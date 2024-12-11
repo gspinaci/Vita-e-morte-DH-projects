@@ -1,0 +1,133 @@
+Titolo,URL progetto,URL progetto risolve?,URL sito vetrina ,URL sito vetrina risolve?,URL Anticamera ,URL Anticamera risolve?,NOTE,Provenance
+Daphnet: Ancient Philosophy,http://ancientsource.daphnet.iliesi.cnr.it/,TRUE,http://www.daphnet.iliesi.cnr.it/,TRUE,,FALSE,,AIUCD
+Daphnet: Modern Philosophy,http://modernsource.daphnet.iliesi.cnr.it/,TRUE,http://www.daphnet.iliesi.cnr.it/,TRUE,,FALSE,,AIUCD
+ASIt: Atlante Sintattico d’Italia,http://svrims2.dei.unipd.it:8080/asit-maldura/pages/search.jsp,TRUE,http://asit.maldura.unipd.it/,TRUE,,FALSE,,AIUCD
+The “Verbo-Visual Virtual” Platform,http://www.verbovisualevirtuale.org/,TRUE,,FALSE,,FALSE,,AIUCD
+Dante: A Web Application for the History of Art,https://dante.beniculturali.unipd.it/dante-web/,TRUE,,FALSE,,FALSE,,AIUCD
+Open Philology Project,,FALSE,http://openphilology.org/,TRUE,,FALSE,,AIUCD
+Progetto Mambrino,https://www.mambrino.it/it,TRUE,,FALSE,,FALSE,,AIUCD
+TRANSSCRIPT,https://anr.fr/Project-ANR-14-CE31-0022,FALSE,,FALSE,,FALSE,,AIUCD
+Illuminated Dante Project (IDP),https://www.dante.unina.it/ndp/public/frontend,TRUE,,FALSE,,FALSE,,AIUCD
+Epistolario Italo Svevo,,FALSE,,FALSE,,FALSE,,AIUCD
+Eagle Project,https://www.eagle-network.eu/,TRUE,,FALSE,,FALSE,,AIUCD
+AMiGre,,FALSE,http://amigre.upatras.gr/,TRUE,,FALSE,,AIUCD
+BelliniInRete,,FALSE,http://bellininrete.istc.cnr.it/,TRUE,,FALSE,,AIUCD
+Czech-IT! Linguistic corpus of native Czech and Slovak learners acquiring Italian language,https://czech-it.github.io/,TRUE,,FALSE,,FALSE,,AIUCD
+Clavius Correspondence,http://claviusontheweb.it/lod,FALSE,,FALSE,,FALSE,,AIUCD
+The Medieval Kingdom of Sicily Image Database,https://koseodiah.org/index.php,TRUE,,FALSE,,FALSE,,AIUCD
+Archivio Università Castrense,https://archivio.universitacastrense.eu/,TRUE,,FALSE,,FALSE,,AIUCD
+Epigraphs of Castello Ursino Museum,,FALSE,http://epicum.istc.cnr.it/,TRUE,,FALSE,,AIUCD
+14-18 Documenti e immagini della Grande Guerra,http://www.14-18.it/progetto,TRUE,,FALSE,,FALSE,,AIUCD
+Epistolario De Gasperi,https://www.epistolariodegasperi.it/#/archivio_digitale/lettere,TRUE,,FALSE,www.epistolariodegasperi.it,TRUE,,AIUCD
+Linking Latin,https://lila-erc.eu/LiLaLisp/,TRUE,,FALSE,https://lila-erc.eu/#about-1,TRUE,,AIUCD
+Ecodigit,https://ecodigit.dtclazio.it/,FALSE,https://dtclazio.it/progetto-ecodigit,TRUE,,FALSE,,AIUCD
+Petrarchive,https://dcl.luddy.indiana.edu/petrarchive/,TRUE,,FALSE,,FALSE,,AIUCD
+Emodsar,http://corpora.unica.it/TEITOK/emodsar,FALSE,,FALSE,,FALSE,,AIUCD
+FrancoBuffoni,,FALSE,https://www.francobuffoni.it/,TRUE,,FALSE,,AIUCD
+Stragi Nazifasciste,https://www.straginazifasciste.it/,TRUE,,FALSE,,FALSE,,AIUCD
+Pirandello nazionale,https://www.pirandellonazionale.it/opere/,TRUE,,FALSE,https://www.pirandellonazionale.it/,TRUE,,AIUCD
+Hypermedia Dante Project,https://hdn.dantenetwork.it/,FALSE,,FALSE,,FALSE,,AIUCD
+Varianti della rosa,,FALSE,https://www.variantidellarosa.it/,TRUE,,FALSE,,AIUCD
+Registri Monterosso,https://registrimonterosso.labcd.unipi.it/,TRUE,,FALSE,,FALSE,,AIUCD
+Bellini corrispondenza,http://bellinicorrespondence.cnr.it/,TRUE,,FALSE,,FALSE,,AIUCD
+Repim,https://repim.itatti.harvard.edu/,TRUE,,FALSE,,FALSE,,AIUCD
+Patrimonio Letterario Filologico,https://dh.dlls.univr.it/it/progetti/patrimonio-letterario-filologico/#trisde51,FALSE,,FALSE,,FALSE,,AIUCD
+ Archivio della Latinità Italiana del Medioevo,http://en.alim.unisi.it/dl/fonti_documentarie,TRUE,,FALSE,,FALSE,,AIUCD
+DB allegorico dantesco,https://www.databaseallegoricodantesco.it/archivio.php,TRUE,,FALSE,,FALSE,,AIUCD
+"LINEA: per un portale della letteratura italiana del
+Novecento",,FALSE,https://linea.unict.it/,TRUE,,FALSE,,AIUCD
+ I LUOGHI DELLA CULTURA IN TOSCANA FINO AL 1325 ,https://atlas.mirabileweb.it/atlas,TRUE,,FALSE,,FALSE,,AIUCD
+Petrarca itinera,https://petrarchsitinera.github.io/,FALSE,,FALSE,,TRUE,,AIUCD
+Elisa Chimenti,,FALSE,,FALSE,https://www.elisachimenti.org/accueildef.html,FALSE,,AIUCD
+Erbario di Aldovrandi,https://botanica.sma.unibo.it/aldrovandi/Explore,TRUE,,FALSE,https://botanica.sma.unibo.it/,TRUE,,AIUCD
+Ragu project,,FALSE,,FALSE,https://raguproject.github.io/,FALSE,,AIUCD
+Tree of philosophers,https://treeofphilosophers.it/labels,TRUE,,FALSE,,FALSE,,AIUCD
+MaximHum,,FALSE,,FALSE,,FALSE,,AIUCD
+Fondazione fava,https://www.fondazionefava.it/archivio-di-giuseppe-fava/,TRUE,,FALSE,,FALSE,,AIUCD
+OpenGadda,https://numgadda.github.io/OpenGadda/databasecolumnmerge.html,TRUE,,FALSE,,FALSE,,AIUCD
+Hyperpavese,https://www.hyperpavese.com/progetto.php,TRUE,,FALSE,,FALSE,,AIUCD
+Progetto viver,https://testi.progettoviver.it/,TRUE,,FALSE,,FALSE,,AIUCD
+LACAM Laboratory ,https://lacam.di.uniba.it/activit/,FALSE,,FALSE,,FALSE,,IRCDL
+"IntraText dLib: digital library framework system based on distributed collaboration, e-mail interaction and easy to use text-to-xml facilities for editorial accuracy ",https://www.intratext.com/ ,TRUE,,FALSE,,FALSE,,IRCDL
+Enabling Services in Knowledge Infrastructures: The DRIVER Experience,www.driver-repository.eu,FALSE,,FALSE,,FALSE,,IRCDL
+"Personalization in Digital Libraries: An Intelligent Service based on Semantic User Profiles
+",ITem Recommender http://193.204.187.223:8080/iswc rebuild/,FALSE,,FALSE,,FALSE,,IRCDL
+"Extending the DelosDLMS by the FAST Annotation Service
+
+(https://www.dei.unipd.it/~ferro/papers/2007/IRCDL2007-ABFRS.pdf)",https://delos.info/ ,TRUE,,FALSE,,FALSE,,IRCDL
+	D4Science: Infrastructure to Support the Definition and Operation of Virtual Research Environments,https://www.d4science.org/,TRUE,,FALSE,,FALSE,,IRCDL
+PLANETS: Preservation and Long-term Access through Networked Services,https://www.planets-project.eu/ ,TRUE,,FALSE,,FALSE,,IRCDL
+MultiMatch: A New Way to Access Cultural Heritage Information across Media and Language Boundaries,http://multimatch01.isti.cnr.it/ ,FALSE,http://www.multimatch.eu/,FALSE,,FALSE,,IRCDL
+"TrebleCLEF: Evaluation, Best Practices and Collaboration for Multilingual Access", https://www.multimatch.org/ (secondo link non va),FALSE,https://www.trebleclef.eu/,TRUE,,FALSE,,IRCDL
+DRIVER-II: Infrastructure to Support the Aggregation and Curation of Repositories Federation,https://www.driver-repository.eu/,FALSE,,FALSE,,FALSE,,IRCDL
+"CASPAR: Cultural, Artistic and Scientific Knowledge for Preservation, Access and Retrieval","https://www.casparpreserves.eu/caspar-project.html#:~:text=CASPAR%20%2D%20Cultural%2C%20Artistic%20and%20Scientific,cultural%20and%20scientific%20resources%22).",TRUE,,FALSE,,FALSE,,IRCDL
+CLEF Ad-hoc: A Perspective on the Evolution of the Cross-Language Evaluation Forum,http://ims.dei.unipd.it/gridclef/,FALSE,,FALSE,,FALSE,,IRCDL
+"Toward an Audio Digital Library 2.0: SMASH, a Social Music Archive of SHellac Phonographic Discs",https://avires.dimi.uniud.it/tmp/DL/Experimental_Results.html,FALSE,,FALSE,,FALSE,,IRCDL
+Building Grammatical Resources for Italian Dialects,http://asit.maldura.unipd.it/,TRUE,,FALSE,,FALSE,,IRCDL
+"The Challenges of Building Ex Libris Rosetta, a Digital Preservation System",https://exlibrisgroup.com/products/rosetta-digital-asset-management-and-preservation/,FALSE,,FALSE,,FALSE,,IRCDL
+SIAR: A User-Centric Digital Archive System,https://siar.regione.veneto.it/,TRUE,,FALSE,,FALSE,,IRCDL
+Annotating Digital Libraries and Electronic Editions in a Collaborative and Semantic Perspective (SemLib project),https://thepund.it/,TRUE,https://cordis.europa.eu/project/id/262301/reporting,TRUE,,FALSE,,IRCDL
+A Multi-layer Digital Library for Mediaeval Legal Manuscripts (Mosaico project),http://mosaico.cirsfid.unibo.it/,TRUE,,FALSE,,FALSE,,IRCDL
+"Establishing a Digital Library in Wide-Ranging University’s Context
+The Sapienza Digital Library Experience",https://sapienzadigitallibrary.uniroma1.it/index.php/,TRUE,,FALSE,,FALSE,,IRCDL
+A Contribution for the Dissemination of Cultural Heritage Content to a Wider Public,http://ipsa.ipsa-project.org/,FALSE,http://ipsa.ipsa-project.org/,TRUE,,FALSE,,IRCDL
+Modeling Archives by Means of OAI-ORE,https://www.openarchives.org/ore/,TRUE,,FALSE,,FALSE,,IRCDL
+Historical Digital Archive and Geo-referenced Contents of the Francigena Librari Web Portal,http://www.francigena.beniculturali.it/web/valit/il-progetto,FALSE,,FALSE,,FALSE,,IRCDL
+EDB: Knowledge Technologies for Ancient Greek and Latin Epigraphy,https://www.edb.uniba.it/,TRUE,,FALSE,,FALSE,,IRCDL
+"Culturaitalia, the Italian National Content Aggregator in Europeana",http://dati.culturaitalia.it/,TRUE,,FALSE,,FALSE,,IRCDL
+The AstroBID: Preserving and Sharing the Italian Astronomical Heritage.,www.beniculturali.inaf.it,TRUE,,FALSE,,FALSE,,IRCDL
+The EAGLE Europeana Network of AncientGreek and Latin Epigraphy:A Technical Perspective,https://www.eagle-network.eu/,TRUE,,FALSE,,FALSE,,IRCDL
+The TRAME Project - Text and Manuscript Transmission of the Middle Ages in Europe,http://git-trame.fefonlus.it/,TRUE,,FALSE,,FALSE,,IRCDL
+"The Archivio dei Possessori of the Biblioteca Nazionale
+Marciana. A Provenance Database",https://archiviopossessori.it/,TRUE,,FALSE,,FALSE,,IRCDL
+"An IT Support for an Exhibition of Illuminated
+Manuscripts",https://ipsa.dei.unipd.it/,FALSE,,FALSE,,FALSE,,IRCDL
+SACHER: Smart Architecture for Cultural Heritage in Emilia Romagna,http://www.sacherproject.com/,FALSE,,FALSE,,FALSE,,IRCDL
+A Research Tool for the ERC-Funded EMoBookTrade project ,http://emobooktrade.uniud.it/,FALSE,,FALSE,,FALSE,,IRCDL
+"The European Project OpenUP: OPENing UP new Methods, Indicators and Tools for Peer Review, Impact Measurement and Dissemination of Research Results",https://www.openuphub.eu/,FALSE,,FALSE,,FALSE,,IRCDL
+XDOCS: an Application to Index Historical Documents,https://aimagelab.ing.unimore.it/imagelab/project.asp?idprogetto=59,TRUE,,FALSE,,FALSE,,IRCDL
+Eliciting the Ancient Geography from a Digital Library of Latin Texts ,https://visualdataweb.de/webvowl/#iri=https://w3id.org/geolit/ontologies/GO-TOP,FALSE,https://w3id.org/geolit/ontologies/GO-TOP.owl,FALSE,,FALSE,,IRCDL
+A Software Architecture for Narratives,https://dlnarratives.eu/narratives.html,FALSE,,FALSE,,FALSE,,IRCDL
+Library Data Integration: the CoBiS Linked Open Data Project and Portal ,https://dati.cobis.to.it/,TRUE,,FALSE,,FALSE,,IRCDL
+Annote: A Serious Game for Medical Students to Approach Lesion Skin Images of a Digital Library ,https://imagelab.ing.unimore.it/annoteProject,FALSE,,FALSE,,FALSE,,IRCDL
+The Biographical Dictionary of Friulans -“Nuovo Liruti” On-Line,https://www.dizionariobiograficodeifriulani.it/,TRUE,,FALSE,,FALSE,,IRCDL
+Regional Research Portal FVG: an OpenScience portal ,https://research.unityfvg.it/,FALSE,,FALSE,,FALSE,,IRCDL
+Predicting the Usability of the Dice CAPTCHA via Artificial Neural Network,https://sites.google.com/site/sites/system/errors/WebspaceNotFound?path=%2Falessiaamelio%2F+software-tools%2Fdice-captcha-dataset.,FALSE,,FALSE,,FALSE,,IRCDL
+Exploring Semantic Archival Collections: The Case of Piłsudski Institute of America,http://arkivo-ontology.org/,FALSE,,FALSE,,FALSE,,IRCDL
+Metadata as Semantic Palimpsests: The Case of PHAIDRA@unipd,https://phaidra.cab.unipd.it/info/impressum,TRUE,,FALSE,,FALSE,,IRCDL
+In Codice Ratio: Machine Transcription of Medieval Manuscripts,https://www.inf.uniroma3.it/db/icr/,TRUE,,FALSE,,FALSE,,IRCDL
+Progetto TraMonti,http://www.tramontivaldivara.it/,FALSE,,FALSE,,FALSE,non accessibile (accessibile con wayback ma non funzionante),DH Awards
+digilibLT: Biblioteca digitale di testi latini tardoantichi,http://www.digiliblt.unipmn.it/,TRUE,,FALSE,,FALSE,"accessibile, richiede registrazione",DH Awards
+Musisque Deoque,http://www.mqdq.it/,TRUE,,FALSE,,FALSE,aperto e funzionante pare,DH Awards
+The Medici Archive Project,http://bia.medici.org/,TRUE,,FALSE,,FALSE,"mellon founded, richiede registrazione",DH Awards
+The digital lab of “crunched books”: explore and annotate the classics,http://cbook.it/en/,FALSE,,FALSE,,FALSE,il redirect è appeso (accessibile con wayback ma non funzionante),DH Awards
+3DHOP: 3D Heritage Online Presenter,http://vcg.isti.cnr.it/3dhop/,TRUE,,FALSE,,FALSE,"Non espone dati, è un software",DH Awards
+ALCIDE (Analysis of Language and Content In a Digital Environment),http://celct.fbk.eu:8080/Alcide_Demo/,TRUE,,FALSE,,FALSE,traslocato https://alcidedigitale.fbk.eu/platform/,DH Awards
+DanteSources,http://perunaenciclopediadantescadigitale.eu/dantesources/index.html,TRUE,,FALSE,,FALSE,redirect a https://dantesources.dantenetwork.it/index.html dal 2021,DH Awards
+Pundit,http://thepund.it/,TRUE,,FALSE,,FALSE,"Non espone dati, è un software",DH Awards
+Alchimia di Jackson Pollock / Jackson Pollock: Alchemy in 3D,http://vcg.isti.cnr.it/alchemy/,TRUE,,FALSE,,FALSE,,DH Awards
+EVT – Edition Visualization Technology,http://evt.labcd.unipi.it/,TRUE,,FALSE,,FALSE,è un tool ma espone anche due demo edizioni digitali. rientra,DH Awards
+Galassia Ariosto,http://galassiaariosto.sns.it/,FALSE,,FALSE,,FALSE,"è stato internalizzato, forse, dal 2020 e ci si può accedere con VPN (forse)",DH Awards
+NumET,https://nuovomedioevo.it/numet-2/,FALSE,,FALSE,,FALSE,,DH Awards
+I conti con la Storia: Le leggi razziali tra televisione e storiografia,http://www.iconticonlastoria.it,TRUE,,FALSE,,FALSE,traslocato a https://www.unive.it/pag/44465/,DH Awards
+Storia dei Carabinieri,https://www.spreaker.com/show/storia-dei-carabinieri,TRUE,,FALSE,,FALSE,,DH Awards
+Navigli Project,http://arcg.is/0vfWKj,TRUE,,FALSE,,FALSE,,DH Awards
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
+,,FALSE,,FALSE,,FALSE,,
