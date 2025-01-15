@@ -20,7 +20,7 @@ except ImportError:
 
 # Set up logging
 logging.basicConfig(
-    filename='script_final.log',
+    filename='logs/script_final.log',
     level=logging.DEBUG,
     format='%(asctime)s [%(levelname)s] %(message)s'
 )
