@@ -152,8 +152,8 @@ def normalize_url(url):
     return url
 
 # Input/Output CSV files
-input_csv = "lista_finale.csv"
-output_csv = "lista_finale_post_script.csv"
+input_csv = r"C:\Users\crosi\Documents\GitHub\Vita-e-morte-DH-projects\dataset\dataset_final.csv"
+output_csv = r"C:\Users\crosi\Documents\GitHub\Vita-e-morte-DH-projects\dataset\lista_finale_post_script.csv"
 
 # Read the input CSV
 with open(input_csv, newline='', encoding='utf-8') as infile:

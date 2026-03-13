@@ -1,286 +1,285 @@
 Titolo,URL progetto,Sito funzionante,Sito non trovato,Sito non funzionante,Sito non reinderizzato,Sito parzialmente Inacessibile,Sito dopo migrazione,URL sito vetrina,URL sito vetrina risolve?,URL Anticamera,URL Anticamera risolve?,Provenance,KNOT URI,NOTE,URL progetto First_Seen,URL progetto Last_Seen
-VOCABO,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://www.treccani.it/magazine/lingua_italiana/speciali/VocaBO/2_Pani.html,TRUE,,FALSE,Italian DH Institutions,,,,
-Varianti della rosa,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://www.variantidellarosa.it/,TRUE,,FALSE,AIUCD,,,,
-university research funding patent,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://dh.fbk.eu/2020/11/university-research-funding-patenting-and-technological-impact/,TRUE,,FALSE,Italian DH Institutions,,,,
-"TrebleCLEF: Evaluation, Best Practices and Collaboration for Multilingual Access",https://www.multimatch.org/,FALSE,FALSE,TRUE,FALSE,FALSE,,https://www.trebleclef.eu/,TRUE,,FALSE,IRCDL,,,,
-TRANSSCRIPT,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://anr.fr/Project-ANR-14-CE31-0022,TRUE,,FALSE,AIUCD,,protocolo https non aggiornato,,
-"Toward an Audio Digital Library 2.0: SMASH, a Social Music Archive of SHellac Phonographic Discs",https://avires.dimi.uniud.it/tmp/DL/Experimental_Results.html,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,protocolo https non aggiornato,2024-04-15 09:19:38,2024-04-16 19:25:36
-The Sound of St Mark's,http://vmo.unive.it/choirbooks/,FALSE,FALSE,TRUE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/sound-stmark-project,,2018-04-30 07:50:10,2024-07-23 23:58:09
-The nuncio's secret archives,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://nsa.unipr.it,TRUE,,FALSE,Italian DH Institutions,,,,
-"The European Project OpenUP: OPENing UP new Methods, Indicators and Tools for Peer Review, Impact Measurement and Dissemination of Research Results",https://www.openuphub.eu/,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,Adobe Flash Player,2017-06-05 00:00:23,2024-12-03 13:57:52
-The digital lab of “crunched books”: explore and annotate the classics,http://cbook.it/en/,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,DH Awards,,,2015-02-22 12:00:23,2023-06-06 02:48:39
-"The Challenges of Building Ex Libris Rosetta, a Digital Preservation System",https://exlibrisgroup.com/products/rosetta-digital-asset-management-and-preservation/,FALSE,FALSE,TRUE,TRUE,FALSE,https://knowledge.exlibrisgroup.com/Rosetta,,FALSE,,FALSE,IRCDL,,protocolo https non aggiornato,2018-02-03 22:25:00,2023-03-28 02:35:16
-Tebtynis: fragmentary voices from the past,http://www.papirologia.unipr.it/ricerca/CPGM/index.html,FALSE,FALSE,FALSE,TRUE,FALSE,http://www.papirologia.unipr.it/ricerca/tebtynis.html,,FALSE,,FALSE,Italian DH Institutions,,,,
-studiolo belfiore,https://studiolobelfiore.unibo.it/,FALSE,FALSE,FALSE,TRUE,FALSE,https://framelab.unibo.it/vt/studiolodibelfiore/Studiolo%20di%20Belfiore.html,,,,,KNOT,http://purl.org/knot/data/belfiore-project,,2022-01-09 21:57:51,2024-12-03 12:46:14
-śivadharma database,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://shivadharmaproject.com/the-sivadhama-infrastructure-modeling-a-web-application-for-managing-scholarly-data/,TRUE,,FALSE,Italian DH Institutions,,ricerca per parole non va,,
-SACHER: Smart Architecture for Cultural Heritage in Emilia Romagna,http://www.sacherproject.com/,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2018-04-26 17:11:47,2023-06-09 00:49:10
-ROADS,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://csc.dei.unipd.it/roads-project/index.html,TRUE,,FALSE,Italian DH Institutions,,404 page not found,,
-Regional Research Portal FVG: an OpenScience portal,https://research.unityfvg.it/,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2018-01-20 19:44:41,2024-03-29 04:03:45
-Ramusio,http://virgo.unive.it/ecf-workflow/books/Ramusio/main/intro.html,FALSE,FALSE,TRUE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/elec-ramusio-project,,2015-08-29 08:43:51,2023-10-28 17:41:44
-Progetto TraMonti,http://www.tramontivaldivara.it/,FALSE,FALSE,TRUE,TRUE,FALSE,https://tramonti.labcd.unipi.it/,,FALSE,,FALSE,DH Awards,,protocolo https non aggiornato,2013-02-03 03:21:43,2019-11-20 16:28:37
-Predicting the Usability of the Dice CAPTCHA via Artificial Neural Network,https://sites.google.com/site/sites/system/errors/WebspaceNotFound?path=%2Falessiaamelio%2F+software-tools%2Fdice-captcha-dataset.,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,,
-Petrarca itinera,https://petrarchsitinera.github.io/,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,TRUE,AIUCD,,,2023-06-05 04:07:41,2023-06-05 04:09:40
-"Personalization in Digital Libraries: An Intelligent Service based on Semantic User Profiles
-",http://193.204.187.223:8080/iswc rebuild/,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,NOTPROVIDED,NOTPROVIDED
-PedeCerto - metrica latina digitale,https://www.pedecerto.eu/public/,FALSE,FALSE,FALSE,TRUE,FALSE,https://www.pedecerto.eu/,,,,,KNOT,http://purl.org/knot/data/pedecerto-project,,2020-02-19 13:00:44,2024-11-28 11:51:56
-Parthenos Project,,FALSE,TRUE,FALSE,FALSE,FALSE,,http://www.parthenos-project.eu/,TRUE,,FALSE,Italian DH Institutions,,,,
-Open Philology Project,http://openphilology.org/,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,protocolo https non aggiornato,,
-NumET,https://nuovomedioevo.it/numet-2/,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,DH Awards,,,2018-03-30 09:25:10,2021-10-22 16:05:12
-Musisque Deoque: Un archivio digitale di poesia latina,https://www.mqdq.it,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,problemi con alcuni caricamenti,,
-MultiMatch: A New Way to Access Cultural Heritage Information across Media and Language Boundaries,http://multimatch01.isti.cnr.it/,FALSE,FALSE,TRUE,FALSE,FALSE,,http://www.multimatch.eu/,TRUE,,FALSE,IRCDL,,,,
-MaximHum,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://maximhum.fileli.unipi.it/,TRUE,,FALSE,AIUCD,,,,
-Marchio Angeli’s Inventory,http://vmo.unive.it/inventory1720/,FALSE,FALSE,TRUE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/marchio-angeli-project,,2020-05-16 03:09:03,2024-11-29 22:43:57
-Lemlat,,FALSE,FALSE,FALSE,FALSE,FALSE,,http://www.lemlat3.eu/,TRUE,,FALSE,Italian DH Institutions,,accedere con credenziali,,
-Historical Digital Archive and Geo-referenced Contents of the Francigena Librari Web Portal,http://www.francigena.beniculturali.it/web/valit/il-progetto,FALSE,FALSE,FALSE,TRUE,FALSE,https://www.viefrancigene.org/,,FALSE,,FALSE,IRCDL,,non è possibile visualizzare metadati né i testi che vogliono mostrare. Download non possibile.,2012-12-22 08:06:53,2015-07-07 01:31:20
-GRASPOS,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://graspos.eu/,TRUE,,FALSE,Italian DH Institutions,,,,
-Galassia Ariosto,http://galassiaariosto.sns.it/,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,DH Awards,,,2017-09-30 16:52:43,2020-11-27 08:13:09
-FrancoBuffoni,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://www.francobuffoni.it/,TRUE,,FALSE,AIUCD,,,,
-Exploring Semantic Archival Collections: The Case of Piłsudski Institute of America,http://arkivo-ontology.org/,FALSE,FALSE,FALSE,TRUE,FALSE,https://github.com/ArkivoTeam/ARKIVO,,FALSE,,FALSE,IRCDL,,,2018-02-03 09:33:03,2018-07-27 16:21:12
-Epigraphs of Castello Ursino Museum,,FALSE,TRUE,FALSE,FALSE,FALSE,,http://epicum.istc.cnr.it/,TRUE,,FALSE,AIUCD,,non va protocollo javascript,,
-Emodsar,http://corpora.unica.it/TEITOK/emodsar,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2022-01-20 08:37:13,2023-09-25 00:54:34
-Elisa Chimenti,,FALSE,TRUE,TRUE,FALSE,FALSE,,,FALSE,https://www.elisachimenti.org/accueildef.html,FALSE,AIUCD,,protocolo https non aggiornato,,
-EdMuse,https://edmuse.eu/edmuse-platform/,FALSE,FALSE,TRUE,FALSE,FALSE,,http://edmuse.eu/it/index.html,FALSE,,FALSE,Italian DH Institutions,,,2017-12-15 04:18:47,2024-06-15 00:14:27
-EDF,http://edf.unive.it/,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2019-09-09 13:09:34,2024-06-17 09:14:48
-Ecodigit,https://ecodigit.dtclazio.it/,FALSE,FALSE,TRUE,FALSE,FALSE,,https://dtclazio.it/progetto-ecodigit,TRUE,,FALSE,AIUCD,,,2020-11-28 18:52:12,2023-03-20 16:56:11
-CWALM,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://cwalm.ilc.cnr.it/,TRUE,,FALSE,Italian DH Institutions,,,,
-Creta Inscriptions,https://ilc4clarin.ilc.cnr.it/cretaninscriptions,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2021-05-20 15:47:12,2023-05-20 14:16:35
-Corago LOD,http://corago.unibo.it/lod,FALSE,FALSE,FALSE,TRUE,FALSE,http://coragolod1.ing.unibo.it:8080/corago/,,,,,KNOT,http://purl.org/knot/data/corago-lod-project,,2022-06-07 08:53:46,2022-12-08 05:13:43
-CLEF Ad-hoc: A Perspective on the Evolution of the Cross-Language Evaluation Forum,http://ims.dei.unipd.it/gridclef/,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2008-11-09 07:48:28,2015-06-29 16:09:11
-Clavius Correspondence,http://claviusontheweb.it/lod,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2022-01-19 23:34:09,2022-01-20 18:11:23
-BelliniInRete,,FALSE,TRUE,FALSE,FALSE,FALSE,,http://bellininrete.istc.cnr.it/,TRUE,,FALSE,AIUCD,,impossibile raggiungere il sito,,
-Atlas,https://dh-atlas.github.io/deliverables.html,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,,
-Archivio ViVo,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://www.clarin-it.it/it/content/archivio-vivo,TRUE,,FALSE,Italian DH Institutions,,page not found,,
-Archivio storico fotografico Adolfo Venturi,https://digilab.uniroma1.it/risorse/archivio-storico-fotografico,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2022-06-25 04:21:47,2024-06-16 02:06:21
-Archilochus,,FALSE,TRUE,FALSE,FALSE,FALSE,,https://www.clarin.eu/content/archilochus-paros-elegiac-fragments-xml-archive,TRUE,,FALSE,Italian DH Institutions,,,,
-Archaide,http://www.archaide.eu/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/archaide-project,è necessario avere delle credenziali,2017-01-16 07:46:50,2024-01-27 00:49:54
-Annote: A Serious Game for Medical Students to Approach Lesion Skin Images of a Digital Library,https://imagelab.ing.unimore.it/annoteProject,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,,
-An IT Support for an Exhibition of Illuminated Manuscripts,https://ipsa.dei.unipd.it/,FALSE,TRUE,FALSE,TRUE,FALSE,https://ipsa.beniculturali.unipd.it/ipsa-web/?null=null&language=it,,FALSE,,FALSE,IRCDL,,,2013-01-17 08:22:14,2021-03-02 15:44:47
-AMiGre,,FALSE,TRUE,FALSE,FALSE,FALSE,,http://amigre.upatras.gr/,TRUE,,FALSE,AIUCD,,,,
-A Research Tool for the ERC-Funded EMoBookTrade project,http://emobooktrade.uniud.it/,FALSE,FALSE,FALSE,TRUE,FALSE,https://emobooktrade.unimi.it/,,FALSE,,FALSE,IRCDL,,,2017-08-06 02:49:11,2020-05-20 07:50:03
-zeri e lode,http://data.fondazionezeri.unibo.it/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,Italian DH Institutions,,,2016-06-20 13:45:22,2025-01-04 04:17:26
-Yashiro,https://yashiro.itatti.harvard.edu/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,pagina non trovata,2015-07-15 00:33:04,2024-12-27 23:18:13
-XDOCS: an Application to Index Historical Documents,https://aimagelab.ing.unimore.it/imagelab/project.asp?idprogetto=59,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,IRCDL,,,2020-08-09 05:50:23,2024-04-21 20:54:27
-Word formation latin,https://progetti.unicatt.it/progetti-milan-wfl-home,TRUE,FALSE,FALSE,FALSE,FALSE,,http://wfl.marginalia.it,TRUE,,FALSE,Italian DH Institutions,,,2016-06-15 21:24:21,2023-06-03 01:33:43
-WissensGeschichte,https://wissensgeschichte.biblhertz.it/Glossario,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2005-03-05 23:26:21,2024-11-30 20:15:46
-WaCky - The Web-As-Corpus Kool Yinitiative,https://wacky.sslmit.unibo.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/wacky-project,,2005-03-05 22:32:52,2024-12-22 14:24:20
-virtual repository of photographers' sales catalogues,https://virtualphotothek.khi.fi.it/catalogues/publisher,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,,
-Venice Squeeze Project,https://www.e-stampages.eu/s/e-stampages/page/accueil,FALSE,FALSE,FALSE,TRUE,FALSE,https://pric.unive.it/progetti/venice-squeeze-project/home,,FALSE,,FALSE,Italian DH Institutions,,,2019-02-20 07:22:29,2024-11-08 18:23:00
-"VASTO - VArchi, STOria FIORENTINA",https://dharc-org.github.io/progetto-vasto/index.html,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/vasto-project,,2022-08-14 15:12:28,2024-07-11 17:55:44
-vasto,https://dharc-org.github.io/progetto-vasto/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2020-09-10 09:59:42,2024-07-11 17:55:44
-Varianti all’opera,https://www.variantiallopera.it/public/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/varianti-opera-project,,2016-07-29 09:04:03,2024-12-28 12:53:48
-Urbs,https://dlib.biblhertz.it/urbs,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2024-07-30 11:16:29,2024-12-11 02:59:39
-Upgrading History. Diaries from the War Front,https://projects.dharc.unibo.it/uhdw/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2019-06-28 11:12:06,2024-11-18 02:08:15
-Unione Donne in Italia: digital library,https://archiviodigitale.udinazionale.org/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2018-06-02 23:33:13,2024-11-22 19:21:15
-Tree of philosophers,https://treeofphilosophers.it/labels,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2024-12-13 04:56:27,2024-12-13 04:56:27
-The Vercelli Book,http://vbd.humnet.unipi.it/beta2/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,alcune immagini non vengono caricate,2016-03-26 12:43:08,2024-12-13 03:23:06
-The TRAME Project - Text and Manuscript Transmission of the Middle Ages in Europe,http://git-trame.fefonlus.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2014-11-22 09:41:28,2024-09-11 03:18:51
-The medieval kingdom of Sicily: image database,https://koseodiah.org/mapofkingdom.php,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,Italian DH Institutions,,"è stato internalizzato, forse, dal 2020 e ci si può accedere con VPN (forse)",2024-08-09 06:52:16,2024-08-09 06:52:16
-The Medieval Kingdom of Sicily Image Database,https://koseodiah.org/index.php,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2023-11-04 02:17:11,2025-01-01 21:59:28
-The Medici Archive Project,http://bia.medici.org/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,DH Awards,,,2012-12-31 16:41:31,2024-12-19 11:06:40
-The Falconieri Project,https://falconieri.medici.org/Mia/LoginUser.do,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,Italian DH Institutions,,richiede registrazione,2020-10-25 22:19:50,2024-09-11 23:45:11
-The Biographical Dictionary of Friulans -“Nuovo Liruti” On-Line,https://www.dizionariobiograficodeifriulani.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2017-04-06 20:16:28,2025-01-05 03:34:00
-The AstroBID: Preserving and Sharing the Italian Astronomical Heritage.,www.beniculturali.inaf.it,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2015-09-26 14:37:51,2025-01-05 03:55:20
-The Archivio dei Possessori of the Biblioteca Nazionale Marciana. A Provenance Database,https://archiviopossessori.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2021-07-14 13:31:41,2025-01-04 20:38:18
-The “Verbo-Visual Virtual” Platform,https://www.verbovisualevirtuale.org/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,AIUCD,,,2016-04-24 11:51:24,2024-11-27 12:05:22
-Stragi Nazifasciste,https://www.straginazifasciste.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2016-04-10 06:52:57,2025-01-03 17:07:18
-Storia dei Carabinieri,https://www.spreaker.com/show/storia-dei-carabinieri,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,DH Awards,,sito non raggiungibile,2020-11-01 01:10:00,2023-10-05 08:35:21
-Staccioli,https://staccioli.biblhertz.it/resource/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2024-04-14 01:51:27,2024-12-15 03:34:53
-Spatial,https://dlib.biblhertz.it/spatial/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,,
-Siena map,https://db.biblhertz.it/siena/siena.xql,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2019-01-14 14:24:44,2024-09-18 06:28:10
-SIAR: A User-Centric Digital Archive System,https://siar.regione.veneto.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2017-07-17 20:59:07,2024-12-19 01:11:02
-SERICA,https://serica.unipi.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/serica-project,,2022-09-04 17:16:37,2024-09-25 18:42:47
-semantic digital edition of vespasiano da bisticci’s letters,http://projects.dharc.unibo.it/vespasiano/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2020-12-04 15:42:31,2024-08-12 22:36:27
-semantic digital edition of paolo bufalini’s notebook,http://projects.dharc.unibo.it/bufalini-notebook/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2020-11-21 23:26:27,2024-11-27 03:31:22
-S. Michele Arcangelo di Pegazzano,https://sanmichelepegazzano.labcd.unipi.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/pegazzano-project,,2020-01-02 22:53:43,2024-09-19 13:37:48
-RePIM - Repertorio della Poesia Italiana in Musica,https://repim.itatti.harvard.edu/resource/repim:formSearch,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/repim-project,,2023-06-07 17:44:19,2024-11-23 10:35:43
-Repim,https://repim.itatti.harvard.edu/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2022-01-20 21:30:05,2024-11-23 10:35:43
-Registri Monterosso,https://registrimonterosso.labcd.unipi.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2021-09-01 18:05:13,2024-09-15 04:10:06
-RDCI - Repertorio Digitale della Canzone Italiana,https://www.rdci.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/repertorio-canzone-project,,2021-06-17 07:23:58,2024-11-23 16:34:45
-Rara,https://rara.biblhertz.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2007-03-02 12:26:48,2024-12-29 21:49:56
-Ragu project,https://raguproject.github.io/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,https://raguproject.github.io/,FALSE,AIUCD,,,,
-Project 3d Bridge,https://wissensgeschichte.biblhertz.it/3d-bridge-html/index3D.html,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2007-06-25 05:33:59,2009-01-19 14:11:43
-Progetto viver,https://testi.progettoviver.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2023-12-06 14:48:12,2024-11-15 00:19:51
-Progetto Mambrino,https://www.mambrino.it/it,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,risolve ma poi dice 404,2019-08-22 11:12:00,2024-12-04 09:24:39
-Poichilia,https://poichilia.unict.it,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2023-01-10 23:46:29,2024-08-13 15:17:15
-Pirandello nazionale,https://www.pirandellonazionale.it/opere/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,https://www.pirandellonazionale.it/,TRUE,AIUCD,,,2017-12-18 06:45:48,2024-06-24 16:59:26
-philoeditor,http://projects.dharc.unibo.it/philoeditor/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,progetto in lavorazione (finisce nel maggio 2025),2021-12-17 00:19:11,2024-08-06 10:08:33
-Pharos,https://pharosartresearch.org/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,accesso negato,2016-10-30 05:04:38,2025-01-05 00:59:40
-Petrarchive,https://dcl.luddy.indiana.edu/petrarchive/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2023-12-01 12:04:27,2025-01-03 21:39:48
-Perspectiva,https://dlib.biblhertz.it/perspectiva/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,Italian DH Institutions,,,,
-Pelavicino,http://pelavicino.labcd.unipi.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2015-12-25 00:43:10,2024-12-09 19:17:27
-PAThs - Archaeological Atlas of Coptic Literature,https://atlas.paths-erc.eu/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/paths-project,,2019-02-25 10:44:01,2025-01-04 07:45:15
-PARTIGIANI D'ITALIA,https://partigianiditalia.cultura.gov.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/partigiani-italia-project,,2022-12-10 14:40:07,2024-11-23 15:55:24
-Papyri.info,https://papyri.info/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2007-09-29 00:41:54,2025-01-05 02:58:59
-PAISÀ corpus italiano,https://www.corpusitaliano.it/en/index.html,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/paisa-project,,2012-09-30 01:40:22,2024-06-21 17:18:31
-OpenGadda,https://numgadda.github.io/OpenGadda/databasecolumnmerge.html,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,,
-Odonomastica Femminile,http://www.labcd.unipi.it/odonomastica-femminile/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,Italian DH Institutions,,non funziona,2022-05-18 16:23:35,2024-09-14 21:35:56
-odi: uno studio su il castello dei destini incrociati di italo calvino,https://projects.dharc.unibo.it/odi/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,alcuni filtri di ricerca non sono più funzionanti,2023-11-29 02:07:18,2024-07-04 08:04:53
-Nuova Bilioteca Manoscritta,https://www.nuovabibliotecamanoscritta.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2006-01-10 22:55:45,2025-01-04 18:44:24
-Noack,https://db.biblhertz.it/noack/noack.xml,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,Italian DH Institutions,,,2007-05-13 20:47:23,2024-04-30 03:08:52
-Navigli Project,http://arcg.is/0vfWKj,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,DH Awards,,,2020-10-08 06:34:02,2024-07-09 08:39:23
-mythlod,https://dharc-org.github.io/mythlod/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,"solo sito vetrina, il progetto verrà caricato presto (chiuso nel 2020)",2021-11-22 20:11:10,2024-12-15 08:28:31
-mythLOD,https://dharc-org.github.io/mythlod/static/mima.html,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/mythlod-project,,2022-12-05 20:27:10,2024-04-18 19:33:59
-musow,http://projects.dharc.unibo.it/musow/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,Italian DH Institutions,,connessione non privata (accessibile con wayback ma non funzionante),2021-11-17 13:32:50,2024-12-16 16:48:30
-Musisque Deoque. Un archivio digitale di poesia latina,https://mizar.unive.it/mqdq/public/index,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/musisque-deoque-project,,2018-08-07 19:00:18,2024-09-14 11:00:46
-Musisque Deoque,http://www.mqdq.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,DH Awards,,,2009-06-17 19:36:50,2024-12-28 14:41:43
-Metastasio,https://www.progettometastasio.it/public/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/metastasio-drammi-project,,2016-05-15 11:29:42,2024-12-20 13:10:41
-Metadata as Semantic Palimpsests: The Case of PHAIDRA@unipd,https://phaidra.cab.unipd.it/info/impressum,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,protocolo https non aggiornato,2014-12-18 21:57:50,2025-01-03 20:55:46
-Memoria di guerra,http://www.memoriediguerra.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/memorie-guerra-project,,2016-12-18 23:50:19,2024-12-21 20:12:39
-melody. make me a linked open data story,https://projects.dharc.unibo.it/melody/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,"a volte carica tutte le lettere, a volte no",2022-10-06 19:12:07,2024-11-17 23:01:39
-mAuth - Mining Authoritativeness in Art History,https://projects.dharc.unibo.it/mauth/search,TRUE,FALSE,FALSE,FALSE,TRUE,,,,,,KNOT,http://purl.org/knot/data/mauth-project,,2023-01-30 20:56:53,2023-09-27 18:55:49
-Matilde Di Canossa,http://www.labcd.unipi.it/matildedicanossa,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2021-03-19 07:48:28,2024-06-03 02:31:15
-Maps and Gazetteers,https://maps.biblhertz.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,impossibile raggiungere il sito,2020-04-11 10:57:01,2024-12-18 20:28:36
-Mappa project,https://mappaproject.arch.unipi.it/mod/Index.php,TRUE,FALSE,FALSE,FALSE,FALSE,,http://www.mappaproject.org/,TRUE,,,KNOT,http://purl.org/knot/data/mappa-open-project,,2012-05-24 04:23:54,2024-08-28 20:39:02
-Manoscritti Italiani Volgari del 17° secolo,https://miv17.labdilef.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/miv17-project,,2023-01-28 07:31:05,2024-12-29 22:09:52
-Lodovico Media Library,https://lodovico.medialibrary.it/home/index.aspx,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/lodovico-project,,2021-04-15 10:02:13,2025-01-02 14:02:56
-Linking Latin,https://lila-erc.eu/LiLaLisp/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,https://lila-erc.eu/#about-1,TRUE,AIUCD,,,2023-10-20 13:14:10,2024-12-09 10:21:39
-Lineamenta,https://fm.biblhertz.it/fmi/xsl/home.xsl?-token.proj=li,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2020-08-20 06:02:20,2022-07-12 13:03:30
-Linea: per un portale della letteratura italiana del Novecento,https://linea.unict.it,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2022-06-26 01:07:51,2023-06-09 20:17:14
-Libretti d'opera,https://www.librettodopera.it/public/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/libretti-opera-project,,2016-09-06 17:23:02,2024-12-28 22:59:43
-Library Data Integration: the CoBiS Linked Open Data Project and Portal,https://dati.cobis.to.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2017-04-23 13:44:15,2025-01-05 03:50:57
-LIBERaBIT,https://www.liberabit.unisa.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/liberabit-project,,2022-09-19 18:31:15,2024-12-23 23:16:27
-leggo manzoni,https://projects.dharc.unibo.it/leggomanzoni/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2024-04-04 05:56:58,2024-08-06 10:10:15
-Le parole dell'arte. Accademia della crusca,https://mla.accademiadellacrusca.org/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2019-03-28 15:34:02,2024-12-06 19:21:20
-Le Lettere di Alessandra Macinghi Strozzi,https://macinghi-strozzi.labdilef.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/macinghi-strozzi-project,,2022-06-30 16:45:39,2024-12-05 20:14:14
-"Last Letters from the World Wars: Forming Italian Language, Identity and Memory in Texts of Conflict",https://www.ultimelettere.it/LastLetters/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2020-02-26 08:45:09,2024-06-14 10:38:33
-L'Area Cimiteriale di San Matteo,https://sepolturesanmatteo.labcd.unipi.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/cimi-san-matteo-project,,2021-03-05 00:01:09,2024-06-19 07:59:27
-Italian Natural Language Processing Lab,http://www.italianlp.it/demo/linguistic-annotation-tool/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/lingua-project,,2014-07-12 10:58:42,2024-09-06 12:14:11
-"IntraText dLib: digital library framework system based on distributed collaboration, e-mail interaction and easy to use text-to-xml facilities for editorial accuracy ",https://www.intratext.com/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,IRCDL,,,,
-Index Thomisticus Treebank,https://itreebank.marginalia.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,la funzione multilingua non funziona sempre,2008-12-17 15:41:46,2024-12-08 00:12:52
-In Codice Ratio: Machine Transcription of Medieval Manuscripts,https://www.inf.uniroma3.it/db/icr/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2018-05-03 15:16:58,2024-08-26 11:45:42
-Illuminated Dante Project (IDP),https://www.dante.unina.it/ndp/public/frontend,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,traslocato a https://www.unive.it/pag/44465/,2024-11-10 21:13:11,2024-12-12 14:45:03
-Illuminated Dante Project,https://www.dante.unina.it/idp/public/frontend,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,error 404,2024-06-20 11:35:23,2024-12-08 04:08:30
-Idilli di Giacomo Leopardi,https://leopardi.ecdosys.org/en/Home/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/idili-leopardi-project,,2024-05-09 13:23:46,2024-05-09 13:24:10
-I Tatti Digital Collection,https://collection.itatti.harvard.edu/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,protocollo https non implementato + file not found,2022-04-18 00:10:45,2024-12-27 00:17:53
-I conti con la Storia: Le leggi razziali tra televisione e storiografia,http://www.iconticonlastoria.it,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,DH Awards,,,2021-01-08 14:32:52,2024-11-25 04:46:29
-Hyperpavese,https://www.hyperpavese.com/progetto.php,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,sparql endpoint non accessibile,2021-10-24 10:18:42,2024-07-19 03:49:28
-https://zuccaro.biblhertz.it/,https://zuccaro.biblhertz.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,è un sito vetrina (https://vision.artresearch.net/resource/start),2004-06-06 20:10:01,2024-12-10 07:24:24
-Hertziana Rare Books Online,https://dlib.biblhertz.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,pagina non trovata,2017-04-12 15:39:57,2024-12-26 17:42:26
-Heinrich Wölfflin,https://editions.humanitiesconnect.pub/exist/apps/hwgw/index.html,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,,
-Greek Schools,https://viewer.greekschools.eu/,TRUE,FALSE,FALSE,FALSE,FALSE,,https://www.ilc.cnr.it/progetti/greekschools-2/,TRUE,,FALSE,Italian DH Institutions,,,2023-11-02 07:28:30,2024-12-09 06:22:36
-Greek into Arabic,http://www.greekintoarabic.eu/index0b30.html,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/g2a-project,,2020-07-13 05:03:21,2023-10-02 08:45:20
-gigapixel images,https://virtualphotothek.khi.fi.it/gigapixel/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2022-08-31 15:41:18,2023-03-21 14:52:41
-Gesture Atlas,https://biblhertz.github.io/atlas/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,error 404,2020-09-06 21:49:35,2022-12-03 12:59:41
-Galleria Borghese,https://galleriaborghese.beniculturali.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2010-07-22 07:22:55,2025-01-04 13:29:46
-FRED - Machine Reading for the Semantic Web,http://wit.istc.cnr.it/stlab-tools/fred/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/fred-project,,2012-07-15 01:08:17,2024-12-13 15:38:02
-framester,https://framester.github.io/,TRUE,FALSE,FALSE,FALSE,FALSE,,http://etna.istc.cnr.it/framester_web/,TRUE,,FALSE,Italian DH Institutions,,,2024-04-17 22:31:51,2024-07-14 20:00:03
-Foto,https://foto.biblhertz.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2007-12-18 20:03:19,2025-01-05 03:48:43
-Fondazione fava,https://www.fondazionefava.it/archivio-di-giuseppe-fava/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,AIUCD,,,2023-09-30 07:02:51,2024-12-13 06:13:26
-Flos,http://iu.di.unipi.it/flos/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2019-12-07 05:03:59,2022-05-19 01:17:10
-Florentine Drawings,https://florentinedrawings.itatti.harvard.edu/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,error 404 not found,2017-03-23 09:40:04,2024-12-28 07:03:53
-Europeana Eagle Project,https://www.eagle-network.eu/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,problemi col protocollo google maps,2013-01-28 03:32:48,2025-01-05 00:21:11
-Establishing a Digital Library in Wide-Ranging University’s Context The Sapienza Digital Library Experience,https://sapienzadigitallibrary.uniroma1.it/index.php/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2024-08-07 05:28:00,2024-12-02 09:07:39
-Erbario di Aldovrandi,https://botanica.sma.unibo.it/aldrovandi/Explore,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,https://botanica.sma.unibo.it/,TRUE,AIUCD,,,2018-09-22 00:49:25,2024-09-14 05:05:43
-Epistolario De Gasperi,https://epistolariodegasperi.it/#/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,Italian DH Institutions,,traslocato https://alcidedigitale.fbk.eu/platform/,2019-05-09 14:20:35,2024-07-21 18:41:44
-Epistolario De Gasperi,https://www.epistolariodegasperi.it/#/archivio_digitale/lettere,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,www.epistolariodegasperi.it,TRUE,AIUCD,,,2019-05-09 14:20:35,2024-07-21 18:41:44
-Epigraphic Database Roma (EDR),http://www.edr-edr.it/default/index.php,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/edr-project,,2017-02-24 03:00:58,2024-10-08 07:29:04
-Epicum: Epigraphs of Castello Ursino Museum,http://epicum.istc.cnr.it/collezione/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2022-07-06 23:18:50,2024-09-14 21:57:55
-ELA - Eurasian Latin Archive,http://ela.unisi.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/ela-project,,2021-12-17 00:20:52,2024-02-25 02:48:08
-"Eine römische Trilogie: Schudt, Caldana, Schlosser",https://dlib.biblhertz.it/guide/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,,
-EDV -  Epigraphic Database Vernacular,http://www.edvcorpus.com/wp/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/edv-project,,2019-11-11 01:16:32,2024-09-13 20:25:39
-edizione nazionale delle opere di aldo moro,https://aldomorodigitale.unibo.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2021-05-25 07:08:38,2024-12-18 20:02:52
-EDB: Knowledge Technologies for Ancient Greek and Latin Epigraphy,https://www.edb.uniba.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,problemi con javascript,2004-10-14 18:23:51,2024-12-08 06:00:34
-Ebla Digital Archives,http://ebda.cnr.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2018-11-30 12:18:25,2024-12-16 10:04:22
-Ebla Digital Archives,http://ebda.cnr.it/index,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/ebla-project,,2019-02-03 10:29:08,2024-09-26 17:51:32
-Eagle Project,https://www.eagle-network.eu/basic-search/,TRUE,FALSE,FALSE,FALSE,FALSE,,https://www.eagle-network.eu/basic-search/,FALSE,,FALSE,AIUCD,,,2016-03-07 22:59:33,2024-09-09 11:47:46
-e-rihs,https://www.e-rihs.eu/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,è un tool e nei deliverabels raccoglie alcuni risultati vari,,
-DOGE Percorsi Digitali,https://doge.unige.net/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/doge-project,il corpus è accessibile solo con credenziali,2022-01-26 16:15:57,2024-11-27 17:51:30
-digitizing the die kirchen von siena project,https://sienaproject.khi.fi.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,"li project url è più un sito vetrina, per visualizzare il modello 3d bisogna scaricare un software e un dataset in locale",2022-08-11 01:22:37,2024-12-14 05:03:16
-digital photothek,http://photothek.khi.fi.it/?Language=en,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2015-03-29 05:01:44,2023-07-08 20:16:30
-Digital Library Pavia,https://www.bibliotecadigitale.unipv.eu/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/digi-lib-pavia-project,,2020-12-18 07:55:58,2025-01-05 03:10:55
-digital library (ficlit),https://dl.ficlit.unibo.it,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,error 404,2022-05-17 03:57:57,2024-12-26 23:09:55
-digilibLT: Biblioteca digitale di testi latini tardoantichi,http://www.digiliblt.unipmn.it/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,DH Awards,,,2012-02-05 00:48:17,2024-05-11 14:29:16
-DigilibLT - Biblioteca digitale di testi latini tardoantichi,https://digiliblt.uniupo.it/index.php,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/digiliblt-project,,2017-10-22 13:23:29,2024-11-08 16:15:04
-DIGESTO,http://dbtvm1.ilc.cnr.it/digesto/Digesto_Home.html,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/digesto-project,ogni tanto qualche link dà pagina non trovata,2022-03-08 23:13:17,2023-03-27 21:10:32
-dhdkey!,https://projects.dharc.unibo.it/dhdkey/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2021-04-30 23:09:42,2024-08-06 11:30:05
-DB allegorico dantesco,https://www.databaseallegoricodantesco.it/archivio.php,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2023-12-06 20:06:23,2024-03-01 13:09:05
-DASI: digital archive for the study of pre-islamic arabian inscriptions,https://dasi.cnr.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2018-12-20 23:04:20,2025-01-05 01:38:20
-Daphnet: Modern Philosophy,http://modernsource.daphnet.iliesi.cnr.it/,TRUE,FALSE,FALSE,FALSE,TRUE,,http://www.daphnet.iliesi.cnr.it/,TRUE,,FALSE,AIUCD,,,2022-10-01 13:30:27,2022-10-01 13:30:27
-Daphnet: Ancient Philosophy,http://ancientsource.daphnet.iliesi.cnr.it/,TRUE,FALSE,FALSE,FALSE,TRUE,,http://www.daphnet.iliesi.cnr.it/,TRUE,,FALSE,AIUCD,,,2022-09-24 20:41:09,2024-06-06 13:24:10
-DanteSources,https://dantesources.dantenetwork.it/index.html,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2021-03-25 11:05:01,2024-07-14 05:26:19
-Dante: A Web Application for the History of Art,https://dante.beniculturali.unipd.it/dante-web/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,AIUCD,,non si riesce a scaricare i dataset,2022-01-22 13:54:32,2024-11-21 23:13:28
-Dante Search,https://dantesearch.dantenetwork.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/dante-search-project,,2020-08-11 23:56:14,2024-12-13 04:35:15
-"dante depicted: a commentary on image, text, and exegesis around the commedia",https://dante.khi.fi.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2023-03-09 09:56:49,2024-12-18 04:57:14
-Dal Libro alla Biblioteca (DaLiB),https://dalib.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/dalib-project,,2023-03-30 10:25:50,2024-12-26 17:19:36
-Czech-IT! Linguistic corpus of native Czech and Slovak learners acquiring Italian language,https://czech-it.github.io/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,explore page not working,2022-01-19 21:30:45,2024-03-04 11:16:06
-"Culturaitalia, the Italian National Content Aggregator in Europeana",http://dati.culturaitalia.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2013-06-22 13:23:09,2025-01-04 12:31:16
-CRIA,https://cria.itatti.harvard.edu/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2016-12-12 16:51:06,2024-11-27 13:30:16
-Corpus Rhythmorum Musicum,https://www.corimu.unisi.it/public/frontend/index,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/corimu-project,,2021-07-25 00:28:35,2023-03-21 00:23:42
-Corpus KIParla - L'italiano parlato e chi parla italiano,https://kiparla.it/,TRUE,FALSE,FALSE,FALSE,TRUE,,,,,,KNOT,http://purl.org/knot/data/kiparla-project,,2020-08-05 13:29:31,2024-11-16 08:55:14
-Corago,http://corago.unibo.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/corago-project,,2013-10-05 19:43:16,2025-01-05 03:47:02
-CoPhiLab: Collaborative and Cooperative Philology Lab,http://www.languagelibrary.eu/new_ewnui/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2017-06-12 00:33:27,2024-03-07 18:27:00
-Controcultura,https://echaurren.biblhertz.it/PE.html,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2021-08-03 22:56:58,2024-12-14 20:49:06
-Confluenze,https://confluenze.dev/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,mi sembra un sitovetrina e basta,2024-04-18 17:03:56,2024-12-24 12:32:22
-Colonizzazioni interne e Migrazioni,https://storia.dh.unica.it/colonizzazioninterne/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/col-interne-project,"fa un redicrect, e poi impossibile raggiungere il sito",2020-09-24 14:17:44,2024-12-26 11:13:46
-Codex Atlanticus: exploring the largest exhisting collection of writings and drawings of Leonardo Da Vinci,https://codex-atlanticus.ambrosiana.it/#/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2022-06-21 22:27:33,2024-12-22 10:53:28
-CO.COR (COMPLIMENT CORPUS),http://www.cocor.eu/index.php,TRUE,FALSE,FALSE,FALSE,TRUE,,,,,,KNOT,http://purl.org/knot/data/cocor-project,,2020-12-30 05:20:10,2023-10-26 00:43:20
-Clori - archivio della cantata italiana,https://cantataitaliana.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/clori-project,,2011-10-30 09:03:36,2024-12-29 00:55:12
-Classici Dse (EVT viewer),https://www.classici-dse.com/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2021-11-29 17:14:13,2023-08-29 10:38:19
-CLaSSES - Corpus for Latin Sociolinguistic Studies on Epigraphic textS,https://classes-latin-linguistics.fileli.unipi.it/en,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/classes-project,,2020-10-23 21:57:04,2024-10-02 17:52:39
-Cipro,https://cipro.biblhertz.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2021-06-24 15:55:38,2024-12-04 21:25:56
-Catalogus Philologorum Classicorum (CPhCl),http://www.aristarchus.unige.net/CPhCl/en/Home,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/cphci-project,error 404 not found,2017-09-28 12:52:45,2024-07-21 13:01:09
-catalogue,https://projects.dharc.unibo.it/knot/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2024-12-13 04:18:48,2024-12-15 07:15:46
-"CASPAR: Cultural, Artistic and Scientific Knowledge for Preservation, Access and Retrieval","https://www.casparpreserves.eu/caspar-project.html#:~:text=CASPAR%20%2D%20Cultural%2C%20Artistic%20and%20Scientific,cultural%20and%20scientific%20resources%22).",TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,alcune visualizzazioni non sono accessibili tipo % 100 toponimi più frequenti,2011-01-30 05:51:19,2024-07-21 06:33:53
-Carteggio Ricci digital library,http://carteggiodiguerra.cnr.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/carteggio-ricci-project,,2022-03-16 09:18:54,2024-06-14 22:58:34
-Carte d'autore online,https://www.cartedautore.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/carte-autore-project,,2014-08-10 16:44:11,2024-12-07 23:19:34
-Carlo Goldoni,https://www.carlogoldoni.it/public/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/goldoni-drammi-project,è un sito vetrina,2016-05-27 06:14:33,2024-12-29 01:45:22
-Bradypus,https://bdus.cloud/,TRUE,FALSE,FALSE,FALSE,TRUE,,,,,,KNOT,http://purl.org/knot/data/bradypus-project,impossibile raggiungere il sito,2021-02-27 11:46:02,2024-12-08 06:44:57
-Biflow: catalogo bilingue,https://catalogobiflow.vedph.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2021-06-29 08:01:26,2025-01-04 02:12:38
-Biblioteca Italiana,http://www.bibliotecaitaliana.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/bib-ita-project,,2002-02-03 09:34:32,2025-01-05 01:15:54
-Biblioteca Informatica dei Libri di Famiglia,https://bilf.ipertesti.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2022-09-30 20:26:19,2024-12-03 23:07:47
-Bellini corrispondenza,http://bellinicorrespondence.cnr.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2022-01-20 21:32:38,2024-08-11 21:33:19
-Belle Greene,https://bellegreene.itatti.harvard.edu/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,Italian DH Institutions,,è un tool ma espone anche due demo edizioni digitali. rientra,2023-08-20 23:24:18,2024-12-23 12:15:40
-Atlante Storia MArittima della SArdegna,https://storia.dh.unica.it/asmsa/it,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/asmsa-project,,2024-02-21 03:58:11,2024-09-12 00:15:19
-Atlante Lessicale Toscano,http://serverdbt.ilc.cnr.it/ALTWEB,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/alt-project,,2007-07-27 12:07:23,2024-12-08 04:37:19
-ASIt: Atlante Sintattico d’Italia,http://svrims2.dei.unipd.it:8080/asit-maldura/pages/search.jsp,TRUE,FALSE,FALSE,FALSE,TRUE,,http://asit.maldura.unipd.it/,TRUE,,FALSE,AIUCD,,,2013-12-16 00:21:39,2024-02-28 19:17:19
-Artesia,http://artesia.ovi.cnr.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2013-01-22 01:20:04,2024-09-28 05:55:19
-artchives - the inventory of art historians’ archives,http://artchives.fondazionezeri.unibo.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2020-11-28 13:54:26,2024-12-31 12:03:35
-arco,http://wit.istc.cnr.it/arco/index.php?lang=en,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2019-07-26 10:04:19,2024-05-24 15:36:07
-Archivio Università Castrense,https://archivio.universitacastrense.eu/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,AIUCD,,,2019-08-28 10:33:58,2025-01-01 09:18:11
-Archivio Musicale dell'Orchestra Sinfonica Nazionale della Rai,http://www.osn.teche.rai.it/Default.aspx,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/rai-orchestra-project,,2016-09-05 16:31:30,2024-08-13 16:24:56
-Archivio fonti orali,https://pric.unive.it/progetti/archivio-fonti-orali/home,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2021-02-28 04:06:39,2024-12-04 07:06:04
-Archivio Elettronico delle Opere di Carlo Emilio Gadda,http://dbtvm1.ilc.cnr.it/Gadda/,TRUE,FALSE,FALSE,FALSE,TRUE,,,,,,KNOT,http://purl.org/knot/data/gadda-archive-project,lo abbiamo già ma è interessante vedere i link diversi,2024-05-22 08:54:38,2024-06-28 17:03:05
-Archivio digitale del Risorgimento in Sardegna,https://storia.dh.unica.it/archiviodigitalerisorgimento/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/archivio-risorgimento-sardegna-project,,2020-09-24 14:44:16,2024-11-26 22:16:19
-Archilet - archivio delle corrispondenze letterarie di età moderna,http://www.archilet.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/archilet-project,,2012-10-11 01:01:05,2024-12-17 20:47:10
-ArchiDATA - Archivio di (retro)datazioni lessicali,https://www.archidata.info/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/archidata-project,,2006-02-08 12:11:34,2024-12-02 18:20:10
-AMS Historica Unibo,https://historica.unibo.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/ams-historica-project,,2022-09-23 11:50:38,2025-01-03 15:28:21
-Alpion,https://alpion.unict.it,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2022-01-20 22:55:43,2024-09-10 23:54:37
-Alpilink,https://alpilink.it/ascoltaeesplora/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2023-09-12 06:07:50,2024-09-07 16:35:43
-ALIM Archivio della Latinità Italiana del Medioevo,http://alim.unisi.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/alim-project,,2017-11-13 22:16:44,2025-01-01 13:15:17
-ALI Autografi dei Letterati Italiani,http://www.autografi.net/it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/ali-project,,2017-10-22 06:23:17,2024-11-17 07:03:37
-Alessandro Manzoni,https://www.alessandromanzoni.org,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2002-11-24 05:51:31,2024-12-26 01:35:32
-Alcide Digitale,https://alcidedigitale.fbk.eu/platform/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,Italian DH Institutions,,,2021-10-24 19:02:52,2024-09-21 08:05:29
-Alchimia di Jackson Pollock / Jackson Pollock: Alchemy in 3D,,TRUE,FALSE,FALSE,FALSE,FALSE,,http://vcg.isti.cnr.it/alchemy/,TRUE,,FALSE,DH Awards,,,,
-AGLIO Atlante Grammaticale della Lingua Italiana delle Origini,http://aglio.ovi.cnr.it/index.php,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/aglio-project,,2020-08-13 11:52:35,2024-02-21 09:08:44
-Abruzzen und Molise,https://db.biblhertz.it/abruzzo/index.xml,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,,2015-12-23 17:19:12,2024-06-27 11:30:22
-A Software Architecture for Narratives,https://dlnarratives.eu/narratives.html,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2020-03-04 02:32:14,2024-07-24 19:14:38
-A Multi-layer Digital Library for Mediaeval Legal Manuscripts (Mosaico project),http://mosaico.cirsfid.unibo.it/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,IRCDL,,,2013-05-08 14:14:18,2024-07-06 18:10:25
-A Contribution for the Dissemination of Cultural Heritage Content to a Wider Public,http://ipsa.ipsa-project.org/,TRUE,FALSE,FALSE,FALSE,TRUE,,http://ipsa.ipsa-project.org/,TRUE,,FALSE,IRCDL,,,2022-01-20 15:44:19,2024-05-03 10:06:28
-3DHOP: 3D Heritage Online Presenter,http://vcg.isti.cnr.it/3dhop/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,DH Awards,,,2014-06-05 09:33:38,2024-11-27 00:22:28
-3d icons,http://3dicons.ceti.gr/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,Italian DH Institutions,,,,
-14-18 Documenti e immagini della Grande Guerra,http://www.14-18.it/progetto,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2018-12-20 19:56:09,2024-08-09 16:11:42
-I LUOGHI DELLA CULTURA IN TOSCANA FINO AL 1325,https://atlas.mirabileweb.it/atlas,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,,2023-06-05 04:07:28,2023-06-05 04:07:57
-Archivio della Latinità Italiana del Medioevo,http://en.alim.unisi.it/dl/fonti_documentarie,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,AIUCD,,,2017-10-21 04:10:58,2023-06-05 04:07:42
-D4Science: Infrastructure to Support the Definition and Operation of Virtual Research Environments,https://www.d4science.org/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,IRCDL,,,2008-02-08 12:48:10,2025-01-01 10:42:13
-Dante Online,http://www.danteonline.it/italiano/home_ita.asp,TRUE,FALSE,FALSE,,,,,,,,Catalogue Digital Editions,,,2002-10-02 22:44:06,2024-12-08 19:30:40
-I testimoni della Vita Nova,http://vitanova.unipv.it/,TRUE,FALSE,FALSE,,,,,,,,Catalogue Digital Editions,,,2005-04-12 11:55:39,2024-11-18 09:06:40
-"Datini, Lettere",http://datini.archiviodistato.prato.it/la-ricerca/le-edizioni-delle-lettere#n,TRUE,FALSE,FALSE,,,,,,,,Catalogue Digital Editions,,,2014-08-16 05:19:48,2024-07-12 18:41:59
-Galileo Galilei's Notes on Motion,http://www.mpiwg-berlin.mpg.de/Galileo_Prototype/MAIN.HTM,TRUE,FALSE,FALSE,,,,,,,,Catalogue Digital Editions,,,1998-07-03 07:09:39,2025-02-21 17:09:48
-Jacob Burckhardt,https://burckhardtsource.org/,TRUE,FALSE,FALSE,,,,,,,,Catalogue Digital Editions,,,2013-05-06 10:00:06,2025-04-03 00:45:00
-L’Orlando Furioso e la sua traduzione in immagini,http://www.orlandofurioso.org/,FALSE,TRUE,FALSE,,,,,,,,Catalogue Digital Editions,,,2005-07-30 17:28:04,2021-05-06 07:24:39
-Bibliotheca Iuris Antiqui (BIA),http://www.ittig.cnr.it,TRUE,FALSE,FALSE,,,,,,,,Catalogue Digital Editions,,,2002-08-03 13:37:53,2025-04-03 09:50:57
-"Vespasiano da Bisticci, Lettere",http://vespasianodabisticciletters.unibo.it,TRUE,FALSE,FALSE,,,,,,,,Catalogue Digital Editions,,,2014-05-18 02:20:53,2025-02-06 22:50:18
-Italy ELT Archive,https://italy-elt-archive.unimi.it/ ,TRUE,FALSE,FALSE,,,,,,,,IRCDL,,,,
-Archivio digitale Venaria,https://www.centrorestaurovenaria.it/archivio-digitale-ccr/ ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,,,
-LORIS,https://www.jeziknaklik.it/loris/ ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,,,
-Magic,https://www.magic.unina.it/ ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,,,
-Centro Documentazione Bassetti,https://centrodocumentazione.fondazionebassetti.org/ ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,,,
-Carteggio Canneti Fiacchi,https://esdcarteggiocannetifiacchi.unibo.it/#/imgTxt?d=DLCL_CF_E10001&p=DLCL_CF_E10001_L_C1R ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,,,
-Limina,https://limina.dantelimina.it/ ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,,,
-Dante Limina,https://dantelimina.it/matrix/public/ ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,,,
-Dante,https://dante.dantelimina.it/home ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,,,
-Taccuini di Paolo Orsi,https://app.transkribus.org/sites/taccuini-paolo-orsi ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,,,
-Glottolab,https://glottolab.z6.web.core.windows.net/ ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,,,
-Liita,https://www.liita.it ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,,,
-CHIt,https://chit.chitontove.it/risorse ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,Le immagini della biblioteca digitale non vengono visualizzate,,
-uniVOCittà,https://univocitta.github.io/UniVOCItta/ ,TRUE,FALSE,FALSE,,,,,,,,AIUCD,,,,
+VOCABO,,False,True,False,False,False,,https://www.treccani.it/magazine/lingua_italiana/speciali/VocaBO/2_Pani.html,True,,False,Italian DH Institutions,,,,
+Varianti della rosa,,False,True,False,False,False,,https://www.variantidellarosa.it/,True,,False,AIUCD,,,,
+university research funding patent,,False,True,False,False,False,,https://dh.fbk.eu/2020/11/university-research-funding-patenting-and-technological-impact/,True,,False,Italian DH Institutions,,,,
+"TrebleCLEF: Evaluation, Best Practices and Collaboration for Multilingual Access",https://www.multimatch.org/,False,False,True,False,False,,https://www.trebleclef.eu/,True,,False,IRCDL,,,2006-06-23 00:53:49,2024-11-02 12:28:27
+TRANSSCRIPT,,False,True,False,False,False,,https://anr.fr/Project-ANR-14-CE31-0022,True,,False,AIUCD,,protocolo https non aggiornato,,
+"Toward an Audio Digital Library 2.0: SMASH, a Social Music Archive of SHellac Phonographic Discs",https://avires.dimi.uniud.it/tmp/DL/Experimental_Results.html,False,False,True,False,False,,,False,,False,IRCDL,,protocolo https non aggiornato,2024-04-15 09:19:38,2024-04-16 19:25:36
+The Sound of St Mark's,http://vmo.unive.it/choirbooks/,False,False,True,False,False,,,,,,KNOT,http://purl.org/knot/data/sound-stmark-project,,2018-04-30 07:50:10,2024-07-23 23:58:09
+The nuncio's secret archives,,False,True,False,False,False,,https://nsa.unipr.it,True,,False,Italian DH Institutions,,,,
+"The European Project OpenUP: OPENing UP new Methods, Indicators and Tools for Peer Review, Impact Measurement and Dissemination of Research Results",https://www.openuphub.eu/,False,False,True,False,False,,,False,,False,IRCDL,,Adobe Flash Player,2017-06-05 00:00:23,2024-12-03 13:57:52
+The digital lab of “crunched books”: explore and annotate the classics,http://cbook.it/en/,False,False,True,False,False,,,False,,False,DH Awards,,,2015-02-22 12:00:23,2023-06-06 02:48:39
+"The Challenges of Building Ex Libris Rosetta, a Digital Preservation System",https://exlibrisgroup.com/products/rosetta-digital-asset-management-and-preservation/,False,False,True,True,False,https://knowledge.exlibrisgroup.com/Rosetta,,False,,False,IRCDL,,protocolo https non aggiornato,2018-02-03 22:25:00,2023-03-28 02:35:16
+Tebtynis: fragmentary voices from the past,http://www.papirologia.unipr.it/ricerca/CPGM/index.html,False,False,False,True,False,http://www.papirologia.unipr.it/ricerca/tebtynis.html,,False,,False,Italian DH Institutions,,,,
+studiolo belfiore,https://studiolobelfiore.unibo.it/,False,False,False,True,False,https://framelab.unibo.it/vt/studiolodibelfiore/Studiolo%20di%20Belfiore.html,,,,,KNOT,http://purl.org/knot/data/belfiore-project,,2022-01-09 21:57:51,2024-12-03 12:46:14
+śivadharma database,,False,True,False,False,False,,https://shivadharmaproject.com/the-sivadhama-infrastructure-modeling-a-web-application-for-managing-scholarly-data/,True,,False,Italian DH Institutions,,ricerca per parole non va,,
+SACHER: Smart Architecture for Cultural Heritage in Emilia Romagna,http://www.sacherproject.com/,False,False,True,False,False,,,False,,False,IRCDL,,,2018-04-26 17:11:47,2023-06-09 00:49:10
+ROADS,,False,True,False,False,False,,https://csc.dei.unipd.it/roads-project/index.html,True,,False,Italian DH Institutions,,404 page not found,,
+Regional Research Portal FVG: an OpenScience portal,https://research.unityfvg.it/,False,False,True,False,False,,,False,,False,IRCDL,,,2018-01-20 19:44:41,2024-03-29 04:03:45
+Ramusio,http://virgo.unive.it/ecf-workflow/books/Ramusio/main/intro.html,False,False,True,False,False,,,,,,KNOT,http://purl.org/knot/data/elec-ramusio-project,,2015-08-29 08:43:51,2023-10-28 17:41:44
+Progetto TraMonti,http://www.tramontivaldivara.it/,False,False,True,True,False,https://tramonti.labcd.unipi.it/,,False,,False,DH Awards,,protocolo https non aggiornato,2013-02-03 03:21:43,2019-11-20 16:28:37
+Predicting the Usability of the Dice CAPTCHA via Artificial Neural Network,https://sites.google.com/site/sites/system/errors/WebspaceNotFound?path=%2Falessiaamelio%2F+software-tools%2Fdice-captcha-dataset.,False,False,False,False,False,,,False,,False,IRCDL,,,,
+Petrarca itinera,https://petrarchsitinera.github.io/,False,False,True,False,False,,,False,,True,AIUCD,,,2023-06-05 04:07:41,2023-06-05 04:09:40
+Personalization in Digital Libraries: An Intelligent Service based on Semantic User Profiles,http://193.204.187.223:8080/iswc rebuild/,False,False,False,False,False,,,False,,False,IRCDL,,,NOTPROVIDED,NOTPROVIDED
+PedeCerto - metrica latina digitale,https://www.pedecerto.eu/public/,False,False,False,True,False,https://www.pedecerto.eu/,,,,,KNOT,http://purl.org/knot/data/pedecerto-project,,2019-12-15 09:47:45,2026-02-20 08:02:58
+Parthenos Project,,False,True,False,False,False,,http://www.parthenos-project.eu/,True,,False,Italian DH Institutions,,,,
+Open Philology Project,http://openphilology.org/,False,False,True,False,False,,,False,,False,AIUCD,,protocolo https non aggiornato,2013-07-04 09:44:11,2025-07-15 04:27:30
+NumET,https://nuovomedioevo.it/numet-2/,False,False,True,False,False,,,False,,False,DH Awards,,,2018-03-30 09:25:10,2021-10-22 16:05:12
+Musisque Deoque: Un archivio digitale di poesia latina,https://www.mqdq.it,True,False,False,False,False,,,False,,False,Italian DH Institutions,,problemi con alcuni caricamenti,2009-06-17 19:36:50,2026-03-09 05:35:01
+MultiMatch: A New Way to Access Cultural Heritage Information across Media and Language Boundaries,http://multimatch01.isti.cnr.it/,False,False,True,False,False,,http://www.multimatch.eu/,True,,False,IRCDL,,,2010-02-11 15:43:24,2023-06-02 08:59:47
+MaximHum,,False,True,False,False,False,,https://maximhum.fileli.unipi.it/,True,,False,AIUCD,,,,
+Marchio Angeli’s Inventory,http://vmo.unive.it/inventory1720/,False,False,True,False,False,,,,,,KNOT,http://purl.org/knot/data/marchio-angeli-project,,2020-05-16 03:09:03,2024-11-29 22:43:57
+Lemlat,,False,False,False,False,False,,http://www.lemlat3.eu/,True,,False,Italian DH Institutions,,accedere con credenziali,,
+Historical Digital Archive and Geo-referenced Contents of the Francigena Librari Web Portal,http://www.francigena.beniculturali.it/web/valit/il-progetto,False,False,False,True,False,https://www.viefrancigene.org/,,False,,False,IRCDL,,non è possibile visualizzare metadati né i testi che vogliono mostrare. Download non possibile.,2012-12-22 08:06:53,2015-07-07 01:31:20
+GRASPOS,,False,True,False,False,False,,https://graspos.eu/,True,,False,Italian DH Institutions,,,,
+Galassia Ariosto,http://galassiaariosto.sns.it/,False,False,True,False,False,,,False,,False,DH Awards,,,2017-09-30 16:52:43,2020-11-27 08:13:09
+FrancoBuffoni,,False,True,False,False,False,,https://www.francobuffoni.it/,True,,False,AIUCD,,,,
+Exploring Semantic Archival Collections: The Case of Piłsudski Institute of America,http://arkivo-ontology.org/,False,False,False,True,False,https://github.com/ArkivoTeam/ARKIVO,,False,,False,IRCDL,,,2018-02-03 09:33:03,2018-07-27 16:21:12
+Epigraphs of Castello Ursino Museum,,False,True,False,False,False,,http://epicum.istc.cnr.it/,True,,False,AIUCD,,non va protocollo javascript,,
+Emodsar,http://corpora.unica.it/TEITOK/emodsar,False,False,True,False,False,,,False,,False,AIUCD,,,2022-01-20 08:37:13,2023-09-25 00:54:34
+Elisa Chimenti,,False,True,True,False,False,,,False,https://www.elisachimenti.org/accueildef.html,False,AIUCD,,protocolo https non aggiornato,,
+EdMuse,https://edmuse.eu/edmuse-platform/,False,False,True,False,False,,http://edmuse.eu/it/index.html,False,,False,Italian DH Institutions,,,2017-12-15 04:18:47,2024-06-15 00:14:27
+EDF,http://edf.unive.it/,False,False,True,False,False,,,False,,False,Italian DH Institutions,,,2019-08-23 11:39:56,2024-06-17 09:14:48
+Ecodigit,https://ecodigit.dtclazio.it/,False,False,True,False,False,,https://dtclazio.it/progetto-ecodigit,True,,False,AIUCD,,,2019-08-24 19:52:53,2023-03-20 16:56:11
+CWALM,,False,True,False,False,False,,https://cwalm.ilc.cnr.it/,True,,False,Italian DH Institutions,,,,
+Creta Inscriptions,https://ilc4clarin.ilc.cnr.it/cretaninscriptions,False,False,True,False,False,,,False,,False,Italian DH Institutions,,,2021-05-20 15:47:12,2023-05-20 14:16:35
+Corago LOD,http://corago.unibo.it/lod,False,False,False,True,False,http://coragolod1.ing.unibo.it:8080/corago/,,,,,KNOT,http://purl.org/knot/data/corago-lod-project,,2022-06-07 08:53:46,2022-12-08 05:13:43
+CLEF Ad-hoc: A Perspective on the Evolution of the Cross-Language Evaluation Forum,http://ims.dei.unipd.it/gridclef/,False,False,True,False,False,,,False,,False,IRCDL,,,2008-11-09 07:48:28,2015-06-29 16:09:11
+Clavius Correspondence,http://claviusontheweb.it/lod,False,False,True,False,False,,,False,,False,AIUCD,,,2019-07-16 17:27:38,2022-01-20 18:11:23
+BelliniInRete,,False,True,False,False,False,,http://bellininrete.istc.cnr.it/,True,,False,AIUCD,,impossibile raggiungere il sito,,
+Atlas,https://dh-atlas.github.io/deliverables.html,False,True,False,False,False,,,False,,False,Italian DH Institutions,,,,
+Archivio ViVo,,False,True,False,False,False,,https://www.clarin-it.it/it/content/archivio-vivo,True,,False,Italian DH Institutions,,page not found,,
+Archivio storico fotografico Adolfo Venturi,https://digilab.uniroma1.it/risorse/archivio-storico-fotografico,False,False,True,False,False,,,False,,False,Italian DH Institutions,,,2022-06-25 04:21:47,2024-06-16 02:06:21
+Archilochus,,False,True,False,False,False,,https://www.clarin.eu/content/archilochus-paros-elegiac-fragments-xml-archive,True,,False,Italian DH Institutions,,,,
+Archaide,http://www.archaide.eu/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/archaide-project,è necessario avere delle credenziali,2017-01-16 07:46:50,2024-01-27 00:49:54
+Annote: A Serious Game for Medical Students to Approach Lesion Skin Images of a Digital Library,https://imagelab.ing.unimore.it/annoteProject,False,False,True,False,False,,,False,,False,IRCDL,,,,
+An IT Support for an Exhibition of Illuminated Manuscripts,https://ipsa.dei.unipd.it/,False,True,False,True,False,https://ipsa.beniculturali.unipd.it/ipsa-web/?null=null&language=it,,False,,False,IRCDL,,,2013-01-17 08:22:14,2021-03-02 15:44:47
+AMiGre,,False,True,False,False,False,,http://amigre.upatras.gr/,True,,False,AIUCD,,,,
+A Research Tool for the ERC-Funded EMoBookTrade project,http://emobooktrade.uniud.it/,False,False,False,True,False,https://emobooktrade.unimi.it/,,False,,False,IRCDL,,,2017-08-06 02:49:11,2020-05-20 07:50:03
+zeri e lode,http://data.fondazionezeri.unibo.it/,True,False,False,False,True,,,False,,False,Italian DH Institutions,,,2016-06-20 13:45:22,2025-10-08 12:04:49
+Yashiro,https://yashiro.itatti.harvard.edu/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,pagina non trovata,2015-07-15 00:33:04,2026-01-14 08:29:49
+XDOCS: an Application to Index Historical Documents,https://aimagelab.ing.unimore.it/imagelab/project.asp?idprogetto=59,True,False,False,False,True,,,False,,False,IRCDL,,,2020-08-09 05:50:23,2025-09-08 12:49:06
+Word formation latin,https://progetti.unicatt.it/progetti-milan-wfl-home,True,False,False,False,False,,http://wfl.marginalia.it,True,,False,Italian DH Institutions,,,2016-06-15 21:24:21,2025-05-22 22:52:28
+WissensGeschichte,https://wissensgeschichte.biblhertz.it/Glossario,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2005-03-05 23:26:21,2026-02-09 13:58:56
+WaCky - The Web-As-Corpus Kool Yinitiative,https://wacky.sslmit.unibo.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/wacky-project,,2005-03-05 22:32:52,2026-02-19 17:46:17
+virtual repository of photographers' sales catalogues,https://virtualphotothek.khi.fi.it/catalogues/publisher,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,,
+Venice Squeeze Project,https://www.e-stampages.eu/s/e-stampages/page/accueil,False,False,False,True,False,https://pric.unive.it/progetti/venice-squeeze-project/home,,False,,False,Italian DH Institutions,,,2019-02-20 07:22:29,2025-12-06 21:20:01
+"VASTO - VArchi, STOria FIORENTINA",https://dharc-org.github.io/progetto-vasto/index.html,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/vasto-project,,2022-08-14 15:12:28,2025-11-18 19:11:15
+vasto,https://dharc-org.github.io/progetto-vasto/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2020-09-10 09:59:42,2025-11-18 19:11:15
+Varianti all’opera,https://www.variantiallopera.it/public/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/varianti-opera-project,,2016-07-29 09:04:03,2026-02-10 04:52:48
+Urbs,https://dlib.biblhertz.it/urbs,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2024-07-30 11:16:26,2025-05-13 13:11:49
+Upgrading History. Diaries from the War Front,https://projects.dharc.unibo.it/uhdw/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2019-06-28 11:12:06,2025-02-20 16:01:49
+Unione Donne in Italia: digital library,https://archiviodigitale.udinazionale.org/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2018-06-02 23:33:13,2026-03-02 17:49:20
+Tree of philosophers,https://treeofphilosophers.it/labels,True,False,False,False,False,,,False,,False,AIUCD,,,2024-12-13 04:56:27,2024-12-13 04:56:27
+The Vercelli Book,http://vbd.humnet.unipi.it/beta2/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,alcune immagini non vengono caricate,2016-03-26 12:43:08,2025-10-05 23:19:43
+The TRAME Project - Text and Manuscript Transmission of the Middle Ages in Europe,http://git-trame.fefonlus.it/,True,False,False,False,False,,,False,,False,IRCDL,,,2014-11-22 09:41:28,2026-01-23 11:57:01
+The medieval kingdom of Sicily: image database,https://koseodiah.org/mapofkingdom.php,True,False,False,False,True,,,False,,False,Italian DH Institutions,,"è stato internalizzato, forse, dal 2020 e ci si può accedere con VPN (forse)",2024-08-09 06:52:16,2025-01-21 09:59:23
+The Medieval Kingdom of Sicily Image Database,https://koseodiah.org/index.php,True,False,False,False,False,,,False,,False,AIUCD,,,2023-11-04 02:17:11,2025-05-27 08:32:57
+The Medici Archive Project,http://bia.medici.org/,True,False,False,False,True,,,False,,False,DH Awards,,,2012-12-31 16:41:31,2026-01-26 18:54:16
+The Falconieri Project,https://falconieri.medici.org/Mia/LoginUser.do,True,False,False,False,True,,,False,,False,Italian DH Institutions,,richiede registrazione,2020-10-25 22:19:50,2026-01-17 14:22:31
+The Biographical Dictionary of Friulans -“Nuovo Liruti” On-Line,https://www.dizionariobiograficodeifriulani.it/,True,False,False,False,False,,,False,,False,IRCDL,,,2017-04-06 20:16:37,2026-03-05 19:56:34
+The AstroBID: Preserving and Sharing the Italian Astronomical Heritage.,www.beniculturali.inaf.it,True,False,False,False,False,,,False,,False,IRCDL,,,2015-09-26 14:37:51,2026-03-09 19:45:06
+The Archivio dei Possessori of the Biblioteca Nazionale Marciana. A Provenance Database,https://archiviopossessori.it/,True,False,False,False,False,,,False,,False,IRCDL,,,2021-07-14 13:31:41,2026-02-09 07:29:37
+The “Verbo-Visual Virtual” Platform,https://www.verbovisualevirtuale.org/,True,False,False,False,True,,,False,,False,AIUCD,,,2016-04-24 11:51:24,2025-12-06 13:09:51
+Stragi Nazifasciste,https://www.straginazifasciste.it/,True,False,False,False,False,,,False,,False,AIUCD,,,2016-04-10 06:52:57,2026-03-09 21:04:55
+Storia dei Carabinieri,https://www.spreaker.com/show/storia-dei-carabinieri,True,False,False,False,True,,,False,,False,DH Awards,,sito non raggiungibile,2020-11-01 01:10:00,2023-10-05 08:35:21
+Staccioli,https://staccioli.biblhertz.it/resource/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2024-04-14 01:51:27,2025-12-07 00:25:14
+Spatial,https://dlib.biblhertz.it/spatial/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,,
+Siena map,https://db.biblhertz.it/siena/siena.xql,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2019-01-14 14:24:44,2025-12-25 01:23:06
+SIAR: A User-Centric Digital Archive System,https://siar.regione.veneto.it/,True,False,False,False,False,,,False,,False,IRCDL,,,2017-07-17 20:59:07,2025-08-12 17:38:53
+SERICA,https://serica.unipi.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/serica-project,,2022-09-04 17:16:37,2025-04-01 14:59:52
+semantic digital edition of vespasiano da bisticci’s letters,http://projects.dharc.unibo.it/vespasiano/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2020-12-04 15:42:31,2026-02-19 03:14:54
+semantic digital edition of paolo bufalini’s notebook,http://projects.dharc.unibo.it/bufalini-notebook/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2020-11-21 23:26:27,2026-02-10 22:06:48
+S. Michele Arcangelo di Pegazzano,https://sanmichelepegazzano.labcd.unipi.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/pegazzano-project,,2019-12-16 03:29:16,2025-12-26 06:02:05
+RePIM - Repertorio della Poesia Italiana in Musica,https://repim.itatti.harvard.edu/resource/repim:formSearch,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/repim-project,,2023-06-07 17:44:19,2026-01-24 08:20:48
+Repim,https://repim.itatti.harvard.edu/,True,False,False,False,False,,,False,,False,AIUCD,,,2022-01-20 21:30:05,2026-01-24 08:20:48
+Registri Monterosso,https://registrimonterosso.labcd.unipi.it/,True,False,False,False,False,,,False,,False,AIUCD,,,2021-09-01 18:05:13,2025-12-14 11:40:07
+RDCI - Repertorio Digitale della Canzone Italiana,https://www.rdci.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/repertorio-canzone-project,,2021-06-17 07:23:58,2026-01-19 09:25:05
+Rara,https://rara.biblhertz.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2007-03-02 12:26:48,2026-01-08 20:52:04
+Ragu project,https://raguproject.github.io/,True,False,False,False,False,,,False,https://raguproject.github.io/,False,AIUCD,,,2023-12-09 17:38:07,2025-01-30 13:43:30
+Project 3d Bridge,https://wissensgeschichte.biblhertz.it/3d-bridge-html/index3D.html,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2007-06-25 05:33:59,2009-01-19 14:11:43
+Progetto viver,https://testi.progettoviver.it/,True,False,False,False,False,,,False,,False,AIUCD,,,2023-12-06 14:48:12,2025-11-09 22:34:20
+Progetto Mambrino,https://www.mambrino.it/it,True,False,False,False,False,,,False,,False,AIUCD,,risolve ma poi dice 404,2019-07-20 05:21:01,2026-02-10 15:29:11
+Poichilia,https://poichilia.unict.it,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2023-01-10 23:46:29,2024-12-06 14:53:03
+Pirandello nazionale,https://www.pirandellonazionale.it/opere/,True,False,False,False,False,,,False,https://www.pirandellonazionale.it/,True,AIUCD,,,2017-12-18 06:45:48,2026-01-24 03:14:20
+philoeditor,http://projects.dharc.unibo.it/philoeditor/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,progetto in lavorazione (finisce nel maggio 2025),2021-12-17 00:19:11,2025-10-10 05:35:55
+Pharos,https://pharosartresearch.org/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,accesso negato,2016-10-30 05:04:38,2026-02-17 15:30:42
+Petrarchive,https://dcl.luddy.indiana.edu/petrarchive/,True,False,False,False,False,,,False,,False,AIUCD,,,2023-12-01 12:04:27,2026-02-14 05:41:43
+Perspectiva,https://dlib.biblhertz.it/perspectiva/,True,False,False,False,True,,,False,,False,Italian DH Institutions,,,,
+Pelavicino,http://pelavicino.labcd.unipi.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2015-12-25 00:43:10,2026-03-05 13:04:09
+PAThs - Archaeological Atlas of Coptic Literature,https://atlas.paths-erc.eu/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/paths-project,,2019-02-25 10:44:01,2026-02-18 14:23:31
+PARTIGIANI D'ITALIA,https://partigianiditalia.cultura.gov.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/partigiani-italia-project,,2022-12-10 14:40:07,2026-02-19 12:59:29
+Papyri.info,https://papyri.info/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2007-09-29 00:41:54,2026-03-09 12:49:34
+PAISÀ corpus italiano,https://www.corpusitaliano.it/en/index.html,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/paisa-project,,2012-09-30 01:40:22,2026-02-25 06:18:46
+OpenGadda,https://numgadda.github.io/OpenGadda/databasecolumnmerge.html,True,False,False,False,False,,,False,,False,AIUCD,,,2025-03-06 21:04:47,2025-03-06 21:04:47
+Odonomastica Femminile,http://www.labcd.unipi.it/odonomastica-femminile/,True,False,False,False,True,,,False,,False,Italian DH Institutions,,non funziona,2022-05-18 16:23:35,2025-12-14 14:38:48
+odi: uno studio su il castello dei destini incrociati di italo calvino,https://projects.dharc.unibo.it/odi/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,alcuni filtri di ricerca non sono più funzionanti,2023-11-29 02:07:18,2026-03-02 17:30:28
+Nuova Bilioteca Manoscritta,https://www.nuovabibliotecamanoscritta.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2006-01-10 22:55:45,2026-02-22 09:20:23
+Noack,https://db.biblhertz.it/noack/noack.xml,True,False,False,False,True,,,False,,False,Italian DH Institutions,,,2007-05-13 20:47:23,2025-02-21 06:45:53
+Navigli Project,http://arcg.is/0vfWKj,True,False,False,False,False,,,False,,False,DH Awards,,,2020-10-08 06:34:02,2025-09-11 17:34:00
+mythlod,https://dharc-org.github.io/mythlod/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,"solo sito vetrina, il progetto verrà caricato presto (chiuso nel 2020)",2021-11-22 20:11:10,2025-05-29 17:53:14
+mythLOD,https://dharc-org.github.io/mythlod/static/mima.html,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/mythlod-project,,2022-12-05 20:27:10,2025-05-29 17:53:07
+musow,http://projects.dharc.unibo.it/musow/,True,False,False,False,True,,,False,,False,Italian DH Institutions,,connessione non privata (accessibile con wayback ma non funzionante),2021-11-17 13:32:50,2025-09-12 22:09:47
+Musisque Deoque. Un archivio digitale di poesia latina,https://mizar.unive.it/mqdq/public/index,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/musisque-deoque-project,,2018-08-07 19:00:18,2024-12-09 10:26:24
+Musisque Deoque,http://www.mqdq.it/,True,False,False,False,False,,,False,,False,DH Awards,,,2009-06-17 19:36:50,2026-03-09 05:35:01
+Metastasio,https://www.progettometastasio.it/public/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/metastasio-drammi-project,,2016-05-15 11:29:42,2026-02-12 01:37:50
+Metadata as Semantic Palimpsests: The Case of PHAIDRA@unipd,https://phaidra.cab.unipd.it/info/impressum,True,False,False,False,False,,,False,,False,IRCDL,,protocolo https non aggiornato,2014-12-18 21:57:50,2026-01-01 08:39:12
+Memoria di guerra,http://www.memoriediguerra.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/memorie-guerra-project,,2016-12-18 23:50:19,2025-11-18 18:00:42
+melody. make me a linked open data story,https://projects.dharc.unibo.it/melody/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,"a volte carica tutte le lettere, a volte no",2022-10-06 19:12:07,2026-01-20 04:02:10
+mAuth - Mining Authoritativeness in Art History,https://projects.dharc.unibo.it/mauth/search,True,False,False,False,True,,,,,,KNOT,http://purl.org/knot/data/mauth-project,,2021-11-22 20:11:19,2025-03-21 13:39:39
+Matilde Di Canossa,http://www.labcd.unipi.it/matildedicanossa,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2021-03-19 07:48:28,2026-01-03 00:16:39
+Maps and Gazetteers,https://maps.biblhertz.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,impossibile raggiungere il sito,2019-11-15 04:33:24,2026-03-08 03:17:28
+Mappa project,https://mappaproject.arch.unipi.it/mod/Index.php,True,False,False,False,False,,http://www.mappaproject.org/,True,,,KNOT,http://purl.org/knot/data/mappa-open-project,,2012-05-24 04:23:54,2025-01-16 13:17:19
+Manoscritti Italiani Volgari del 17° secolo,https://miv17.labdilef.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/miv17-project,,2023-01-28 07:31:05,2026-01-22 14:42:18
+Lodovico Media Library,https://lodovico.medialibrary.it/home/index.aspx,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/lodovico-project,,2021-04-15 10:02:13,2025-12-21 17:11:52
+Linking Latin,https://lila-erc.eu/LiLaLisp/,True,False,False,False,False,,,False,https://lila-erc.eu/#about-1,True,AIUCD,,,2023-10-20 13:14:10,2024-12-09 10:21:39
+Lineamenta,https://fm.biblhertz.it/fmi/xsl/home.xsl?-token.proj=li,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2020-08-20 06:02:20,2022-07-12 13:03:30
+Linea: per un portale della letteratura italiana del Novecento,https://linea.unict.it,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2022-06-26 01:07:51,2025-08-03 16:59:57
+Libretti d'opera,https://www.librettodopera.it/public/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/libretti-opera-project,,2016-09-06 17:23:02,2026-01-20 06:24:26
+Library Data Integration: the CoBiS Linked Open Data Project and Portal,https://dati.cobis.to.it/,True,False,False,False,False,,,False,,False,IRCDL,,,2017-04-23 13:44:15,2026-03-09 11:17:19
+LIBERaBIT,https://www.liberabit.unisa.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/liberabit-project,,2022-09-19 18:31:15,2025-12-23 01:44:16
+leggo manzoni,https://projects.dharc.unibo.it/leggomanzoni/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2024-04-04 05:56:58,2026-01-22 22:48:25
+Le parole dell'arte. Accademia della crusca,https://mla.accademiadellacrusca.org/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2019-03-28 15:34:02,2026-02-07 23:48:00
+Le Lettere di Alessandra Macinghi Strozzi,https://macinghi-strozzi.labdilef.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/macinghi-strozzi-project,,2022-06-30 16:45:39,2026-01-18 08:29:32
+"Last Letters from the World Wars: Forming Italian Language, Identity and Memory in Texts of Conflict",https://www.ultimelettere.it/LastLetters/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2019-07-20 01:15:36,2026-03-02 16:37:12
+L'Area Cimiteriale di San Matteo,https://sepolturesanmatteo.labcd.unipi.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/cimi-san-matteo-project,,2021-03-05 00:01:09,2025-10-27 22:10:39
+Italian Natural Language Processing Lab,http://www.italianlp.it/demo/linguistic-annotation-tool/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/lingua-project,,2014-07-12 10:58:42,2024-09-06 12:14:11
+"IntraText dLib: digital library framework system based on distributed collaboration, e-mail interaction and easy to use text-to-xml facilities for editorial accuracy ",https://www.intratext.com/,True,False,False,False,True,,,False,,False,IRCDL,,,2000-02-29 04:38:37,2026-03-10 00:06:53
+Index Thomisticus Treebank,https://itreebank.marginalia.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,la funzione multilingua non funziona sempre,2008-12-17 15:41:46,2026-02-07 23:24:14
+In Codice Ratio: Machine Transcription of Medieval Manuscripts,https://www.inf.uniroma3.it/db/icr/,True,False,False,False,False,,,False,,False,IRCDL,,,2018-05-03 15:16:58,2024-08-26 11:45:42
+Illuminated Dante Project (IDP),https://www.dante.unina.it/ndp/public/frontend,True,False,False,False,False,,,False,,False,AIUCD,,traslocato a https://www.unive.it/pag/44465/,2024-11-10 21:13:11,2026-03-09 01:09:48
+Illuminated Dante Project,https://www.dante.unina.it/idp/public/frontend,True,False,False,False,False,,,False,,False,Italian DH Institutions,,error 404,2024-06-20 11:35:23,2026-02-10 11:25:03
+Idilli di Giacomo Leopardi,https://leopardi.ecdosys.org/en/Home/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/idili-leopardi-project,,2024-05-09 13:23:46,2024-05-09 13:24:10
+I Tatti Digital Collection,https://collection.itatti.harvard.edu/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,protocollo https non implementato + file not found,2022-04-18 00:10:45,2025-01-14 21:34:30
+I conti con la Storia: Le leggi razziali tra televisione e storiografia,http://www.iconticonlastoria.it,True,False,False,False,False,,,False,,False,DH Awards,,,2021-01-08 14:32:52,2024-11-25 04:46:29
+Hyperpavese,https://www.hyperpavese.com/progetto.php,True,False,False,False,False,,,False,,False,AIUCD,,sparql endpoint non accessibile,2021-10-24 10:18:42,2025-01-23 04:45:40
+https://zuccaro.biblhertz.it/,https://zuccaro.biblhertz.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,è un sito vetrina (https://vision.artresearch.net/resource/start),2004-06-06 20:10:01,2026-01-22 05:25:13
+Hertziana Rare Books Online,https://dlib.biblhertz.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,pagina non trovata,2017-04-12 15:39:57,2026-02-10 21:11:19
+Heinrich Wölfflin,https://editions.humanitiesconnect.pub/exist/apps/hwgw/index.html,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,,
+Greek Schools,https://viewer.greekschools.eu/,True,False,False,False,False,,https://www.ilc.cnr.it/progetti/greekschools-2/,True,,False,Italian DH Institutions,,,2023-11-02 07:28:30,2025-11-05 16:32:47
+Greek into Arabic,http://www.greekintoarabic.eu/index0b30.html,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/g2a-project,,2019-07-22 12:21:17,2025-03-23 21:21:40
+gigapixel images,https://virtualphotothek.khi.fi.it/gigapixel/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2022-08-31 15:41:18,2025-09-10 02:03:26
+Gesture Atlas,https://biblhertz.github.io/atlas/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,error 404,2019-09-16 07:16:04,2025-11-16 09:34:28
+Galleria Borghese,https://galleriaborghese.beniculturali.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2010-07-22 07:22:55,2026-02-22 08:20:54
+FRED - Machine Reading for the Semantic Web,http://wit.istc.cnr.it/stlab-tools/fred/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/fred-project,,2012-07-15 01:08:17,2026-02-11 06:14:55
+framester,https://framester.github.io/,True,False,False,False,False,,http://etna.istc.cnr.it/framester_web/,True,,False,Italian DH Institutions,,,2024-04-17 22:33:39,2025-11-11 05:41:46
+Foto,https://foto.biblhertz.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2007-12-18 20:03:19,2026-03-09 20:39:53
+Fondazione fava,https://www.fondazionefava.it/archivio-di-giuseppe-fava/,True,False,False,False,True,,,False,,False,AIUCD,,,2023-09-30 07:02:51,2025-11-19 10:55:29
+Flos,http://iu.di.unipi.it/flos/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2019-12-07 05:03:59,2022-05-19 01:17:10
+Florentine Drawings,https://florentinedrawings.itatti.harvard.edu/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,error 404 not found,2017-03-23 09:40:04,2025-10-09 02:19:44
+Europeana Eagle Project,https://www.eagle-network.eu/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,problemi col protocollo google maps,2013-01-28 03:32:48,2026-03-10 01:41:51
+Establishing a Digital Library in Wide-Ranging University’s Context The Sapienza Digital Library Experience,https://sapienzadigitallibrary.uniroma1.it/index.php/,True,False,False,False,False,,,False,,False,IRCDL,,,2024-08-07 05:28:00,2025-09-14 02:25:14
+Erbario di Aldovrandi,https://botanica.sma.unibo.it/aldrovandi/Explore,True,False,False,False,False,,,False,https://botanica.sma.unibo.it/,True,AIUCD,,,2018-09-22 00:49:25,2025-03-28 15:21:50
+Epistolario De Gasperi,https://epistolariodegasperi.it/#/,True,False,False,False,True,,,False,,False,Italian DH Institutions,,traslocato https://alcidedigitale.fbk.eu/platform/,2019-05-09 14:20:35,2026-03-02 16:32:24
+Epistolario De Gasperi,https://www.epistolariodegasperi.it/#/archivio_digitale/lettere,True,False,False,False,False,,,False,www.epistolariodegasperi.it,True,AIUCD,,,2019-05-09 14:20:35,2026-03-02 16:32:24
+Epigraphic Database Roma (EDR),http://www.edr-edr.it/default/index.php,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/edr-project,,2017-02-24 03:00:58,2026-03-06 09:01:09
+Epicum: Epigraphs of Castello Ursino Museum,http://epicum.istc.cnr.it/collezione/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2022-07-06 23:18:50,2026-02-08 11:25:46
+ELA - Eurasian Latin Archive,http://ela.unisi.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/ela-project,,2021-12-17 00:20:52,2025-12-16 22:02:39
+"Eine römische Trilogie: Schudt, Caldana, Schlosser",https://dlib.biblhertz.it/guide/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,,
+EDV -  Epigraphic Database Vernacular,http://www.edvcorpus.com/wp/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/edv-project,,2019-08-21 01:16:30,2025-03-23 14:25:07
+edizione nazionale delle opere di aldo moro,https://aldomorodigitale.unibo.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2021-05-25 07:08:38,2025-12-01 03:02:06
+EDB: Knowledge Technologies for Ancient Greek and Latin Epigraphy,https://www.edb.uniba.it/,True,False,False,False,False,,,False,,False,IRCDL,,problemi con javascript,2004-10-14 18:23:51,2026-02-27 02:51:40
+Ebla Digital Archives,http://ebda.cnr.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2018-11-30 12:18:25,2026-03-10 02:21:17
+Ebla Digital Archives,http://ebda.cnr.it/index,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/ebla-project,,2019-02-03 10:29:08,2024-09-26 17:51:32
+Eagle Project,https://www.eagle-network.eu/basic-search/,True,False,False,False,False,,https://www.eagle-network.eu/basic-search/,False,,False,AIUCD,,,2016-03-07 22:59:33,2026-03-07 02:55:49
+e-rihs,https://www.e-rihs.eu/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,è un tool e nei deliverabels raccoglie alcuni risultati vari,2016-04-12 13:27:32,2026-02-23 15:54:54
+DOGE Percorsi Digitali,https://doge.unige.net/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/doge-project,il corpus è accessibile solo con credenziali,2022-01-26 16:15:57,2026-03-10 00:37:48
+digitizing the die kirchen von siena project,https://sienaproject.khi.fi.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,"li project url è più un sito vetrina, per visualizzare il modello 3d bisogna scaricare un software e un dataset in locale",2022-08-11 01:22:37,2025-08-15 01:29:58
+digital photothek,http://photothek.khi.fi.it/?Language=en,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2015-03-29 05:01:44,2026-02-12 05:45:04
+Digital Library Pavia,https://www.bibliotecadigitale.unipv.eu/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/digi-lib-pavia-project,,2020-12-18 07:55:58,2026-03-01 04:20:28
+digital library (ficlit),https://dl.ficlit.unibo.it,True,False,False,False,False,,,False,,False,Italian DH Institutions,,error 404,2022-05-17 03:57:57,2026-02-07 05:38:08
+digilibLT: Biblioteca digitale di testi latini tardoantichi,http://www.digiliblt.unipmn.it/,True,False,False,False,True,,,False,,False,DH Awards,,,2012-02-05 00:48:17,2026-02-07 09:45:31
+DigilibLT - Biblioteca digitale di testi latini tardoantichi,https://digiliblt.uniupo.it/index.php,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/digiliblt-project,,2017-10-22 13:23:29,2025-09-10 10:10:33
+DIGESTO,http://dbtvm1.ilc.cnr.it/digesto/Digesto_Home.html,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/digesto-project,ogni tanto qualche link dà pagina non trovata,2022-03-08 23:13:17,2025-12-17 09:14:19
+dhdkey!,https://projects.dharc.unibo.it/dhdkey/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2021-04-30 23:09:42,2025-11-05 08:48:23
+DB allegorico dantesco,https://www.databaseallegoricodantesco.it/archivio.php,True,False,False,False,False,,,False,,False,AIUCD,,,2023-12-06 20:06:23,2025-07-14 08:00:58
+DASI: digital archive for the study of pre-islamic arabian inscriptions,https://dasi.cnr.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2018-12-20 23:04:20,2026-03-08 06:14:15
+Daphnet: Modern Philosophy,http://modernsource.daphnet.iliesi.cnr.it/,True,False,False,False,True,,http://www.daphnet.iliesi.cnr.it/,True,,False,AIUCD,,,2022-10-01 13:30:27,2025-12-08 22:36:34
+Daphnet: Ancient Philosophy,http://ancientsource.daphnet.iliesi.cnr.it/,True,False,False,False,True,,http://www.daphnet.iliesi.cnr.it/,True,,False,AIUCD,,,2022-09-24 20:41:09,2024-12-13 06:51:17
+DanteSources,https://dantesources.dantenetwork.it/index.html,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2021-03-25 11:05:01,2025-12-04 23:51:02
+Dante: A Web Application for the History of Art,https://dante.beniculturali.unipd.it/dante-web/,True,False,False,False,True,,,False,,False,AIUCD,,non si riesce a scaricare i dataset,2022-01-22 13:54:32,2025-03-22 10:52:43
+Dante Search,https://dantesearch.dantenetwork.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/dante-search-project,,2020-08-11 23:56:14,2026-02-11 02:29:58
+"dante depicted: a commentary on image, text, and exegesis around the commedia",https://dante.khi.fi.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2023-03-09 09:56:49,2025-12-27 13:00:33
+Dal Libro alla Biblioteca (DaLiB),https://dalib.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/dalib-project,,2023-03-30 10:25:50,2026-03-04 06:59:15
+Czech-IT! Linguistic corpus of native Czech and Slovak learners acquiring Italian language,https://czech-it.github.io/,True,False,False,False,False,,,False,,False,AIUCD,,explore page not working,2022-01-19 21:30:45,2024-03-04 11:16:06
+"Culturaitalia, the Italian National Content Aggregator in Europeana",http://dati.culturaitalia.it/,True,False,False,False,False,,,False,,False,IRCDL,,,2013-06-22 13:23:09,2026-02-25 05:14:19
+CRIA,https://cria.itatti.harvard.edu/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2016-12-12 16:51:06,2026-02-02 04:22:10
+Corpus Rhythmorum Musicum,https://www.corimu.unisi.it/public/frontend/index,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/corimu-project,,2021-07-25 00:28:35,2025-08-06 07:58:28
+Corpus KIParla - L'italiano parlato e chi parla italiano,https://kiparla.it/,True,False,False,False,True,,,,,,KNOT,http://purl.org/knot/data/kiparla-project,,2019-07-16 07:59:32,2026-01-27 15:05:52
+Corago,http://corago.unibo.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/corago-project,,2013-10-05 19:43:16,2026-03-10 00:26:56
+CoPhiLab: Collaborative and Cooperative Philology Lab,http://www.languagelibrary.eu/new_ewnui/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2017-06-12 00:33:27,2024-03-07 18:27:00
+Controcultura,https://echaurren.biblhertz.it/PE.html,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2021-08-03 22:56:58,2025-05-17 03:00:39
+Confluenze,https://confluenze.dev/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,mi sembra un sitovetrina e basta,2024-04-18 17:03:56,2026-01-24 08:17:27
+Colonizzazioni interne e Migrazioni,https://storia.dh.unica.it/colonizzazioninterne/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/col-interne-project,"fa un redicrect, e poi impossibile raggiungere il sito",2019-11-13 10:18:16,2026-02-11 07:07:19
+Codex Atlanticus: exploring the largest exhisting collection of writings and drawings of Leonardo Da Vinci,https://codex-atlanticus.ambrosiana.it/#/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2022-06-21 22:27:33,2026-03-09 04:05:08
+CO.COR (COMPLIMENT CORPUS),http://www.cocor.eu/index.php,True,False,False,False,True,,,,,,KNOT,http://purl.org/knot/data/cocor-project,,2019-07-20 18:40:10,2025-08-08 01:36:37
+Clori - archivio della cantata italiana,https://cantataitaliana.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/clori-project,,2011-10-30 09:03:36,2026-03-06 08:24:18
+Classici Dse (EVT viewer),https://www.classici-dse.com/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2021-11-29 17:14:13,2025-02-20 23:38:20
+CLaSSES - Corpus for Latin Sociolinguistic Studies on Epigraphic textS,https://classes-latin-linguistics.fileli.unipi.it/en,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/classes-project,,2020-10-23 21:57:04,2026-02-11 19:42:29
+Cipro,https://cipro.biblhertz.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2021-06-24 15:55:38,2025-10-09 18:03:04
+Catalogus Philologorum Classicorum (CPhCl),http://www.aristarchus.unige.net/CPhCl/en/Home,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/cphci-project,error 404 not found,2017-09-28 12:52:45,2026-01-25 05:52:15
+catalogue,https://projects.dharc.unibo.it/knot/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2024-11-03 22:38:19,2026-01-22 20:44:39
+"CASPAR: Cultural, Artistic and Scientific Knowledge for Preservation, Access and Retrieval","https://www.casparpreserves.eu/caspar-project.html#:~:text=CASPAR%20%2D%20Cultural%2C%20Artistic%20and%20Scientific,cultural%20and%20scientific%20resources%22).",True,False,False,False,False,,,False,,False,IRCDL,,alcune visualizzazioni non sono accessibili tipo % 100 toponimi più frequenti,2011-01-30 05:51:19,2025-08-08 01:58:42
+Carteggio Ricci digital library,http://carteggiodiguerra.cnr.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/carteggio-ricci-project,,2022-03-16 09:18:54,2025-12-15 21:09:59
+Carte d'autore online,https://www.cartedautore.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/carte-autore-project,,2014-08-10 16:44:11,2026-02-11 09:57:09
+Carlo Goldoni,https://www.carlogoldoni.it/public/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/goldoni-drammi-project,è un sito vetrina,2016-05-27 06:14:33,2026-02-10 13:07:33
+Bradypus,https://bdus.cloud/,True,False,False,False,True,,,,,,KNOT,http://purl.org/knot/data/bradypus-project,impossibile raggiungere il sito,2021-02-27 11:46:02,2026-02-09 12:00:20
+Biflow: catalogo bilingue,https://catalogobiflow.vedph.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2021-06-29 08:01:26,2025-12-16 00:35:52
+Biblioteca Italiana,http://www.bibliotecaitaliana.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/bib-ita-project,,2002-02-03 09:34:32,2026-03-06 04:04:37
+Biblioteca Informatica dei Libri di Famiglia,https://bilf.ipertesti.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2022-09-30 20:26:19,2026-03-04 08:57:11
+Bellini corrispondenza,http://bellinicorrespondence.cnr.it/,True,False,False,False,False,,,False,,False,AIUCD,,,2022-01-20 21:32:38,2026-02-11 00:55:54
+Belle Greene,https://bellegreene.itatti.harvard.edu/,True,False,False,False,True,,,False,,False,Italian DH Institutions,,è un tool ma espone anche due demo edizioni digitali. rientra,2023-08-20 23:24:18,2026-01-01 13:39:57
+Atlante Storia MArittima della SArdegna,https://storia.dh.unica.it/asmsa/it,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/asmsa-project,,2024-02-21 03:58:11,2026-02-11 07:19:00
+Atlante Lessicale Toscano,http://serverdbt.ilc.cnr.it/ALTWEB,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/alt-project,,2007-07-27 12:07:23,2026-02-10 18:32:20
+ASIt: Atlante Sintattico d’Italia,http://svrims2.dei.unipd.it:8080/asit-maldura/pages/search.jsp,True,False,False,False,True,,http://asit.maldura.unipd.it/,True,,False,AIUCD,,,2013-12-16 00:21:39,2026-01-22 13:29:16
+Artesia,http://artesia.ovi.cnr.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2013-01-22 01:20:04,2026-01-23 02:39:23
+artchives - the inventory of art historians’ archives,http://artchives.fondazionezeri.unibo.it/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2020-11-28 13:54:26,2025-12-06 21:53:19
+arco,http://wit.istc.cnr.it/arco/index.php?lang=en,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2019-07-26 10:04:19,2026-02-11 06:35:13
+Archivio Università Castrense,https://archivio.universitacastrense.eu/,True,False,False,False,True,,,False,,False,AIUCD,,,2019-08-28 10:33:58,2026-01-25 01:00:28
+Archivio Musicale dell'Orchestra Sinfonica Nazionale della Rai,http://www.osn.teche.rai.it/Default.aspx,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/rai-orchestra-project,,2016-09-05 16:31:30,2026-02-11 13:19:46
+Archivio fonti orali,https://pric.unive.it/progetti/archivio-fonti-orali/home,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2021-02-28 04:06:39,2025-11-11 14:38:05
+Archivio Elettronico delle Opere di Carlo Emilio Gadda,http://dbtvm1.ilc.cnr.it/Gadda/,True,False,False,False,True,,,,,,KNOT,http://purl.org/knot/data/gadda-archive-project,lo abbiamo già ma è interessante vedere i link diversi,2024-05-22 08:54:38,2025-08-08 02:28:49
+Archivio digitale del Risorgimento in Sardegna,https://storia.dh.unica.it/archiviodigitalerisorgimento/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/archivio-risorgimento-sardegna-project,,2020-09-24 14:44:16,2026-02-11 07:05:18
+Archilet - archivio delle corrispondenze letterarie di età moderna,http://www.archilet.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/archilet-project,,2012-10-11 01:01:05,2026-01-15 03:17:48
+ArchiDATA - Archivio di (retro)datazioni lessicali,https://www.archidata.info/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/archidata-project,,2006-02-08 12:11:34,2026-02-08 11:59:47
+AMS Historica Unibo,https://historica.unibo.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/ams-historica-project,,2023-02-06 02:08:01,2026-02-16 07:21:11
+Alpion,https://alpion.unict.it,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2022-01-20 22:55:43,2024-09-10 23:54:37
+Alpilink,https://alpilink.it/ascoltaeesplora/,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2023-09-12 06:07:50,2026-01-19 06:15:39
+ALIM Archivio della Latinità Italiana del Medioevo,http://alim.unisi.it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/alim-project,,2017-11-13 22:16:44,2026-02-11 17:01:25
+ALI Autografi dei Letterati Italiani,http://www.autografi.net/it/,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/ali-project,,2017-10-22 06:23:17,2025-12-13 22:07:24
+Alessandro Manzoni,https://www.alessandromanzoni.org,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2002-11-24 05:51:31,2026-01-23 01:56:37
+Alcide Digitale,https://alcidedigitale.fbk.eu/platform/,True,False,False,False,True,,,False,,False,Italian DH Institutions,,,2021-10-24 19:02:52,2025-05-22 12:45:26
+Alchimia di Jackson Pollock / Jackson Pollock: Alchemy in 3D,,True,False,False,False,False,,http://vcg.isti.cnr.it/alchemy/,True,,False,DH Awards,,,,
+AGLIO Atlante Grammaticale della Lingua Italiana delle Origini,http://aglio.ovi.cnr.it/index.php,True,False,False,False,False,,,,,,KNOT,http://purl.org/knot/data/aglio-project,,2020-08-13 11:52:35,2024-10-03 11:36:10
+Abruzzen und Molise,https://db.biblhertz.it/abruzzo/index.xml,True,False,False,False,False,,,False,,False,Italian DH Institutions,,,2015-12-23 17:19:12,2025-11-04 09:04:24
+A Software Architecture for Narratives,https://dlnarratives.eu/narratives.html,True,False,False,False,False,,,False,,False,IRCDL,,,2020-03-04 02:32:14,2025-12-18 14:05:42
+A Multi-layer Digital Library for Mediaeval Legal Manuscripts (Mosaico project),http://mosaico.cirsfid.unibo.it/,True,False,False,False,True,,,False,,False,IRCDL,,,2013-05-08 14:14:18,2026-02-12 01:43:06
+A Contribution for the Dissemination of Cultural Heritage Content to a Wider Public,http://ipsa.ipsa-project.org/,True,False,False,False,True,,http://ipsa.ipsa-project.org/,True,,False,IRCDL,,,2022-01-20 15:44:19,2025-04-15 08:33:30
+3DHOP: 3D Heritage Online Presenter,http://vcg.isti.cnr.it/3dhop/,True,False,False,False,False,,,False,,False,DH Awards,,,2014-06-05 09:33:38,2025-12-24 09:29:03
+3d icons,http://3dicons.ceti.gr/,True,False,False,False,True,,,False,,False,Italian DH Institutions,,,2014-09-08 02:09:58,2025-11-07 16:14:56
+14-18 Documenti e immagini della Grande Guerra,http://www.14-18.it/progetto,True,False,False,False,False,,,False,,False,AIUCD,,,2018-12-20 19:56:09,2025-11-11 07:46:27
+I LUOGHI DELLA CULTURA IN TOSCANA FINO AL 1325,https://atlas.mirabileweb.it/atlas,True,False,False,False,False,,,False,,False,AIUCD,,,2023-06-05 04:07:28,2023-06-05 04:07:57
+Archivio della Latinità Italiana del Medioevo,http://en.alim.unisi.it/dl/fonti_documentarie,True,False,False,False,True,,,False,,False,AIUCD,,,2017-10-21 04:10:58,2024-10-12 22:56:20
+D4Science: Infrastructure to Support the Definition and Operation of Virtual Research Environments,https://www.d4science.org/,True,False,False,False,False,,,False,,False,IRCDL,,,2008-02-08 12:48:10,2026-03-09 17:25:00
+Dante Online,http://www.danteonline.it/italiano/home_ita.asp,True,False,False,,,,,,,,Catalogue Digital Editions,,,2002-10-02 22:44:06,2025-12-14 02:55:16
+I testimoni della Vita Nova,http://vitanova.unipv.it/,True,False,False,,,,,,,,Catalogue Digital Editions,,,2005-04-12 11:55:39,2026-01-05 02:07:48
+"Datini, Lettere",http://datini.archiviodistato.prato.it/la-ricerca/le-edizioni-delle-lettere#n,True,False,False,,,,,,,,Catalogue Digital Editions,,,2014-08-16 05:19:48,2024-07-12 18:41:59
+Galileo Galilei's Notes on Motion,http://www.mpiwg-berlin.mpg.de/Galileo_Prototype/MAIN.HTM,True,False,False,,,,,,,,Catalogue Digital Editions,,,1998-07-03 07:09:39,2026-02-20 11:35:26
+Jacob Burckhardt,https://burckhardtsource.org/,True,False,False,,,,,,,,Catalogue Digital Editions,,,2013-05-06 10:00:06,2026-01-15 16:46:25
+L’Orlando Furioso e la sua traduzione in immagini,http://www.orlandofurioso.org/,False,True,False,,,,,,,,Catalogue Digital Editions,,,2005-07-30 17:28:04,2021-05-06 07:24:39
+Bibliotheca Iuris Antiqui (BIA),http://www.ittig.cnr.it,True,False,False,,,,,,,,Catalogue Digital Editions,,,2002-08-03 13:37:53,2026-03-01 20:07:11
+"Vespasiano da Bisticci, Lettere",http://vespasianodabisticciletters.unibo.it,True,False,False,,,,,,,,Catalogue Digital Editions,,,2014-05-18 02:20:53,2026-02-17 10:11:53
+Italy ELT Archive,https://italy-elt-archive.unimi.it/ ,True,False,False,,,,,,,,IRCDL,,,2024-09-14 17:50:47,2026-02-28 00:49:54
+Archivio digitale Venaria,https://www.centrorestaurovenaria.it/archivio-digitale-ccr/ ,True,False,False,,,,,,,,AIUCD,,,2024-10-26 02:59:27,2024-11-10 21:24:23
+LORIS,https://www.jeziknaklik.it/loris/ ,True,False,False,,,,,,,,AIUCD,,,2023-03-27 01:13:19,2026-01-09 07:22:09
+Magic,https://www.magic.unina.it/ ,True,False,False,,,,,,,,AIUCD,,,2024-07-31 07:58:46,2026-01-20 07:10:30
+Centro Documentazione Bassetti,https://centrodocumentazione.fondazionebassetti.org/ ,True,False,False,,,,,,,,AIUCD,,,2025-04-05 00:08:30,2026-01-25 13:03:03
+Carteggio Canneti Fiacchi,https://esdcarteggiocannetifiacchi.unibo.it/#/imgTxt?d=DLCL_CF_E10001&p=DLCL_CF_E10001_L_C1R ,True,False,False,,,,,,,,AIUCD,,,2025-03-07 09:49:07,2025-07-03 11:16:36
+Limina,https://limina.dantelimina.it/ ,True,False,False,,,,,,,,AIUCD,,,2024-11-19 03:23:13,2025-09-09 10:04:14
+Dante Limina,https://dantelimina.it/matrix/public/ ,True,False,False,,,,,,,,AIUCD,,,2025-06-12 23:49:02,2026-01-13 12:00:13
+Dante,https://dante.dantelimina.it/home ,True,False,False,,,,,,,,AIUCD,,,2025-06-12 23:50:58,2025-06-13 01:01:30
+Taccuini di Paolo Orsi,https://app.transkribus.org/sites/taccuini-paolo-orsi ,True,False,False,,,,,,,,AIUCD,,,2024-11-30 06:15:22,2025-06-13 02:05:14
+Glottolab,https://glottolab.z6.web.core.windows.net/ ,True,False,False,,,,,,,,AIUCD,,,2025-06-13 01:33:59,2025-06-13 02:18:25
+Liita,https://www.liita.it ,True,False,False,,,,,,,,AIUCD,,,2024-04-23 16:10:22,2026-02-10 00:49:48
+CHIt,https://chit.chitontove.it/risorse ,True,False,False,,,,,,,,AIUCD,,Le immagini della biblioteca digitale non vengono visualizzate,2025-06-13 00:08:54,2025-06-13 00:18:25
+uniVOCittà,https://univocitta.github.io/UniVOCItta/ ,True,False,False,,,,,,,,AIUCD,,,2025-06-13 00:49:57,2025-06-13 13:56:11
