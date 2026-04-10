@@ -5,6 +5,7 @@ from datetime import datetime
 import sys
 import re
 import logging
+from pathlib import Path
 from urllib.parse import urlparse
 
 try:
@@ -18,18 +19,22 @@ except ImportError:
     blue = '\033[94m'
     reset = '\033[0m'
 
-# Set up logging
+# Set up logging (OS-agnostic)
+SCRIPT_DIR = Path(__file__).resolve().parent
+LOG_DIR = SCRIPT_DIR / "logs"
+LOG_DIR.mkdir(exist_ok=True)
 logging.basicConfig(
-    filename='logs/script_final.log',
+    filename=str(LOG_DIR / 'script_final.log'),
     level=logging.DEBUG,
     format='%(asctime)s [%(levelname)s] %(message)s'
 )
 
 # Constants
 CDX_API_URL = "https://web.archive.org/cdx/search/cdx"
-MAX_RETRIES = 10              # Fewer retries to avoid extreme backoff times
-BACKOFF_FACTOR = 2           # Exponential backoff base
-RATE_LIMIT_DELAY = 5         # ~15 requests/minute => 4 seconds each => ~18+ min for 280 URLs
+MAX_RETRIES = 5
+BACKOFF_FACTOR = 2
+RATE_LIMIT_DELAY = 1          # Reduced: the slow API provides natural rate limiting
+REQUEST_TIMEOUT = 60          # Wayback CDX can be very slow, avoid unnecessary retries
 
 def get_wayback_info(url):
     """
@@ -46,14 +51,13 @@ def get_wayback_info(url):
         'url': url,
         'output': 'json',
         'fl': 'timestamp,original,statuscode',
-        'limit': '100000',
-        'matchType': 'prefix',  # Uncomment if you need to include domain variants
+        'matchType': 'exact',
     }
 
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             logging.debug(f"[Wayback Attempt {attempt}] Requesting CDX API for URL: {url} | Params={params}")
-            response = requests.get(CDX_API_URL, params=params, timeout=10)
+            response = requests.get(CDX_API_URL, params=params, timeout=REQUEST_TIMEOUT)
             response.raise_for_status()
             data = response.json()
 
@@ -125,7 +129,7 @@ def check_url_status(url):
     """
     try:
         logging.debug(f"Checking URL status for {url}")
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, timeout=REQUEST_TIMEOUT)
         return response.status_code
     except requests.RequestException as e:
         logging.warning(f"Status check failed for {url}: {e}")
@@ -151,9 +155,9 @@ def normalize_url(url):
         return "http://" + url
     return url
 
-# Input/Output CSV files
-input_csv = r"C:\Users\crosi\Documents\GitHub\Vita-e-morte-DH-projects\dataset\dataset_final.csv"
-output_csv = r"C:\Users\crosi\Documents\GitHub\Vita-e-morte-DH-projects\dataset\lista_finale_post_script.csv"
+# Input/Output CSV files (OS-agnostic, relative to script location)
+input_csv = SCRIPT_DIR / "dataset" / "dataset_final.csv"
+output_csv = SCRIPT_DIR / "dataset" / "lista_finale_post_script_2026.csv"
 
 # Read the input CSV
 with open(input_csv, newline='', encoding='utf-8') as infile:
