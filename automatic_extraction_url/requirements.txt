@@ -1,0 +1,7 @@
+pymupdf
+requests
+tqdm
+langchain-community
+ollama
+beautifulsoup4
+lxml
