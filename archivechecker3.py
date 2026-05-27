@@ -33,8 +33,16 @@ logging.basicConfig(
 CDX_API_URL = "https://web.archive.org/cdx/search/cdx"
 MAX_RETRIES = 5
 BACKOFF_FACTOR = 2
-RATE_LIMIT_DELAY = 1          # Reduced: the slow API provides natural rate limiting
+RATE_LIMIT_DELAY = 0.3        # Faster baseline; 429 handling + backoff provide safety
 REQUEST_TIMEOUT = 60          # Wayback CDX can be very slow, avoid unnecessary retries
+MIN_REQUEST_DELAY = 0.2       # Base delay between rows; adaptive backoff handles pressure
+
+# Descriptive User-Agent per IA automation guidelines
+USER_AGENT = "VitaMorteDHArchiveChecker/1.0 (+research; contact: project-team)"
+
+# Reuse TCP connections for speed/efficiency
+SESSION = requests.Session()
+SESSION.headers.update({"User-Agent": USER_AGENT})
 
 def get_wayback_info(url):
     """
@@ -57,7 +65,19 @@ def get_wayback_info(url):
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             logging.debug(f"[Wayback Attempt {attempt}] Requesting CDX API for URL: {url} | Params={params}")
-            response = requests.get(CDX_API_URL, params=params, timeout=REQUEST_TIMEOUT)
+            response = SESSION.get(CDX_API_URL, params=params, timeout=REQUEST_TIMEOUT)
+
+            # Respect rate limiting explicitly
+            if response.status_code == 429:
+                retry_after = response.headers.get("Retry-After")
+                try:
+                    wait_time = float(retry_after) if retry_after else (BACKOFF_FACTOR ** (attempt - 1))
+                except ValueError:
+                    wait_time = BACKOFF_FACTOR ** (attempt - 1)
+                logging.warning(f"429 received for {url}. Waiting {wait_time}s before retry.")
+                time.sleep(wait_time)
+                continue
+
             response.raise_for_status()
             data = response.json()
 
@@ -129,7 +149,7 @@ def check_url_status(url):
     """
     try:
         logging.debug(f"Checking URL status for {url}")
-        response = requests.get(url, timeout=REQUEST_TIMEOUT)
+        response = SESSION.get(url, timeout=REQUEST_TIMEOUT)
         return response.status_code
     except requests.RequestException as e:
         logging.warning(f"Status check failed for {url}: {e}")
@@ -156,7 +176,9 @@ def normalize_url(url):
     return url
 
 # Input/Output CSV files (OS-agnostic, relative to script location)
-input_csv = SCRIPT_DIR / "dataset" / "dataset_final.csv"
+# NOTE: after repository updates, dataset_final.csv is no longer present.
+# Use the current merged dataset as input and keep the 2026 post-script file as output.
+input_csv = SCRIPT_DIR / "dataset" / "lista_finale_post_script.csv"
 output_csv = SCRIPT_DIR / "dataset" / "lista_finale_post_script_2026.csv"
 
 # Read the input CSV
@@ -263,8 +285,8 @@ with open(output_csv, 'w', newline='', encoding='utf-8') as outfile:
 
         writer.writerow(row)
 
-        # Rate limiting ( ~15 requests per minute = 4s delay )
-        time.sleep(RATE_LIMIT_DELAY)
+        # Rate limiting (baseline); 429 handling above applies adaptive waits when needed
+        time.sleep(max(MIN_REQUEST_DELAY, RATE_LIMIT_DELAY))
 
         # Progress bar / time estimation
         iteration_time = time.time() - iteration_start
