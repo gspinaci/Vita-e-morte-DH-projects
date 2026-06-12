@@ -37,7 +37,7 @@ def read_rows(path: Path) -> list[list[str]]:
         reader = csv.reader(f)
         rows = list(reader)
     data = rows[1:]
-    return [r for r in data if any((c or "").strip() for c in r[1:])]
+    return [r for r in data if any((c or "").strip() for c in r)]
 
 
 def col(rows, idx):
@@ -134,32 +134,32 @@ def fmt_likert_table(likerts: dict[str, dict]) -> str:
 
 def report_morti(rows: list[list[str]]) -> str:
     n = len(rows)
-    roles = counts(col(rows, 1))
-    institutions = counts(col(rows, 2))
-    starts = counts(col(rows, 3))
-    durations = counts(col(rows, 4))
-    outputs = multi_counts(col(rows, 5))
-    funding = counts(col(rows, 6))
-    team = counts(col(rows, 7))
-    tech_figure = counts(col(rows, 8))
-    hosting = counts(col(rows, 9))
+    roles = counts(col(rows, 0))
+    institutions = counts(col(rows, 1))
+    starts = counts(col(rows, 2))
+    durations = counts(col(rows, 3))
+    outputs = multi_counts(col(rows, 4))
+    funding = counts(col(rows, 5))
+    team = counts(col(rows, 6))
+    tech_figure = counts(col(rows, 7))
+    hosting = counts(col(rows, 8))
 
     c_items = {
-        "C1 — piano di sostenibilità iniziale": likert_stats(col(rows, 10)),
-        "C2 — discussione fine finanziamento": likert_stats(col(rows, 11)),
-        "C3 — documentazione tecnica": likert_stats(col(rows, 12)),
-        "C4 — accessibilità a lungo termine (FAIR)": likert_stats(col(rows, 13)),
+        "C1 — piano di sostenibilità iniziale": likert_stats(col(rows, 9)),
+        "C2 — discussione fine finanziamento": likert_stats(col(rows, 10)),
+        "C3 — documentazione tecnica": likert_stats(col(rows, 11)),
+        "C4 — accessibilità a lungo termine (FAIR)": likert_stats(col(rows, 12)),
     }
-    c5 = counts(col(rows, 14))
-    c6 = counts(col(rows, 15))
+    c5 = counts(col(rows, 13))
+    c6 = counts(col(rows, 14))
 
-    d1_causes = multi_counts(col(rows, 16))
+    d1_causes = multi_counts(col(rows, 15))
     d2_by_factor = {
-        f: likert_stats(col(rows, 17 + i)) for i, f in enumerate(MORTI_D2_FACTORS)
+        f: likert_stats(col(rows, 16 + i)) for i, f in enumerate(MORTI_D2_FACTORS)
     }
-    d3_mode = counts(col(rows, 30))
-    d4 = counts(col(rows, 31))
-    d4a = multi_counts(col(rows, 32))
+    d3_mode = counts(col(rows, 29))
+    d4 = counts(col(rows, 30))
+    d4a = multi_counts(col(rows, 31))
 
     d2_ranked = sorted(
         ((f, s) for f, s in d2_by_factor.items() if s is not None),
@@ -274,32 +274,32 @@ _Analisi automatica generata da `analyze_surveys.py`._
 
 def report_vivi(rows: list[list[str]]) -> str:
     n = len(rows)
-    roles = counts(col(rows, 1))
-    institutions = counts(col(rows, 2))
-    starts = counts(col(rows, 3))
-    durations = counts(col(rows, 4))
-    outputs = multi_counts(col(rows, 5))
-    funding = counts(col(rows, 6))
-    team = counts(col(rows, 7))
-    tech_figure = counts(col(rows, 8))
-    hosting = counts(col(rows, 9))
+    roles = counts(col(rows, 0))
+    institutions = counts(col(rows, 1))
+    starts = counts(col(rows, 2))
+    durations = counts(col(rows, 3))
+    outputs = multi_counts(col(rows, 4))
+    funding = counts(col(rows, 5))
+    team = counts(col(rows, 6))
+    tech_figure = counts(col(rows, 7))
+    hosting = counts(col(rows, 8))
 
     c_items = {
-        "C1 — piano di sostenibilità iniziale": likert_stats(col(rows, 10)),
-        "C2 — discussione fine finanziamento": likert_stats(col(rows, 11)),
-        "C3 — documentazione tecnica": likert_stats(col(rows, 12)),
-        "C4 — accessibilità a lungo termine (FAIR)": likert_stats(col(rows, 13)),
+        "C1 — piano di sostenibilità iniziale": likert_stats(col(rows, 9)),
+        "C2 — discussione fine finanziamento": likert_stats(col(rows, 10)),
+        "C3 — documentazione tecnica": likert_stats(col(rows, 11)),
+        "C4 — accessibilità a lungo termine (FAIR)": likert_stats(col(rows, 12)),
     }
-    c4a_tools = multi_counts(col(rows, 14))
-    c5 = counts(col(rows, 15))
-    c6 = counts(col(rows, 16))
+    c4a_tools = multi_counts(col(rows, 13))
+    c5 = counts(col(rows, 14))
+    c6 = counts(col(rows, 15))
 
-    d1_incidents = counts(col(rows, 17))
-    d1a_motivi = [v for v in col(rows, 18) if v]
-    d2_prob = likert_stats(col(rows, 19))
-    d3_causes = multi_counts(col(rows, 20))
-    d4 = counts(col(rows, 21))
-    d4a = multi_counts(col(rows, 22))
+    d1_incidents = counts(col(rows, 16))
+    d1a_motivi = [v for v in col(rows, 17) if v]
+    d2_prob = likert_stats(col(rows, 18))
+    d3_causes = multi_counts(col(rows, 19))
+    d4 = counts(col(rows, 20))
+    d4a = multi_counts(col(rows, 21))
 
     patterns = []
     inst_top = institutions.most_common(1)[0] if institutions else None
