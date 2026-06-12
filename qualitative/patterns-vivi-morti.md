@@ -27,7 +27,7 @@ xychart-beta
 
 ---
 
-## Pattern 2 — Percezione vs realtà: i vivi temono la tecnologia, i morti sono morti di soldi
+## Pattern 2 — Percezione vs realtà: i vivi temono la tecnologia, i morti sono morti a cause dei soldi
 
 Le cause che i progetti attivi **si aspettano** (D3) sono quasi l'inverso di quelle che i progetti discontinuati **riportano davvero** (D1). I vivi mettono in cima l'obsolescenza tecnologica (64%); tra i morti la prima causa reale è la **fine del finanziamento senza piano di continuazione (75%)**, seguita dalla mancanza di supporto istituzionale (50%).
 
