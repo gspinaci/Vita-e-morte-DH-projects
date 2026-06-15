@@ -46,12 +46,20 @@ SESSION.headers.update({"User-Agent": USER_AGENT})
 
 def get_wayback_info(url):
     """
-    Returns:
-      (first_seen_dt, last_seen_dt, last_snapshot_link)
+    Returns a 4-tuple:
+      (first_seen_dt, last_seen_dt, last_snapshot_link, outcome)
     for the URL from the Wayback Machine, considering ALL snapshots except 4xx and 5xx.
     We remove 'collapse' so we can see all timestamps, then manually filter.
 
     last_snapshot_link is the clickable Wayback link for the most recent snapshot.
+
+    `outcome` lets the caller tell apart two very different "no dates" situations:
+      - "OK"           : snapshots found, dates returned.
+      - "EMPTY"        : the request succeeded but Wayback genuinely has no usable
+                         snapshot for this URL (a real "no data" result).
+      - "FETCH_FAILED" : the request itself failed (DNS error, timeout, repeated
+                         429s, JSON error). The dates are unknown, NOT absent --
+                         the caller must NOT treat this as "no snapshots".
     """
 
     # No filter for status code here; we retrieve everything, then filter out 4xx, 5xx in Python.
@@ -85,12 +93,12 @@ def get_wayback_info(url):
             # data[1:] = actual snapshot records
             if len(data) < 2:
                 logging.info(f"No timestamps returned for URL {url}. Data length: {len(data)}")
-                return None, None, None
+                return None, None, None, "EMPTY"
 
             rows = data[1:]
             if not rows:
                 logging.info(f"No valid rows in the response for URL {url}")
-                return None, None, None
+                return None, None, None, "EMPTY"
 
             # Filter out 4xx/5xx snapshots
             valid_snapshots = []
@@ -112,7 +120,7 @@ def get_wayback_info(url):
 
             if not valid_snapshots:
                 logging.info(f"After filtering out 4xx/5xx, no snapshots left for URL {url}")
-                return None, None, None
+                return None, None, None, "EMPTY"
 
             # Sort by timestamp ascending
             valid_snapshots.sort(key=lambda tup: tup[0])
@@ -126,22 +134,26 @@ def get_wayback_info(url):
             last_snapshot_link = f"https://web.archive.org/web/{last_ts}/{last_orig}"
 
             logging.debug(f"First seen: {first_seen_dt}, Last seen: {last_seen_dt} (code={last_code}), Link={last_snapshot_link}")
-            return first_seen_dt, last_seen_dt, last_snapshot_link
+            return first_seen_dt, last_seen_dt, last_snapshot_link, "OK"
 
         except requests.RequestException as e:
             logging.warning(f"RequestException on attempt {attempt} for URL {url}: {e}")
             if attempt == MAX_RETRIES:
                 logging.error(f"Max retries exceeded for URL {url}")
-                return None, None, None
+                return None, None, None, "FETCH_FAILED"
             sleep_time = BACKOFF_FACTOR ** (attempt - 1)
             logging.info(f"Retrying in {sleep_time} seconds...")
             time.sleep(sleep_time)
         except ValueError as e:
             logging.error(f"Error decoding JSON for URL {url}: {e}")
-            return None, None, None
+            return None, None, None, "FETCH_FAILED"
         except Exception as e:
             logging.error(f"Unexpected error for URL {url}: {e}")
-            return None, None, None
+            return None, None, None, "FETCH_FAILED"
+
+    # All retries exhausted (e.g. repeated 429s) without ever returning.
+    logging.error(f"Wayback lookup exhausted all retries for URL {url}")
+    return None, None, None, "FETCH_FAILED"
 
 def check_url_status(url):
     """
@@ -216,11 +228,17 @@ extra_fields = [
     "URL sito vetrina Last_URL_Snapshot"
 ]
 
-def process_url(url_value):
+def process_url(url_value, prev=None):
     """
     Checks if the URL is valid, normalizes it, queries Wayback for first/last seen,
     retrieves the last snapshot link, and does a live GET to retrieve current status code.
+
+    `prev` holds this row's previously-recorded values (first_seen / last_seen /
+    status_code / last_snapshot_link), available when re-running on a *_post_script
+    file. On a Wayback FETCH_FAILED they are preserved, so a transient network
+    problem can no longer overwrite good data with blanks.
     """
+    prev = prev or {}
     logging.debug(f"Processing URL: {url_value}")
 
     if not is_valid_url(url_value):
@@ -237,26 +255,52 @@ def process_url(url_value):
 
     # Current live status
     status_code = check_url_status(normalized_url)
+    live_reachable = status_code is not None
     if status_code is None:
         status_code = "NOSTATUSCODE"
 
     # Wayback data
-    first_dt, last_dt, last_url_snapshot = get_wayback_info(normalized_url)
+    first_dt, last_dt, last_url_snapshot, outcome = get_wayback_info(normalized_url)
 
-    # Format the dates if they exist
-    first_str = first_dt.strftime("%Y-%m-%d %H:%M:%S") if first_dt else ""
-    last_str = last_dt.strftime("%Y-%m-%d %H:%M:%S") if last_dt else ""
+    if outcome == "FETCH_FAILED":
+        # Network/API failure (DNS error, timeout, exhausted retries): the dates
+        # are UNKNOWN, not absent. Preserve the previously-recorded values instead
+        # of blanking them, so a flaky connection cannot silently erase good data.
+        prev_first = (prev.get("first_seen") or "").strip()
+        prev_last = (prev.get("last_seen") or "").strip()
+        prev_snapshot = (prev.get("last_snapshot_link") or "").strip()
+        prev_status = (prev.get("status_code") or "").strip()
+        if prev_first or prev_last:
+            logging.warning(
+                f"Wayback fetch FAILED for {normalized_url}; preserving previous "
+                f"dates (first={prev_first!r}, last={prev_last!r}) instead of blanking."
+            )
+        first_str, last_str = prev_first, prev_last
+        last_url_snapshot = prev_snapshot
+        # If we couldn't even reach Wayback, our own network was likely down, so a
+        # NOSTATUSCODE live result is unreliable; keep the previous status if known.
+        if not live_reachable and prev_status:
+            status_code = prev_status
+    else:
+        # "OK" (snapshots found) or "EMPTY" (genuinely no snapshots) -> trust it.
+        first_str = first_dt.strftime("%Y-%m-%d %H:%M:%S") if first_dt else ""
+        last_str = last_dt.strftime("%Y-%m-%d %H:%M:%S") if last_dt else ""
+        last_url_snapshot = last_url_snapshot or ""
 
     return {
         "first_seen": first_str,
         "last_seen": last_str,
         "status_code": status_code,
-        "last_snapshot_link": last_url_snapshot or ""
+        "last_snapshot_link": last_url_snapshot
     }
 
 # Write to the output CSV
 with open(output_csv, 'w', newline='', encoding='utf-8') as outfile:
-    writer = csv.DictWriter(outfile, fieldnames=fieldnames + extra_fields)
+    # De-duplicate columns: a *_post_script input already contains the enrichment
+    # fields, so don't write them twice (avoids the duplicate-column artifact that
+    # previously required a separate cleanup step).
+    output_fieldnames = list(dict.fromkeys(fieldnames + extra_fields))
+    writer = csv.DictWriter(outfile, fieldnames=output_fieldnames, extrasaction='ignore')
     writer.writeheader()
 
     for i, row in enumerate(rows, start=1):
@@ -267,10 +311,25 @@ with open(output_csv, 'w', newline='', encoding='utf-8') as outfile:
 
         logging.debug(f"Row {i}: URL progetto: {url_progetto}, URL sito vetrina: {url_sito_vetrina}")
 
+        # Previously-recorded values for this row (present when re-running on a
+        # *_post_script file); used to preserve data if a fresh lookup fails.
+        prev_progetto = {
+            "first_seen": row.get("URL progetto First_Seen", ""),
+            "last_seen": row.get("URL progetto Last_Seen", ""),
+            "status_code": row.get("URL progetto Status_Code", ""),
+            "last_snapshot_link": row.get("URL progetto Last_URL_Snapshot", ""),
+        }
+        prev_vetrina = {
+            "first_seen": row.get("URL sito vetrina First_Seen", ""),
+            "last_seen": row.get("URL sito vetrina Last_Seen", ""),
+            "status_code": row.get("URL sito vetrina Status_Code", ""),
+            "last_snapshot_link": row.get("URL sito vetrina Last_URL_Snapshot", ""),
+        }
+
         # Process "URL progetto"
-        progetto_info = process_url(url_progetto)
+        progetto_info = process_url(url_progetto, prev_progetto)
         # Process "URL sito vetrina"
-        vetrina_info = process_url(url_sito_vetrina)
+        vetrina_info = process_url(url_sito_vetrina, prev_vetrina)
 
         # Update the row with new fields
         row["URL progetto First_Seen"] = progetto_info["first_seen"]
