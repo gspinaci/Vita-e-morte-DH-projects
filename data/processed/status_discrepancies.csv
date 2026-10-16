@@ -1,0 +1,45 @@
+title,project_url,functioning_website,url_status_code,macro_status,discrepancy
+The nuncio's secret archives,,True,NOTPROVIDED,NOTPROVIDED,false_negative: functioning but status 4xx/5xx/none
+Musisque Deoque: Un archivio digitale di poesia latina,https://www.mqdq.it,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Creta Inscriptions,https://ilc4clarin.ilc.cnr.it/cretaninscriptions,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Corago LOD,http://corago.unibo.it/lod,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Archaide,http://www.archaide.eu/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Tree of philosophers,https://treeofphilosophers.it/labels,True,404,4xx,false_negative: functioning but status 4xx/5xx/none
+The Vercelli Book,http://vbd.humnet.unipi.it/beta2/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Storia dei Carabinieri,https://www.spreaker.com/show/storia-dei-carabinieri,True,404,4xx,false_negative: functioning but status 4xx/5xx/none
+SIAR: A User-Centric Digital Archive System,https://siar.regione.veneto.it/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+S. Michele Arcangelo di Pegazzano,https://sanmichelepegazzano.labcd.unipi.it/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Registri Monterosso,https://registrimonterosso.labcd.unipi.it/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Project 3d Bridge,https://wissensgeschichte.biblhertz.it/3d-bridge-html/index3D.html,True,404,4xx,false_negative: functioning but status 4xx/5xx/none
+Progetto viver,https://testi.progettoviver.it/,True,401,4xx,false_negative: functioning but status 4xx/5xx/none
+Pelavicino,http://pelavicino.labcd.unipi.it/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Odonomastica Femminile,http://www.labcd.unipi.it/odonomastica-femminile/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+musow,http://projects.dharc.unibo.it/musow/,True,503,5xx,false_negative: functioning but status 4xx/5xx/none
+Musisque Deoque. Un archivio digitale di poesia latina,https://mizar.unive.it/mqdq/public/index,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+mAuth - Mining Authoritativeness in Art History,https://projects.dharc.unibo.it/mauth/search,True,406,4xx,false_negative: functioning but status 4xx/5xx/none
+Matilde Di Canossa,http://www.labcd.unipi.it/matildedicanossa,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Mappa project,https://mappaproject.arch.unipi.it/mod/Index.php,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Lineamenta,https://fm.biblhertz.it/fmi/xsl/home.xsl?-token.proj=li,True,500,5xx,false_negative: functioning but status 4xx/5xx/none
+L'Area Cimiteriale di San Matteo,https://sepolturesanmatteo.labcd.unipi.it/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+In Codice Ratio: Machine Transcription of Medieval Manuscripts,https://www.inf.uniroma3.it/db/icr/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Illuminated Dante Project (IDP),https://www.dante.unina.it/ndp/public/frontend,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Illuminated Dante Project,https://www.dante.unina.it/idp/public/frontend,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Greek into Arabic,http://www.greekintoarabic.eu/index0b30.html,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Galleria Borghese,https://galleriaborghese.beniculturali.it/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Flos,http://iu.di.unipi.it/flos/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+EDV -  Epigraphic Database Vernacular,http://www.edvcorpus.com/wp/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+EDB: Knowledge Technologies for Ancient Greek and Latin Epigraphy,https://www.edb.uniba.it/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+digitizing the die kirchen von siena project,https://sienaproject.khi.fi.it/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+DigilibLT - Biblioteca digitale di testi latini tardoantichi,https://digiliblt.uniupo.it/index.php,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+DanteSources,https://dantesources.dantenetwork.it/index.html,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Dante Search,https://dantesearch.dantenetwork.it/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+CoPhiLab: Collaborative and Cooperative Philology Lab,http://www.languagelibrary.eu/new_ewnui/,True,503,5xx,false_negative: functioning but status 4xx/5xx/none
+Classici Dse (EVT viewer),https://www.classici-dse.com/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+CLaSSES - Corpus for Latin Sociolinguistic Studies on Epigraphic textS,https://classes-latin-linguistics.fileli.unipi.it/en,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Catalogus Philologorum Classicorum (CPhCl),http://www.aristarchus.unige.net/CPhCl/en/Home,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+artchives - the inventory of art historians’ archives,http://artchives.fondazionezeri.unibo.it/,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Alchimia di Jackson Pollock / Jackson Pollock: Alchemy in 3D,,True,NOTPROVIDED,NOTPROVIDED,false_negative: functioning but status 4xx/5xx/none
+A Software Architecture for Narratives,https://dlnarratives.eu/narratives.html,True,NOSTATUSCODE,none,false_negative: functioning but status 4xx/5xx/none
+Predicting the Usability of the Dice CAPTCHA via Artificial Neural Network,https://sites.google.com/site/sites/system/errors/WebspaceNotFound?path=%2Falessiaamelio%2F+software-tools%2Fdice-captcha-dataset.,False,200,2xx,false_positive: not functioning but status 2xx
+Open Philology Project,http://openphilology.org/,False,200,2xx,false_positive: not functioning but status 2xx
+NumET,https://nuovomedioevo.it/numet-2/,False,200,2xx,false_positive: not functioning but status 2xx

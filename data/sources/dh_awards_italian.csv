@@ -1,0 +1,17 @@
+year,category,title,url,still_exists,digital_publication,notes,first_appearance_archive,last_appearance_archive,ip_history
+2012,Best DH Project for Public Audiences,Progetto TraMonti,http://www.tramontivaldivara.it/,FALSE,,non accessibile (accessibile con wayback ma non funzionante),"Fabruary 3, 2013","January 24, 2019",non raggiungibile
+2013,Best DH Contribution Not in the English Language,digilibLT: Biblioteca digitale di testi latini tardoantichi,http://www.digiliblt.unipmn.it/,TRUE,,"accessibile, richiede registrazione","February 5, 2012",Today,
+2013,Best DH Contribution Not in the English Language,Musisque Deoque,http://www.mqdq.it/,TRUE,,aperto e funzionante pare,"January 20, 2016",Today,
+2014,Best Use DH Public Engagement,The Medici Archive Project,http://bia.medici.org/,TRUE,,"mellon founded, richiede registrazione","December 31, 2012",Today,
+2014,Best DH Tool or Suite of Tools,The digital lab of “crunched books”: explore and annotate the classics,http://cbook.it/en/,FALSE,,il redirect è appeso (accessibile con wayback ma non funzionante),"September 20, 2014","March 4, 2024",non raggiungibile
+2015,Best DH Tool or Suite of Tools,3DHOP: 3D Heritage Online Presenter,http://vcg.isti.cnr.it/3dhop/,TRUE,,"Non espone dati, è un software",,,
+2015,Best DH Tool or Suite of Tools,ALCIDE (Analysis of Language and Content In a Digital Environment),http://celct.fbk.eu:8080/Alcide_Demo/,TRUE,,traslocato https://alcidedigitale.fbk.eu/platform/,"September 6, 2015",today,
+2015,Best DH Tool or Suite of Tools,DanteSources,http://perunaenciclopediadantescadigitale.eu/dantesources/index.html,TRUE,,redirect a https://dantesources.dantenetwork.it/index.html dal 2021,"July 4, 2015",today,
+2015,Best DH Tool or Suite of Tools,Pundit,http://thepund.it/,TRUE,,"Non espone dati, è un software",,,
+2015,Best Use DH Public Engagement,Alchimia di Jackson Pollock / Jackson Pollock: Alchemy in 3D,http://vcg.isti.cnr.it/alchemy/,TRUE,,,"April 14, 2018",today,
+2016,Best DH Tool or Suite of Tools,EVT – Edition Visualization Technology,http://evt.labcd.unipi.it/,TRUE,,è un tool ma espone anche due demo edizioni digitali. rientra,"April 23, 2017",today,
+2017,Best Use DH Public Engagement,Galassia Ariosto,http://galassiaariosto.sns.it/,FALSE,,"è stato internalizzato, forse, dal 2020 e ci si può accedere con VPN (forse)","September 30, 2017","November 27, 2020",
+2018,Best Use DH Public Engagement,NumET,https://nuovomedioevo.it/numet-2/,FALSE,,,"February 3, 2018","June 17, 2024",
+2020,Best Use of DH for Public Engagement,I conti con la Storia: Le leggi razziali tra televisione e storiografia,http://www.iconticonlastoria.it,TRUE,,traslocato a https://www.unive.it/pag/44465/,"January 8, 2021",today,
+2020,Best Use of DH for Public Engagement,Storia dei Carabinieri,https://www.spreaker.com/show/storia-dei-carabinieri,FALSE,FALSE,,,,
+2022,Best DH Data Visualization,Navigli Project,http://arcg.is/0vfWKj,TRUE,TRUE,,,today,

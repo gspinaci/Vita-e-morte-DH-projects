@@ -1,0 +1,78 @@
+title,article_title,project_url,project_url_resolves,url_showcase,url_showcase_resolves,url_landing_page,url_landing_page_resolves,notes
+Daphnet: Ancient Philosophy,,http://ancientsource.daphnet.iliesi.cnr.it/,TRUE,http://www.daphnet.iliesi.cnr.it/,TRUE,,FALSE,
+Daphnet: Modern Philosophy,,http://modernsource.daphnet.iliesi.cnr.it/,TRUE,http://www.daphnet.iliesi.cnr.it/,TRUE,,FALSE,
+ASIt: Atlante Sintattico d’Italia,ASIt: Atlante Sintattico d’Italia A linked open data geolinguistic web application,http://svrims2.dei.unipd.it:8080/asit-maldura/pages/search.jsp,TRUE,http://asit.maldura.unipd.it/,TRUE,,FALSE,La pagina del portale non fuznionava. Dopo 30 min funziona. Probabilmente c'è un server che entra in funziona a richiesta.
+The “Verbo-Visual Virtual” Platform,The ‘Verbo-Visual Virtual’ Platform for Digitizing and Navigating Cultural Heritage Collections,http://www.verbovisualevirtuale.org/,TRUE,,FALSE,,FALSE,
+Dante: A Web Application for the History of Art,Dante. A Web Application for the History of Art,https://dante.beniculturali.unipd.it/dante-web/,TRUE,,FALSE,,FALSE,Protetto da accesso.
+Open Philology Project,L’Open Philology Project dell’Università di Lipsia. Per una filologia ‘sostenibile’ in un mondo globale,,FALSE,http://openphilology.org/,TRUE,,FALSE,Coming soon LOL
+Progetto Mambrino,Progetto Mambrino: Metodologie e prospettive di un’edizione digitale,https://www.mambrino.it/it,TRUE,,FALSE,,FALSE,
+TRANSSCRIPT,Il progetto ANR TRANSSCRIPT Writing and Gover- nance. Cultural Transfers between France and the Em- pire (13th-16th centuries),https://anr.fr/Project-ANR-14-CE31-0022,FALSE,,FALSE,,FALSE,
+Illuminated Dante Project (IDP),Illuminated Dante Project (IDP): Una startup per la digitalizzazione e l’analisi della più antica iconografia dantesca (secc. XIV-XV),https://www.dante.unina.it/ndp/public/frontend,TRUE,,FALSE,,FALSE,
+Epistolario Italo Svevo,Sentiment Analysis d’autore: l’epistolario di Italo Svevo,,FALSE,,FALSE,,FALSE,https://www.museosveviano.it/ar/
+Eagle Project,Coping with interoperability in cultural heritage data infrastructures: the Europeana network of Ancient Greek and Latin Epigraphy,https://www.eagle-network.eu/,TRUE,,FALSE,,FALSE,
+AMiGre,AMiGre: A unified framework for archiving and processing oral and written dialectal data,,FALSE,http://amigre.upatras.gr/,TRUE,,FALSE,
+BelliniInRete,Le lettere di Bellini: dalla carta al Web,,FALSE,http://bellininrete.istc.cnr.it/,TRUE,,FALSE,
+Czech-IT! Linguistic corpus of native Czech and Slovak learners acquiring Italian language,Presentazione di Czech-IT!: Un corpus linguistico di parlanti cechi apprendenti la lingua italiana,https://czech-it.github.io/,TRUE,,FALSE,,FALSE,
+Clavius Correspondence,From the Clavius Correspondence to Linked Data: the CoW-LD Project,http://claviusontheweb.it/lod,FALSE,,FALSE,,FALSE,
+The Medieval Kingdom of Sicily Image Database,Historical Images and the Recovery of the Past. The Medieval Kingdom of Sicily Image Database,https://koseodiah.org/index.php,TRUE,,FALSE,,FALSE,
+Archivio Università Castrense,"Per un archivio digitale dell’Università Castrense di San Giorgio di Nogaro: saperi, pratiche, immagini durante la Grande guerra",https://archivio.universitacastrense.eu/,TRUE,,FALSE,,FALSE,
+Epigraphs of Castello Ursino Museum,. Un museo epigrafico digitale per visitatori e specialisti,,FALSE,http://epicum.istc.cnr.it/,TRUE,,FALSE,
+14-18 Documenti e immagini della Grande Guerra,14-18 Documenti e immagini della Grande Guerra,http://www.14-18.it/progetto,TRUE,,FALSE,,FALSE,
+Epistolario De Gasperi,"Per un’edizione online dell’Epistolario di Alcide De Gasperi. Criteri di
+digitalizzazione, schedatura, regestazione ed edizione di lettere del Novecento",https://www.epistolariodegasperi.it/#/archivio_digitale/lettere,TRUE,,FALSE,www.epistolariodegasperi.it,TRUE,
+Linking Latin,"LiLa: Linking Latin. Building a Knowledge Base of
+Linguistic Resources for Latin",https://lila-erc.eu/LiLaLisp/,TRUE,,FALSE,https://lila-erc.eu/#about-1,TRUE,Sparql endpoint https://lila-erc.eu/sparql/. non si capisce un cazzo
+Ecodigit,"EcoDigit
+Ecosistema Digitale per la fruizione e la valorizzazione dei beni e delle
+attività culturali del Lazio",https://ecodigit.dtclazio.it/,FALSE,https://dtclazio.it/progetto-ecodigit,TRUE,,FALSE,
+Petrarchive,Making a Digital Edition: The Petrarchive Project,https://dcl.luddy.indiana.edu/petrarchive/,TRUE,,FALSE,,FALSE,
+Emodsar,EModSar: A Corpus of Early Modern Sardinian Texts,http://corpora.unica.it/TEITOK/emodsar,FALSE,,FALSE,,FALSE,
+FrancoBuffoni,"L’organizzazione e la descrizione di un fondo nativo digitale: PAD e
+l’archivio Franco Buffoni",,FALSE,https://www.francobuffoni.it/,TRUE,,FALSE,
+Stragi Nazifasciste,"L’Atlante delle stragi.
+Da Digital History a Digital Public History",https://www.straginazifasciste.it/,TRUE,,FALSE,,FALSE,
+Pirandello nazionale,"Pirandello Nazionale: per un nuovo modello
+di edizione digitale, collaborativa e integrata",https://www.pirandellonazionale.it/opere/,TRUE,,FALSE,https://www.pirandellonazionale.it/,TRUE,
+Hypermedia Dante Project,The Hypermedia Dante Network Project,https://hdn.dantenetwork.it/,FALSE,,FALSE,,FALSE,
+Varianti della rosa,"«Le varianti della rosa». Per un prototipo di edizione digitale delNome della rosa: interpretazione, didattica, annotazione",,FALSE,https://www.variantidellarosa.it/,TRUE,,FALSE,
+Registri Monterosso,"Tra Public e Digital History: la soluzione ibrida dei
+registri parrocchiali di Monterosso on line",https://registrimonterosso.labcd.unipi.it/,TRUE,,FALSE,,FALSE,
+Bellini corrispondenza,"Dalla codifica alla fruizione:
+l’edizione digitale Bellini Digital Correspondence",http://bellinicorrespondence.cnr.it/,TRUE,,FALSE,,FALSE,
+Repim,"RePIM in LOD: semantic technologies to preserve knowledge
+about Italian secular music and lyric poetry from the 16th-17th
+centuries",https://repim.itatti.harvard.edu/,TRUE,,FALSE,,FALSE,
+Patrimonio Letterario Filologico,"L’edizione di un graphic novel medievale:
+il Romanzo di Tristan in München, BSB, Cgm 51 come
+laboratorio di codifica (Progetto: TRISDE 51)",https://dh.dlls.univr.it/it/progetti/patrimonio-letterario-filologico/#trisde51,FALSE,,FALSE,,FALSE,
+Archivio della Latinità Italiana del Medioevo,"A digital diplomatic edition of the 10th-century charters
+of Lucca for Latin corpus linguistic",http://en.alim.unisi.it/dl/fonti_documentarie,TRUE,,FALSE,,FALSE,
+DB allegorico dantesco,Database Allegorico Dantesco,https://www.databaseallegoricodantesco.it/archivio.php,TRUE,,FALSE,,FALSE,
+"LINEA: per un portale della letteratura italiana del
+Novecento","LINEA: per un portale della letteratura italiana del
+Novecento",,FALSE,https://linea.unict.it/,TRUE,,FALSE,
+I LUOGHI DELLA CULTURA IN TOSCANA FINO AL 1325,"Per un atlante delle biblioteche medievali: il progetto
+Mirabile-Atlas e una nuova prospettiva sulla circolazione
+della cultura manoscritta",https://atlas.mirabileweb.it/atlas,TRUE,,FALSE,,FALSE,
+Petrarca itinera,"ITINERA: progetto, database e prospettive",https://petrarchsitinera.github.io/,FALSE,,FALSE,,TRUE,
+Elisa Chimenti,"Il progetto digitale su Elisa Chimenti (LAI-ALEEF): la
+problematicità di un profilo mediterraneo tra reti e frontiere",,FALSE,,FALSE,https://www.elisachimenti.org/accueildef.html,FALSE,
+Erbario di Aldovrandi,"Mediterraneo verde fantastico: un repertorio digitale attraverso
+la collezione botanica di Ulisse Aldrovandi (1522-1605)",https://botanica.sma.unibo.it/aldrovandi/Explore,TRUE,,FALSE,https://botanica.sma.unibo.it/,TRUE,
+Ragu project,"Preserving Culinary Traditions. A Crowdsourced Digital
+Collection of Cookbooks",,FALSE,,FALSE,https://raguproject.github.io/,FALSE,
+Tree of philosophers,"The Tree of Philosophers: design and implementation of a digital
+resource for the history of academic philosophy",https://treeofphilosophers.it/labels,TRUE,,FALSE,,FALSE,
+MaximHum,"Il progetto “MaximHum”: Italia umanistica e Moscovia
+cinquecentesca dialogano in digitale",,FALSE,,FALSE,,FALSE,
+Fondazione fava,"L’Archivio di Giuseppe Fava: conservazione e valorizzazione
+attraverso il digitale",https://www.fondazionefava.it/archivio-di-giuseppe-fava/,TRUE,,FALSE,,FALSE,
+OpenGadda,OpenData: OpenGadda,https://numgadda.github.io/OpenGadda/databasecolumnmerge.html,TRUE,,FALSE,,FALSE,
+Hyperpavese,"PAVES-e: Per una Hyperedizione dell’opera
+di Cesare Pavese",https://www.hyperpavese.com/progetto.php,TRUE,,FALSE,,FALSE,
+Progetto viver,Il VIVer (Vocabolario dell’Italiano Verista),https://testi.progettoviver.it/,TRUE,,FALSE,,FALSE,
+DATASET,Voce dei Margini’: Le annotazioni di Giorgio Bassani,https://zenodo.org/records/7996309,FALSE,,FALSE,,FALSE,
+,"GKPS: portale per la condivisione delle
+conoscenze nell’ambito del rischio clinico",https://www.gkps.net/,FALSE,,FALSE,,FALSE,
+,"Per l’edizione digitale delle lettere familiari di Verga:
+un esperimento di analisi semantica",,FALSE,,FALSE,,FALSE,

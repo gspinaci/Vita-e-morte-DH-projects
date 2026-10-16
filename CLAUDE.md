@@ -4,39 +4,45 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository purpose
 
-Research dataset and scripts for the paper *"Life and Death of DH Projects: A Preliminary Investigation of Their Lifecycles in Italy"* (AIUCD XIV). The published dataset is [`DH_Projects_Survey_20250530_v01.csv`](DH_Projects_Survey_20250530_v01.csv) (also on [Zenodo](https://doi.org/10.5281/zenodo.15551858)). The code here is the pipeline that produced and maintains that dataset — it is research code, not a deployable application.
+Research dataset and code for *"Life and Death of DH Projects"* (AIUCD 2025 paper and its
+extended version). The dataset is on Zenodo (concept DOI 10.5281/zenodo.15551857). This is
+research code, not a deployable application. Overview in [README.md](README.md).
 
 ## Environment
 
-- Python 3.8+ with a local `.venv/` (already present).
-- Install deps from the top-level [`requirements.txt`](requirements.txt). The `automatic_extraction_url/` subproject has its own [`requirements.txt`](automatic_extraction_url/requirements.txt) (PDF/LLM stack).
-- No build, lint, or test suite is configured. Scripts are run directly.
+- Python ≥ 3.10, local `.venv/`. `make install` (= `pip install -r requirements.txt`).
+- Dependency ranges in [pyproject.toml](pyproject.toml); exact pins in [requirements.txt](requirements.txt). Keep both in sync.
+- `make test` runs the pytest suite in [tests/](tests/) (offline: every HTTP call is mocked; fixture projects in `tests/conftest.py`). Also check a change by diffing command outputs (`reports/stats.md`, `reports/figures/*.png`, the CSVs) against the committed version.
 
-## Architecture / pipeline
+## Architecture
 
-The repo is organised by pipeline stage, not by module. Four logically separate stages feed each other through CSV files in [`dataset/`](dataset/):
+Package [src/dhlife/](src/dhlife/); every stage is a subcommand, `python -m dhlife <cmd>`
+(dispatcher in [__main__.py](src/dhlife/__main__.py)); each module has `main(argv=None)`.
 
-1. **Retrieval** — [`retriever/crawlerDHprojects.ipynb`](retriever/crawlerDHprojects.ipynb) crawls candidate Italian DH project listings, producing [`retriever/dh_projects_results.csv`](retriever/dh_projects_results.csv) and the filtering spreadsheet.
-2. **URL extraction from proceedings** — [`automatic_extraction_url/`](automatic_extraction_url/) is a two-phase pipeline (see its own [README](automatic_extraction_url/README.md)):
-   - Phase 1: [`parsing_pdf_grobid.py`](automatic_extraction_url/parsing_pdf_grobid.py) needs a local GROBID at `http://localhost:8070` (`docker run --rm --init --ulimit core=0 -p 8070:8070 grobid/grobid:0.9.0-crf`). Splits a proceedings PDF into per-article JSON with title/authors/abstract/footnotes.
-   - Phase 2: [`extract_project_urls_colab.ipynb`](automatic_extraction_url/extract_project_urls_colab.ipynb) runs on Colab (or local Ollama with `llama3.1:8b`) to pick the official project URL out of footnote URLs.
-3. **Archive / liveness checking** — `archivechecker.py`, `archivechecker2.py`, [`archivechecker3.py`](archivechecker3.py) are *successive iterations*; **`archivechecker3.py` is the current one**. It reads `dataset/lista_finale_post_script.csv`, hits the Wayback CDX API (`https://web.archive.org/cdx/search/cdx`) plus a live HTTP check per URL, and writes `dataset/lista_finale_post_script_2026.csv`. Logs go to `logs/script_final.log`. Helper one-offs live in [`helper_scripts/`](helper_scripts/) (`single_url_archive_checker.py`, `wayback_compare_filter.py`).
-4. **Qualitative analysis & charts** — [`dataset/input/make_chart.ipynb`](dataset/input/make_chart.ipynb) produces figures (e.g. `output.png`); [`qualitative/data/`](qualitative/data/) holds the manually-coded *progetti-vivi* / *progetti-morti* split.
+- [paths.py](src/dhlife/paths.py): every file location. Never hard-code a path elsewhere.
+- [schema.py](src/dhlife/schema.py): column lists, sentinels (`NOTPROVIDED`, `NOSTATUSCODE`),
+  `read_projects` / `write_projects` (TRUE/FALSE booleans).
+- [wayback.py](src/dhlife/wayback.py): CDX API client and live HTTP check.
+- [analysis.py](src/dhlife/analysis.py): all logic behind the paper numbers; used by
+  `stats.py` and `charts.py`.
+- `sources`, `crawl`, `archive_check`, `check_url`, `stats`, `charts`, `release`,
+  `qualitative/`, `proceedings/` (experimental GROBID + LLM URL extraction).
 
-### Dataset flow (important for editing CSV paths)
+Data layers in [data/](data/README.md): `sources/` (frozen Google Sheet snapshot + cleaned
+CSVs) → `curated/projects.csv` (hand-edited, source of truth) → `processed/` (generated) →
+`release/` (Zenodo files, never edited). Outputs of `stats`/`charts`/`qualitative` go to
+`reports/`.
 
-`dataset/input/` holds *intermediate* CSVs (gitignored except for the directory). `dataset/` holds the curated outputs that *are* committed. Naming convention: `*_post_script.csv` = output of the archive checker; year suffix (`_2026`) = the most recent re-run. When updating the archive checker, the input/output filenames are hard-coded near the bottom of the script (currently [archivechecker3.py:181-182](archivechecker3.py#L181)) — update both together.
+## Rules
 
-## Running the archive checker
-
-```bash
-python archivechecker3.py
-```
-
-It is rate-limit-aware (Wayback CDX: `RATE_LIMIT_DELAY`, `MAX_RETRIES`, `BACKOFF_FACTOR` at the top of the file) and uses a descriptive `User-Agent` per Internet Archive automation guidelines — preserve that if you refactor. The CDX call deliberately omits `collapse` and filters 4xx/5xx in Python, so changes there affect the "first seen / last seen" semantics that feed the paper's analysis.
-
-## Conventions
-
-- CSVs are the source of truth between stages — do not rename a committed `dataset/*.csv` without updating every script that reads it.
-- The older `archivechecker.py` / `archivechecker2.py` are kept for provenance; new work goes into `archivechecker3.py` (or a successor).
-- Output column names in the survey CSV (e.g. `url_first_seen`, `url_last_seen`, `functioning_website`) are the public schema of the Zenodo release — treat them as stable.
+- The Google Sheet is frozen: never read it at analysis time; work from `data/sources/raw/`.
+- Column names in [docs/data_dictionary.md](docs/data_dictionary.md) (`url_first_seen`,
+  `functioning_website`, …) are the public Zenodo schema: keep them stable.
+- Wayback semantics in `wayback.get_wayback_info` feed the paper's first/last-seen analysis:
+  no `collapse`, `matchType=exact`, 4xx/5xx snapshots dropped in Python (3xx kept), previous
+  values kept on fetch failure. Keep the descriptive `User-Agent` and the rate-limit/backoff
+  constants (Internet Archive automation guidelines).
+- `archive-check` takes ~1 hour; test changes with `check-url` or a few-row `--input`.
+- Releases are new files (`dhlife release --version NN`, UTF-8); never overwrite one in
+  `data/release/`.
+- Qualitative data: see the memory notes on anonymisation; `.audit/` is never committed.
