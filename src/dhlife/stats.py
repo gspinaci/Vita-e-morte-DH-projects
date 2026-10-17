@@ -1,0 +1,185 @@
+"""Compute every number quoted in the paper and write ``reports/stats.md``.
+
+    python -m dhlife stats
+
+Also writes ``data/processed/unavailable_projects_2026.csv`` (one row per unavailable project,
+with the last-seen date actually used) and ``data/processed/live_status_vs_manual_check_2026.csv``
+(live status code vs. the manual functioning flag, for manual review).
+"""
+
+import argparse
+from pathlib import Path
+
+import pandas as pd
+
+from dhlife import analysis, paths
+
+
+def _count(mask) -> int:
+    return int(mask.sum())
+
+
+def reconciliation(df: pd.DataFrame) -> list[tuple[str, int]]:
+    """How the 284 projects split; the paper's categories, with the arithmetic explicit."""
+    has_url = df["project_url"].notna()
+    functioning = df["functioning_website"] == True  # noqa: E712
+    partial = df["partially_unaccessible_website"] == True  # noqa: E712
+    not_functioning = has_url & ~functioning
+    migrated = analysis.migrated(df)
+    return [
+        ("Projects", len(df)),
+        ("  never published (no project URL)", _count(~has_url)),
+        ("  with a project URL", _count(has_url)),
+        ("    functioning", _count(has_url & functioning)),
+        ("      fully accessible", _count(has_url & functioning & ~partial)),
+        ("      partially accessible", _count(has_url & functioning & partial)),
+        ("    inaccessible at the original URL", _count(not_functioning)),
+        ("      migrated (active at a new address)", _count(not_functioning & migrated)),
+        ("      ended (discontinued)", _count(not_functioning & ~migrated)),
+    ]
+
+
+def taxonomy_counts(df: pd.DataFrame) -> list[tuple[str, str, int]]:
+    """``(dimension, category, n)`` for the dimensions of ``analysis.taxonomy``."""
+    tax = analysis.taxonomy(df)
+    return [(dim, cat, int(n)) for dim in tax.columns
+            for cat, n in tax[dim].fillna("(not applicable)").value_counts().items()]
+
+
+def flag_counts(df: pd.DataFrame) -> list[tuple[str, int]]:
+    flags = [
+        "functioning_website", "partially_unaccessible_website", "website_not_found",
+        "non_functioning_website", "not_redirected_website",
+    ]
+    return [(f, _count(df[f] == True)) for f in flags] + [  # noqa: E712
+        ("new_website_url set (migrated)", _count(analysis.migrated(df)))
+    ]
+
+
+def _table(rows, headers=("", "n")) -> str:
+    lines = [f"| {headers[0]} | {headers[1]} |", "|---|---:|"]
+    lines += [f"| {label.replace('  ', '&nbsp;&nbsp;')} | {value} |" for label, value in rows]
+    return "\n".join(lines)
+
+
+def _tree(rows) -> str:
+    """Draw ``(label, n)`` rows, nested by two-space indentation, as a ``tree``-style list."""
+    depths = [(len(label) - len(label.lstrip(" "))) // 2 for label, _ in rows]
+    lines, open_levels = [], []  # open_levels[d]: is there a later sibling at depth d?
+    for i, ((label, value), depth) in enumerate(zip(rows, depths)):
+        later = next((d for d in depths[i + 1:] if d <= depth), -1)
+        del open_levels[depth:]
+        open_levels.append(later == depth)
+        if depth == 0:
+            prefix = ""
+        else:
+            prefix = "".join("│   " if o else "    " for o in open_levels[1:depth])
+            prefix += "├── " if open_levels[depth] else "└── "
+        lines.append((prefix + label.strip(), value))
+    width = max(len(text) for text, _ in lines)
+    return "```\n" + "\n".join(f"{text:<{width}}  {value:>4}" for text, value in lines) + "\n```"
+
+
+def _frame(df: pd.DataFrame) -> str:
+    cells = df.map(lambda v: "" if pd.isna(v) else f"{v:.2f}" if isinstance(v, float) else str(v))
+    lines = ["| " + " | ".join(df.columns) + " |", "|" + "---:|" * len(df.columns)]
+    lines += ["| " + " | ".join(row) + " |" for row in cells.itertuples(index=False)]
+    return "\n".join(lines)
+
+
+def _years_months(months: float) -> str:
+    return f"{int(months // 12)} years and {round(months % 12)} months"
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--input", type=Path, default=paths.PROJECTS_ARCHIVE)
+    args = parser.parse_args(argv)
+
+    raw = analysis.load(args.input)
+    corrected, unmatched = analysis.apply_last_seen_corrections(raw)
+    corrected = analysis.add_years(corrected)
+
+    life = analysis.lifespans(corrected)
+    by_year = life["lifespan_years_by_year"].dropna()
+    by_day = life["lifespan_days"].dropna()
+
+    discrepancies = analysis.status_discrepancies(raw)
+    unavailable = analysis.unavailable_projects(raw, corrected)
+    yearly = analysis.yearly_counts(corrected)
+    growth = analysis.growth_table(yearly)
+
+    paths.PROCESSED.mkdir(parents=True, exist_ok=True)
+    discrepancies.to_csv(paths.STATUS_DISCREPANCIES, index=False)
+    unavailable.to_csv(paths.UNAVAILABLE_PROJECTS, index=False)
+
+    provenance = raw["provenance"].value_counts()
+    fn = discrepancies["discrepancy"].str.startswith("false_negative")
+
+    report = f"""# Dataset statistics
+
+Generated by `python -m dhlife stats` from `{args.input.relative_to(paths.ROOT)}`.
+Do not edit by hand.
+
+## Status of the projects
+
+{_tree(reconciliation(raw))}
+
+Taxonomy of the paper (§4.3), derived from the flags by `analysis.taxonomy` (not in the release):
+
+{_table([(f"`{dim}` = {cat}", n) for dim, cat, n in taxonomy_counts(raw)], ("category", "n"))}
+
+`project_status` counts the two functioning projects with a `new_website_url` as migrated,
+so active (228) is two fewer than functioning (230). Dormant, archived, planned vs. unplanned
+ending, restricted access and data preservation are not assessed.
+
+Raw flag counts (a project can have several flags):
+
+{_table(flag_counts(raw), ("flag", "TRUE"))}
+
+## Provenance
+
+{_table([(k, f"{v} ({v / len(raw):.1%})") for k, v in provenance.items()], ("source", "n"))}
+
+## Last-seen corrections
+
+{corrected.attrs["corrections_applied"]} manual corrections of `url_last_seen` applied
+from `data/curated/last_seen_manual_corrections.csv`.
+{"" if unmatched.empty else "Corrections matching no `project_url` (not applied): " + ", ".join(f"*{t}* (`{u}`)" for t, u in zip(unmatched["title"], unmatched["project_url"])) + "."}
+
+## Lifespan of discontinued projects
+
+Discontinued (`project_status` = ended) = a project URL exists, not functioning, not migrated; last seen after corrections.
+
+* Paper method (difference of the first/last-seen **years**): mean
+  **{_years_months(by_year.mean() * 12)}** (n={len(by_year)}).
+* Exact (days between first and last seen): mean **{by_day.mean() / 365.25:.2f} years**,
+  median {by_day.median() / 365.25:.2f} years (n={len(by_day)}).
+
+## Unavailable projects
+
+{len(unavailable)} projects have at least one unavailability flag
+(see `data/processed/unavailable_projects_2026.csv`):
+
+{_table(list(unavailable["unavailability"].value_counts().items()), ("flags", "n"))}
+
+Mean lifespan with known dates: {unavailable["lifespan_years"].mean():.2f} years
+(n={unavailable["lifespan_years"].notna().sum()}).
+
+## Live status code vs. manual flag
+
+{len(discrepancies)} discrepancies (see `data/processed/live_status_vs_manual_check_2026.csv`):
+{_count(fn)} functioning projects whose live check returned 4xx/5xx/nothing, and
+{_count(~fn)} non-functioning projects that returned 2xx.
+
+## New and unavailable projects per year
+
+{_frame(growth)}
+"""
+    paths.STATS_REPORT.parent.mkdir(parents=True, exist_ok=True)
+    paths.STATS_REPORT.write_text(report)
+    print(report)
+
+
+if __name__ == "__main__":
+    main()

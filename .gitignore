@@ -1,5 +1,9 @@
 .venv
 .vscode
-dataset/input/*.csv
-dumps
-logs
+__pycache__/
+*.egg-info/
+.DS_Store
+logs/
+dumps/
+.audit/
+.pytest_cache/
