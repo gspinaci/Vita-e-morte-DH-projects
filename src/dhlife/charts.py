@@ -1,9 +1,10 @@
-"""Draw the paper figures into ``reports/figures/``.
+"""Draw the paper figures into ``reports/figures/``: project growth and survey causes.
 
     python -m dhlife charts
 """
 
 import argparse
+from pathlib import Path
 
 import matplotlib
 
@@ -12,11 +13,15 @@ import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 
 from dhlife import analysis, paths  # noqa: E402
+from dhlife.qualitative import analyze_surveys  # noqa: E402
 
 NEW_COLOR = "lightgrey"
 UNAVAILABLE_COLOR = "orange"
 TOTAL_COLOR = "#0371ad"
 GROWTH_COLOR = "pink"
+ACTIVE_COLOR = "#3565a8"
+DISCONTINUED_COLOR = "#bf5b23"
+GROUP_COLORS = {"Financial": "#7a3a10", "Institutional": "#5c4a1e", "Technological": "#1f3f6e"}
 
 
 def _save(fig, name):
@@ -24,50 +29,6 @@ def _save(fig, name):
     fig.savefig(path, dpi=200, bbox_inches="tight")
     plt.close(fig)
     print(f"Wrote {path.relative_to(paths.ROOT)}")
-
-
-def provenance(df):
-    pct = df["provenance"].value_counts(normalize=True) * 100
-    fig, ax = plt.subplots()
-    pct.plot(kind="barh", ax=ax, color="darkgrey")
-    ax.set_title("Percentage of Projects per Provenance")
-    ax.set_xlabel("Percentage")
-    ax.set_ylabel("Provenance")
-    fig.tight_layout()
-    for bar in ax.patches:
-        ax.text(bar.get_width() - 1, bar.get_y() + bar.get_height() / 2, f"{bar.get_width():.1f}%",
-                va="center", ha="right", color="white", fontsize=10)
-    _save(fig, "provenance.png")
-
-
-def new_vs_unavailable(yearly):
-    fig, ax = plt.subplots()
-    yearly.rename(columns={"new": "New", "unavailable": "Unavailable"}).plot(
-        kind="bar", x="year", y=["New", "Unavailable"], ax=ax, color=[NEW_COLOR, UNAVAILABLE_COLOR])
-    ax.set_title("New and Unavailable Projects per Year")
-    ax.set_xlabel("Year")
-    ax.set_ylabel("Number of Projects")
-    plt.setp(ax.get_xticklabels(), rotation=45)
-    fig.tight_layout()
-    _save(fig, "new_vs_unavailable_per_year.png")
-
-
-def cumulative_existing(yearly):
-    t = yearly[yearly["year"] != analysis.CURRENT_YEAR].copy()
-    t["existing"] = (t["new"] - t["unavailable"]).cumsum()
-    fig, ax = plt.subplots()
-    ax.plot(t["year"], t["existing"], label="Cumulative Existing Projects", color=NEW_COLOR)
-    last = t.tail(3)
-    ax.plot(last["year"], last["existing"], color=UNAVAILABLE_COLOR)
-    ax.set_title("Existing Projects per Year")
-    ax.set_xlabel("Year")
-    ax.set_ylabel("Number of Projects")
-    ax.yaxis.get_major_locator().set_params(integer=True)
-    ax.set_xticks(t["year"])
-    ax.set_xticklabels(t["year"].astype(str), rotation=45)
-    ax.legend()
-    fig.tight_layout()
-    _save(fig, "cumulative_existing.png")
 
 
 def growth_and_cumulative(growth):
@@ -108,9 +69,53 @@ def growth_and_cumulative(growth):
     _save(fig, "growth_and_cumulative.png")
 
 
+def survey_causes(shares):
+    """Causes anticipated by active projects vs. reported by discontinued ones, as the
+    share of selections within each group (only the four causes of ``CAUSE_GROUPS``)."""
+    causes = list(analyze_surveys.CAUSE_GROUPS)
+    x = np.arange(len(causes))
+    width = 0.37
+    fig, ax = plt.subplots(figsize=(10, 5.8))
+    for offset, (name, label, color) in zip(
+            (-width / 2, width / 2),
+            (("active", "Anticipated by active projects", ACTIVE_COLOR),
+             ("discontinued", "Reported by discontinued projects", DISCONTINUED_COLOR))):
+        respondents, counts = shares[name]
+        total = sum(counts.values())
+        values = [100 * counts[c] / total for c in causes]
+        bars = ax.bar(x + offset, values, width=width, color=color, label=f"{label} (n = {respondents})")
+        for bar, v in zip(bars, values):
+            ax.text(bar.get_x() + bar.get_width() / 2, v + 0.8, f"{v:.1f}%",
+                    ha="center", va="bottom", fontweight="bold", color="#333333")
+
+    groups = [analyze_surveys.CAUSE_GROUPS[c][1] for c in causes]
+    top = ax.get_ylim()[1] * 1.2
+    ax.set_ylim(0, top)
+    for g in dict.fromkeys(groups):
+        idx = [i for i, gi in enumerate(groups) if gi == g]
+        ax.text((idx[0] + idx[-1]) / 2, top * 0.96, g, ha="center", va="top",
+                style="italic", color=GROUP_COLORS.get(g, "#333333"))
+    for i in range(1, len(groups)):
+        if groups[i] != groups[i - 1]:
+            ax.axvline(i - 0.5, color="lightgrey", linewidth=1)
+
+    ax.set_xticks(x)
+    ax.set_xticklabels([analyze_surveys.CAUSE_GROUPS[c][0] for c in causes])
+    ax.set_ylabel("Share of selections within group (%)")
+    ax.yaxis.grid(True, color="#eeeeee")
+    ax.set_axisbelow(True)
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.0), ncol=2, frameon=False)
+    ax.set_title("Relative emphasis on each cause of discontinuation (normalized)",
+                 pad=34, color="#555555")
+    fig.suptitle("The misalignment of risk:", fontsize=15, fontweight="bold")
+    fig.tight_layout()
+    _save(fig, "survey_causes_anticipated_vs_reported.png")
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--input", type=paths.Path, default=paths.PROJECTS_ARCHIVE)
+    parser.add_argument("--input", type=Path, default=paths.PROJECTS_ARCHIVE)
     args = parser.parse_args(argv)
 
     raw = analysis.load(args.input)
@@ -118,10 +123,8 @@ def main(argv=None):
     yearly = analysis.yearly_counts(analysis.add_years(corrected))
 
     paths.FIGURES.mkdir(parents=True, exist_ok=True)
-    provenance(raw)
-    new_vs_unavailable(yearly)
-    cumulative_existing(yearly)
     growth_and_cumulative(analysis.growth_table(yearly))
+    survey_causes(analyze_surveys.cause_shares())
 
 
 if __name__ == "__main__":

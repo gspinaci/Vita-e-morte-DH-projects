@@ -4,7 +4,7 @@ Daphnet: Modern Philosophy,,http://modernsource.daphnet.iliesi.cnr.it/,TRUE,http
 ASIt: Atlante Sintattico d’Italia,ASIt: Atlante Sintattico d’Italia A linked open data geolinguistic web application,http://svrims2.dei.unipd.it:8080/asit-maldura/pages/search.jsp,TRUE,http://asit.maldura.unipd.it/,TRUE,,FALSE,La pagina del portale non fuznionava. Dopo 30 min funziona. Probabilmente c'è un server che entra in funziona a richiesta.
 The “Verbo-Visual Virtual” Platform,The ‘Verbo-Visual Virtual’ Platform for Digitizing and Navigating Cultural Heritage Collections,http://www.verbovisualevirtuale.org/,TRUE,,FALSE,,FALSE,
 Dante: A Web Application for the History of Art,Dante. A Web Application for the History of Art,https://dante.beniculturali.unipd.it/dante-web/,TRUE,,FALSE,,FALSE,Protetto da accesso.
-Open Philology Project,L’Open Philology Project dell’Università di Lipsia. Per una filologia ‘sostenibile’ in un mondo globale,,FALSE,http://openphilology.org/,TRUE,,FALSE,Coming soon LOL
+Open Philology Project,L’Open Philology Project dell’Università di Lipsia. Per una filologia ‘sostenibile’ in un mondo globale,,FALSE,http://openphilology.org/,TRUE,,FALSE,Coming soon
 Progetto Mambrino,Progetto Mambrino: Metodologie e prospettive di un’edizione digitale,https://www.mambrino.it/it,TRUE,,FALSE,,FALSE,
 TRANSSCRIPT,Il progetto ANR TRANSSCRIPT Writing and Gover- nance. Cultural Transfers between France and the Em- pire (13th-16th centuries),https://anr.fr/Project-ANR-14-CE31-0022,FALSE,,FALSE,,FALSE,
 Illuminated Dante Project (IDP),Illuminated Dante Project (IDP): Una startup per la digitalizzazione e l’analisi della più antica iconografia dantesca (secc. XIV-XV),https://www.dante.unina.it/ndp/public/frontend,TRUE,,FALSE,,FALSE,
@@ -21,7 +21,7 @@ Epigraphs of Castello Ursino Museum,. Un museo epigrafico digitale per visitator
 Epistolario De Gasperi,"Per un’edizione online dell’Epistolario di Alcide De Gasperi. Criteri di
 digitalizzazione, schedatura, regestazione ed edizione di lettere del Novecento",https://www.epistolariodegasperi.it/#/archivio_digitale/lettere,TRUE,,FALSE,www.epistolariodegasperi.it,TRUE,
 Linking Latin,"LiLa: Linking Latin. Building a Knowledge Base of
-Linguistic Resources for Latin",https://lila-erc.eu/LiLaLisp/,TRUE,,FALSE,https://lila-erc.eu/#about-1,TRUE,Sparql endpoint https://lila-erc.eu/sparql/. non si capisce un cazzo
+Linguistic Resources for Latin",https://lila-erc.eu/LiLaLisp/,TRUE,,FALSE,https://lila-erc.eu/#about-1,TRUE,Sparql endpoint https://lila-erc.eu/sparql/. di difficile comprensione
 Ecodigit,"EcoDigit
 Ecosistema Digitale per la fruizione e la valorizzazione dei beni e delle
 attività culturali del Lazio",https://ecodigit.dtclazio.it/,FALSE,https://dtclazio.it/progetto-ecodigit,TRUE,,FALSE,

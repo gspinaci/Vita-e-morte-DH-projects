@@ -1,7 +1,7 @@
 """Genera report Markdown in italiano dalle due survey qualitative.
 
-Input:  data/qualitative/progetti-morti.csv, data/qualitative/progetti-vivi.csv
-Output: reports/qualitative/report-progetti-morti.md, reports/qualitative/report-progetti-vivi.md
+Input:  data/qualitative/survey_discontinued_projects.csv, data/qualitative/survey_active_projects.csv
+Output: reports/qualitative/report-progetti-cessati.md, reports/qualitative/report-progetti-attivi.md
 
     python -m dhlife qualitative
 """
@@ -16,10 +16,10 @@ from dhlife import paths
 DATA_DIR = paths.QUALITATIVE_DATA
 OUT_DIR = paths.QUALITATIVE_REPORTS
 
-MORTI_CSV = DATA_DIR / "progetti-morti.csv"
-VIVI_CSV = DATA_DIR / "progetti-vivi.csv"
+DISCONTINUED_CSV = DATA_DIR / "survey_discontinued_projects.csv"
+ACTIVE_CSV = DATA_DIR / "survey_active_projects.csv"
 
-MORTI_D2_FACTORS = [
+DISCONTINUED_D2_FACTORS = [
     "Finanziamento insufficiente o temporaneo",
     "Perdita di personale chiave",
     "Obsolescenza tecnologica (bit rot)",
@@ -136,7 +136,30 @@ def fmt_likert_table(likerts: dict[str, dict]) -> str:
     return "\n".join(lines)
 
 
-def report_morti(rows: list[list[str]]) -> str:
+CAUSE_GROUPS = {  # survey answer -> (English label, Cause of Ending category of the taxonomy)
+    "Fine del finanziamento senza un piano di continuazione":
+        ("End of funding\n(no continuation\nplan)", "Financial"),
+    "Ristrutturazione istituzionale o mancanza di supporto da parte dell'istituzione":
+        ("Institutional\nrestructuring /\nlack of support", "Institutional"),
+    'Abbandono del progetto da parte del personale chiave ("orphaning")':
+        ("Orphaning\n(loss of key\npersonnel)", "Institutional"),
+    "Obsolescenza tecnologica (software, framework o formati non più supportati)":
+        ("Technological\nobsolescence", "Technological"),
+}
+
+
+def cause_shares() -> dict[str, tuple[int, Counter]]:
+    """Selections of the ``CAUSE_GROUPS`` causes: anticipated by active projects (D3)
+    and reported by discontinued ones (D1), as ``{group: (respondents, counts)}``."""
+    shares = {}
+    for name, path, idx in (("active", ACTIVE_CSV, 19), ("discontinued", DISCONTINUED_CSV, 15)):
+        rows = read_rows(path)
+        c = multi_counts(col(rows, idx))
+        shares[name] = (len(rows), Counter({k: c[k] for k in CAUSE_GROUPS}))
+    return shares
+
+
+def report_discontinued(rows: list[list[str]]) -> str:
     n = len(rows)
     roles = counts(col(rows, 0))
     institutions = counts(col(rows, 1))
@@ -159,7 +182,7 @@ def report_morti(rows: list[list[str]]) -> str:
 
     d1_causes = multi_counts(col(rows, 15))
     d2_by_factor = {
-        f: likert_stats(col(rows, 16 + i)) for i, f in enumerate(MORTI_D2_FACTORS)
+        f: likert_stats(col(rows, 16 + i)) for i, f in enumerate(DISCONTINUED_D2_FACTORS)
     }
     d3_mode = counts(col(rows, 29))
     d4 = counts(col(rows, 30))
@@ -203,7 +226,7 @@ def report_morti(rows: list[list[str]]) -> str:
     if d1_causes:
         top_cause, top_cause_n = d1_causes.most_common(1)[0]
         patterns.append(
-            f"Causa di discontinuazione più ricorrente (D1): **{top_cause}** "
+            f"Causa di cessazione più ricorrente (D1): **{top_cause}** "
             f"({top_cause_n} menzioni su {n} risposte)."
         )
 
@@ -213,7 +236,7 @@ def report_morti(rows: list[list[str]]) -> str:
             f"| {f} | {s['n']} | {s['media']:.2f} | {s['mediana']:.1f} | {s['moda']} |"
         )
 
-    return f"""# Report — Progetti DH discontinuati (`progetti-morti.csv`)
+    return f"""# Report — Progetti DH cessati (`survey_discontinued_projects.csv`)
 
 _Analisi automatica generata da `analyze_surveys.py`._
 
@@ -256,14 +279,14 @@ _Analisi automatica generata da `analyze_surveys.py`._
 
 ## 5. Fine vita e fattori di rischio
 
-- Cause principali di discontinuazione (D1, risposta multipla):
+- Cause principali di cessazione (D1, risposta multipla):
 {fmt_counter(d1_causes, n)}
 
 - Fattori di rischio D2 ordinati per gravità media percepita:
 
 {chr(10).join(d2_lines)}
 
-- Modalità di discontinuazione (D3):
+- Modalità di cessazione (D3):
 {fmt_counter(d3_mode, n)}
 - Presenza di segnali premonitori (D4):
 {fmt_counter(d4, n)}
@@ -276,7 +299,7 @@ _Analisi automatica generata da `analyze_surveys.py`._
 """
 
 
-def report_vivi(rows: list[list[str]]) -> str:
+def report_active(rows: list[list[str]]) -> str:
     n = len(rows)
     roles = counts(col(rows, 0))
     institutions = counts(col(rows, 1))
@@ -330,7 +353,7 @@ def report_vivi(rows: list[list[str]]) -> str:
         )
     if d3_causes:
         top3 = ", ".join(f"_{k}_ ({v})" for k, v in d3_causes.most_common(3))
-        patterns.append(f"Top 3 cause di discontinuazione attese (D3): {top3}.")
+        patterns.append(f"Top 3 cause di cessazione attese (D3): {top3}.")
     d1_yes = d1_incidents.get("Sì", 0)
     if d1_yes:
         patterns.append(
@@ -348,7 +371,7 @@ def report_vivi(rows: list[list[str]]) -> str:
         "\n".join(f"  - _{m}_" for m in d1a_motivi) if d1a_motivi else "  _nessuna motivazione testuale fornita_"
     )
 
-    return f"""# Report — Progetti DH attivi (`progetti-vivi.csv`)
+    return f"""# Report — Progetti DH attivi (`survey_active_projects.csv`)
 
 _Analisi automatica generata da `analyze_surveys.py`._
 
@@ -399,7 +422,7 @@ _Analisi automatica generata da `analyze_surveys.py`._
 {motivi_block}
 - D2 — probabilità percepita di future problematiche di mantenimento (Likert 1–5):
 {("  - n=" + str(d2_prob['n']) + ", media **" + f"{d2_prob['media']:.2f}" + "**, mediana " + f"{d2_prob['mediana']:.1f}" + ", moda " + str(d2_prob['moda'])) if d2_prob else "  _nessun dato_"}
-- D3 — cause attese di possibile discontinuazione (risposta multipla):
+- D3 — cause attese di possibile cessazione (risposta multipla):
 {fmt_counter(d3_causes, n)}
 - D4 — presenza di segnali premonitori:
 {fmt_counter(d4, n)}
@@ -413,14 +436,14 @@ _Analisi automatica generata da `analyze_surveys.py`._
 
 
 def main(argv=None) -> None:
-    morti_rows = read_rows(MORTI_CSV)
-    vivi_rows = read_rows(VIVI_CSV)
+    discontinued_rows = read_rows(DISCONTINUED_CSV)
+    active_rows = read_rows(ACTIVE_CSV)
 
-    (OUT_DIR / "report-progetti-morti.md").write_text(report_morti(morti_rows), encoding="utf-8")
-    (OUT_DIR / "report-progetti-vivi.md").write_text(report_vivi(vivi_rows), encoding="utf-8")
+    (OUT_DIR / "report-progetti-cessati.md").write_text(report_discontinued(discontinued_rows), encoding="utf-8")
+    (OUT_DIR / "report-progetti-attivi.md").write_text(report_active(active_rows), encoding="utf-8")
 
-    print(f"Scritti: report-progetti-morti.md ({len(morti_rows)} risposte), "
-          f"report-progetti-vivi.md ({len(vivi_rows)} risposte)")
+    print(f"Scritti: report-progetti-cessati.md ({len(discontinued_rows)} risposte), "
+          f"report-progetti-attivi.md ({len(active_rows)} risposte)")
 
 
 if __name__ == "__main__":

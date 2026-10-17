@@ -29,7 +29,7 @@ Package [src/dhlife/](src/dhlife/); every stage is a subcommand, `python -m dhli
   `qualitative/`, `proceedings/` (experimental GROBID + LLM URL extraction).
 
 Data layers in [data/](data/README.md): `sources/` (frozen Google Sheet snapshot + cleaned
-CSVs) → `curated/projects.csv` (hand-edited, source of truth) → `processed/` (generated) →
+CSVs) → `curated/italian_dh_projects.csv` (hand-edited, source of truth) → `processed/` (generated) →
 `release/` (Zenodo files, never edited). Outputs of `stats`/`charts`/`qualitative` go to
 `reports/`.
 

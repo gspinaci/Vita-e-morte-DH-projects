@@ -1,15 +1,16 @@
 """Crawl the websites of Italian DH centres for links that look like projects.
 
-    python -m dhlife crawl            # data/sources/dh_centers.csv -> data/sources/dh_center_projects_crawled.csv
+    python -m dhlife crawl            # data/sources/italian_dh_centres.csv -> data/sources/italian_dh_centres_crawled_links.csv
 
 A link is kept when its text or URL contains one of ``KEYWORDS`` (links inside modal
 dialogs are searched too; hidden links and social networks are skipped). For the
 institutions in ``LIST_PAGE_INSTITUTIONS`` the given URL already *is* the project
 list, so it is recorded as is. The output is a candidate list for manual curation
-(the curated result is ``dh_center_projects.csv``), not a list of projects.
+(the curated result is ``italian_dh_centres_projects.csv``), not a list of projects.
 """
 
 import argparse
+from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 import pandas as pd
@@ -105,8 +106,8 @@ def crawl_center(center) -> list[dict]:
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--input", type=paths.Path, default=paths.SOURCES / "dh_centers.csv")
-    parser.add_argument("--output", type=paths.Path, default=paths.SOURCES / "dh_center_projects_crawled.csv")
+    parser.add_argument("--input", type=Path, default=paths.SOURCES / "italian_dh_centres.csv")
+    parser.add_argument("--output", type=Path, default=paths.SOURCES / "italian_dh_centres_crawled_links.csv")
     args = parser.parse_args(argv)
 
     centers = pd.read_csv(args.input)

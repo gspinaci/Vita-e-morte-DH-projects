@@ -13,11 +13,10 @@ DATA_DIR = paths.QUALITATIVE_DATA
 AUDIT_DIR = DATA_DIR / ".audit"
 
 
-def main():
-
+def main(argv=None):
     AUDIT_DIR.mkdir(exist_ok=True)
 
-    for fname in ["progetti-morti.csv", "progetti-vivi.csv"]:
+    for fname in ["survey_discontinued_projects.csv", "survey_active_projects.csv"]:
         csv_path = DATA_DIR / fname
         audit_path = AUDIT_DIR / f".{fname}.timestamps"
 
@@ -25,10 +24,14 @@ def main():
         if not rows:
             continue
 
-        # Header: rimuovi "Informazioni cronologiche"
+        # Header: rimuovi "Informazioni cronologiche". Se manca, il file è già stato
+        # anonimizzato: non toccarlo (altrimenti si perderebbe la prima colonna di risposte
+        # e si sovrascriverebbe l'audit trail).
         header = rows[0]
-        if header and header[0].strip() == "Informazioni cronologiche":
-            header = header[1:]
+        if not header or header[0].strip() != "Informazioni cronologiche":
+            print(f"- {fname}: nessun timestamp, già anonimizzato")
+            continue
+        header = header[1:]
 
         # Data rows: estrai timestamp (col 0) e dati (col 1+)
         data_rows = []

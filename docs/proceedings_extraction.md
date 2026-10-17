@@ -1,8 +1,8 @@
 # Project URLs from conference proceedings (experimental)
 
 A two-phase pipeline that finds the project URL of each article of a proceedings volume
-(AIUCD, IRCDL). It was used to help build `data/sources/aiucd_proceedings.csv` and
-`ircdl_proceedings.csv`; its output was always checked by hand.
+(AIUCD, IRCDL). It was used to help build `data/sources/aiucd_proceedings_projects.csv` and
+`ircdl_proceedings_articles.csv`; its output was always checked by hand.
 
 ```
 proceedings.pdf ─grobid-parse─▶ article_NNNN.json (title, authors, abstract, footnotes) ─extract-urls─▶ project_urls.json

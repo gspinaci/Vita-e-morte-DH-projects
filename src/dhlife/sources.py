@@ -1,10 +1,12 @@
 """Turn the frozen Google Sheet snapshot into clean, English, one-table-per-file source CSVs.
 
 The working spreadsheet (see ``data/sources/README.md``) is frozen: it is snapshotted
-once as ``data/sources/raw/google_sheet_<date>.xlsx`` and never read at analysis time.
-This module only keeps the *source* tabs (where candidate projects came from) and the
-last-seen corrections; the many superseded "Lista finale" tabs are left in the raw
-snapshot for provenance.
+once as ``data/sources/raw/working_sheet_snapshot_<date>.xlsx`` and never read at analysis time.
+This module only keeps the *source* tabs (where candidate projects came from); the many
+superseded "Lista finale" tabs are left in the raw snapshot for provenance.
+
+The ``dead_projects`` tab was extracted once to ``data/curated/last_seen_manual_corrections.csv``,
+which is now edited by hand and deliberately not rewritten here.
 
     python -m dhlife sources                 # rebuild CSVs from the committed snapshot
     python -m dhlife sources --download      # take a fresh snapshot first
@@ -28,6 +30,13 @@ EXPORT_URL = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=x
 TRUE_VALUES = {"true", "sì", "si", "yes", "y"}
 FALSE_VALUES = {"false", "no", "n"}
 
+# Informal internal remarks in the sheet's notes, reworded for the public CSVs
+# (the raw snapshot is left as it is).
+NOTE_REWORDING = {
+    "Coming soon LOL": "Coming soon",
+    "non si capisce un cazzo": "di difficile comprensione",
+}
+
 log = logging.getLogger(__name__)
 
 
@@ -40,19 +49,18 @@ class Tab:
     columns: dict[str, str]  # sheet header -> output column (only these are kept)
     keys: list[str]  # a row is kept if at least one of these is non-empty
     booleans: list[str] = field(default_factory=list)
-    destination: Path = paths.SOURCES
 
 
 TABS = [
     Tab(
         "DH Awards",
-        "dh_awards.csv",
+        "dh_awards_all_nominees.csv",
         {"Year": "year", "Category": "category", "Title": "title", "URL": "url"},
         keys=["title", "url"],
     ),
     Tab(
         "DH Awards (Italians)",
-        "dh_awards_italian.csv",
+        "dh_awards_italian_nominees.csv",
         {
             "Year": "year",
             "Category": "category",
@@ -70,7 +78,7 @@ TABS = [
     ),
     Tab(
         "Proceedings AIUCD",
-        "aiucd_proceedings.csv",
+        "aiucd_proceedings_projects.csv",
         {
             "Title": "title",
             "Article Title": "article_title",
@@ -87,7 +95,7 @@ TABS = [
     ),
     Tab(
         "IRCDL",
-        "ircdl_proceedings.csv",
+        "ircdl_proceedings_articles.csv",
         {
             "Year": "year",
             "IRCDL program": "program_url",
@@ -104,25 +112,25 @@ TABS = [
     ),
     Tab(
         "KNOT aggregator",
-        "knot_catalogue.csv",
+        "knot_all_homepages.csv",
         {"s": "knot_uri", "o": "homepage"},  # SPARQL: ?s foaf:homepage ?o
         keys=["knot_uri"],
     ),
     Tab(
         "KNOT finale",
-        "knot_projects.csv",
+        "knot_selected_projects.csv",
         {"Titolo": "knot_uri", "URL progetto": "project_url"},
         keys=["knot_uri", "project_url"],
     ),
     Tab(
         "Centri DH",
-        "dh_centers.csv",
+        "italian_dh_centres.csv",
         {"Categoria": "category", "Nome": "name", "Luogo": "location", "URL": "urls"},
         keys=["name", "urls"],
     ),
     Tab(
         "dh italian projects",
-        "dh_center_projects.csv",
+        "italian_dh_centres_projects.csv",
         {
             "categoria": "category",
             "institution": "institution",
@@ -135,20 +143,6 @@ TABS = [
         },
         keys=["institution", "project_name", "project_url"],
         booleans=["still_exists"],
-    ),
-    Tab(
-        "dead_projects",
-        "last_seen_corrections.csv",
-        {
-            "tre": "title",  # header typo in the sheet
-            "URL progetto": "project_url",
-            "URL progetto First_Seen": "wayback_first_seen",
-            "URL progetto Last_Seen": "wayback_last_seen",
-            "CORRECT LAST SEEN": "correct_last_seen",
-            "NOTE": "notes",
-        },
-        keys=["correct_last_seen"],
-        destination=paths.CURATED,
     ),
 ]
 
@@ -171,13 +165,16 @@ def clean(raw: pd.DataFrame, tab: Tab) -> pd.DataFrame:
     df = df[df[tab.keys].notna().any(axis=1)]
     for col in tab.booleans:
         df[col] = df[col].map(to_bool)
+    if "notes" in df:
+        for informal, neutral in NOTE_REWORDING.items():
+            df["notes"] = df["notes"].str.replace(informal, neutral, regex=False)
     if "urls" in df:  # several URLs per cell, normalise the separator
         df["urls"] = df["urls"].str.replace(r"\s*;\s*", "; ", regex=True)
     return df.reset_index(drop=True)
 
 
 def download(target_dir: Path) -> Path:
-    target = target_dir / f"google_sheet_{dt.date.today().isoformat()}.xlsx"
+    target = target_dir / f"working_sheet_snapshot_{dt.date.today().isoformat()}.xlsx"
     resp = requests.get(EXPORT_URL, timeout=120)
     resp.raise_for_status()
     target.write_bytes(resp.content)
@@ -191,9 +188,9 @@ def build(snapshot: Path) -> None:
         book = pd.read_excel(snapshot, sheet_name=[t.sheet for t in TABS], dtype=str)
     for tab in TABS:
         df = clean(book[tab.sheet], tab)
-        tab.destination.mkdir(parents=True, exist_ok=True)
-        df.to_csv(tab.destination / tab.output, index=False)
-        log.info("%-24s -> %s (%d rows)", tab.sheet, tab.destination / tab.output, len(df))
+        paths.SOURCES.mkdir(parents=True, exist_ok=True)
+        df.to_csv(paths.SOURCES / tab.output, index=False)
+        log.info("%-24s -> %s (%d rows)", tab.sheet, paths.SOURCES / tab.output, len(df))
 
 
 def main(argv=None):

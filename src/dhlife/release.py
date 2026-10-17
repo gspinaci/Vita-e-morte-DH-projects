@@ -3,22 +3,24 @@
     python -m dhlife release --version 04
 
 Writes ``data/release/DH_Projects_Survey_<YYYYMMDD>_v<version>.csv``: curated and archive
-columns in the public schema order, ``;``-separated (as all previous releases).
+columns, named as in the Zenodo documentation (``schema.RELEASE_NAMES``), ``;``-separated (as all previous releases).
 Use UTF-8 (default); ``--encoding cp1252`` matches the v03 file,
 but replaces characters cp1252 cannot encode (e.g. "ś", "ł") with "?".
 """
 
 import argparse
 import datetime as dt
+from pathlib import Path
 
 from dhlife import paths
-from dhlife.schema import BOOLEAN_COLUMNS, RELEASE_COLUMNS, read_projects
+from dhlife.schema import BOOLEAN_COLUMNS, RELEASE_COLUMNS, RELEASE_NAMES, read_projects
 
 
 def build(input_path, output_path, encoding="utf-8", sep=";"):
     df = read_projects(input_path)[RELEASE_COLUMNS]
     for col in BOOLEAN_COLUMNS:
         df[col] = df[col].map({True: "TRUE", False: "FALSE"})
+    df = df.rename(columns=RELEASE_NAMES)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding=encoding, errors="replace", newline="") as f:
         df.to_csv(f, sep=sep, index=False)
@@ -29,7 +31,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--version", required=True, help="release number, e.g. 04")
     parser.add_argument("--date", default=dt.date.today().strftime("%Y%m%d"), help="YYYYMMDD (default: today)")
-    parser.add_argument("--input", type=paths.Path, default=paths.PROJECTS_ARCHIVE)
+    parser.add_argument("--input", type=Path, default=paths.PROJECTS_ARCHIVE)
     parser.add_argument("--encoding", default="utf-8")
     args = parser.parse_args(argv)
     output = paths.RELEASE / f"DH_Projects_Survey_{args.date}_v{args.version}.csv"

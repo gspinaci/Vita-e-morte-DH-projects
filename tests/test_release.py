@@ -1,7 +1,7 @@
 import pandas as pd
 
 from dhlife import release
-from dhlife.schema import RELEASE_COLUMNS, write_projects
+from dhlife.schema import RELEASE_COLUMNS, RELEASE_NAMES, write_projects
 
 
 def test_build_utf8(tmp_path, projects):
@@ -10,9 +10,10 @@ def test_build_utf8(tmp_path, projects):
     write_projects(projects, src)
     release.build(src, out)
     df = pd.read_csv(out, sep=";", dtype=str, encoding="utf-8")
-    assert df.columns.tolist() == RELEASE_COLUMNS
+    assert df.columns.tolist() == [RELEASE_NAMES.get(c, c) for c in RELEASE_COLUMNS]
+    assert {"functioning_websites", "non_redirected_website", "new_websites_url"} <= set(df.columns)
     assert df.loc[0, "title"] == "Progetto śivadharma"
-    assert df["functioning_website"].tolist() == ["TRUE", "FALSE", "FALSE", "FALSE"]
+    assert df["functioning_websites"].tolist() == ["TRUE", "FALSE", "FALSE", "FALSE"]
 
 
 def test_build_cp1252_replaces_unencodable(tmp_path, projects):

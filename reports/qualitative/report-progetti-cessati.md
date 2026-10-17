@@ -1,4 +1,4 @@
-# Report — Progetti DH discontinuati (`progetti-morti.csv`)
+# Report — Progetti DH cessati (`survey_discontinued_projects.csv`)
 
 _Analisi automatica generata da `analyze_surveys.py`._
 
@@ -78,7 +78,7 @@ _Analisi automatica generata da `analyze_surveys.py`._
 
 ## 5. Fine vita e fattori di rischio
 
-- Cause principali di discontinuazione (D1, risposta multipla):
+- Cause principali di cessazione (D1, risposta multipla):
 - Fine del finanziamento senza un piano di continuazione: **9** (75%)
 - Ristrutturazione istituzionale o mancanza di supporto da parte dell'istituzione: **6** (50%)
 - Abbandono del progetto da parte del personale chiave ("orphaning"): **3** (25%)
@@ -108,7 +108,7 @@ _Analisi automatica generata da `analyze_surveys.py`._
 | Mancato rinnovo del dominio o dell'hosting | 12 | 1.83 | 1.0 | 1 |
 | Scarsa interoperabilità con altri sistemi | 11 | 1.82 | 2.0 | 1 |
 
-- Modalità di discontinuazione (D3):
+- Modalità di cessazione (D3):
 - Gradualmente (es. lento deterioramento, manutenzione irregolare, progressiva inaccessibilità): **4** (33%)
 - Improvvisamente (es. guasto del server, taglio dei fondi senza preavviso): **4** (33%)
 - Come conclusione pianificata: **2** (17%)
@@ -130,4 +130,4 @@ _Analisi automatica generata da `analyze_surveys.py`._
 - La pianificazione di sostenibilità iniziale (C1) risulta **debole** (media 2.67/5).
 - Nel **83%** dei casi l'ente finanziatore **non** ha richiesto un piano di sostenibilità o di gestione dei dati (C6).
 - Top 3 fattori di rischio per gravità percepita (D2): _Mancanza di supporto istituzionale_ (media 3.83), _Finanziamento insufficiente o temporaneo_ (media 3.75), _Assenza di pianificazione della sostenibilità_ (media 3.58).
-- Causa di discontinuazione più ricorrente (D1): **Fine del finanziamento senza un piano di continuazione** (9 menzioni su 12 risposte).
+- Causa di cessazione più ricorrente (D1): **Fine del finanziamento senza un piano di continuazione** (9 menzioni su 12 risposte).

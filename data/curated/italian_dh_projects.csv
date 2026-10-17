@@ -113,11 +113,11 @@ Bibliotheca Hertziana,Rara,https://rara.biblhertz.it/,TRUE,FALSE,FALSE,FALSE,FAL
 Università di Bologna,Ragu project,https://raguproject.github.io/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,https://raguproject.github.io/,FALSE,AIUCD,,
 Bibliotheca Hertziana,Project 3d Bridge,https://wissensgeschichte.biblhertz.it/3d-bridge-html/index3D.html,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,
 Accademia della Crusca,Progetto viver,https://testi.progettoviver.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,
-Università di Verona,Progetto Mambrino,https://www.mambrino.it/it,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,
+Università di Verona,Progetto Mambrino,https://www.mambrino.it/it,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,"resolves, then error 404"
 Università di Catania,Poichilia,https://poichilia.unict.it,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,
 Università di Catania,Pirandello nazionale,https://www.pirandellonazionale.it/opere/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,https://www.pirandellonazionale.it/,TRUE,AIUCD,,
-Università di Bologna,philoeditor,http://projects.dharc.unibo.it/philoeditor/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,
-I Tatti - The Harvard University. Center For Italian Renaissance Studies; University of Bologna; Kunsthistoriches Institut in Florenz; Bibliotheca Hertziana,Pharos,https://pharosartresearch.org/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,
+Università di Bologna,philoeditor,http://projects.dharc.unibo.it/philoeditor/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,work in progress (ending in May 2025)
+I Tatti - The Harvard University. Center For Italian Renaissance Studies; University of Bologna; Kunsthistoriches Institut in Florenz; Bibliotheca Hertziana,Pharos,https://pharosartresearch.org/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,access denied
 Indiana University,Petrarchive,https://dcl.luddy.indiana.edu/petrarchive/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,AIUCD,,
 Bibliotheca Hertziana,Perspectiva,https://dlib.biblhertz.it/perspectiva/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,Italian DH Institutions,,
 Università di Pisa,Pelavicino,http://pelavicino.labcd.unipi.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,
@@ -252,7 +252,7 @@ ISTC-CNR,arco,http://wit.istc.cnr.it/arco/index.php?lang=en,TRUE,FALSE,FALSE,FAL
 ,Archivio Università Castrense,https://archivio.universitacastrense.eu/,TRUE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,FALSE,AIUCD,,
 Università degli studi di Torino; Teche Rai.,Archivio Musicale dell'Orchestra Sinfonica Nazionale della Rai,http://www.osn.teche.rai.it/Default.aspx,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/rai-orchestra-project,
 Università Ca' Foscari Venezia,Archivio fonti orali,https://pric.unive.it/progetti/archivio-fonti-orali/home,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,Italian DH Institutions,,
-"Istituto di Linguistica Computazionale ""A. Zampolli"" (ILC-CNR)",Archivio Elettronico delle Opere di Carlo Emilio Gadda,http://dbtvm1.ilc.cnr.it/Gadda/,TRUE,FALSE,FALSE,FALSE,TRUE,,,,,,KNOT,http://purl.org/knot/data/gadda-archive-project,
+"Istituto di Linguistica Computazionale ""A. Zampolli"" (ILC-CNR)",Archivio Elettronico delle Opere di Carlo Emilio Gadda,http://dbtvm1.ilc.cnr.it/Gadda/,TRUE,FALSE,FALSE,FALSE,TRUE,,,,,,KNOT,http://purl.org/knot/data/gadda-archive-project,"already listed, but its different links are interesting"
 Università di Cagliari,Archivio digitale del Risorgimento in Sardegna,https://storia.dh.unica.it/archiviodigitalerisorgimento/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/archivio-risorgimento-sardegna-project,
 "Università degli studi di Roma ""La Sapienza""; Università Cattolica del Sacro Cuore del Sacro Cuore; Università degli studi di Torino; Università degli studi di Padova; Università degli Studi di Urbino Carlo Bo; Università degli studi della Tuscia; Università degli studi di Bergamo; Royal Netherlands Institute in Rome.",Archilet - archivio delle corrispondenze letterarie di età moderna,http://www.archilet.it/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/archilet-project,
 Accademia della Crusca,ArchiDATA - Archivio di (retro)datazioni lessicali,https://www.archidata.info/,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,KNOT,http://purl.org/knot/data/archidata-project,

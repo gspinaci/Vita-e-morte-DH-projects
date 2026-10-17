@@ -1,9 +1,18 @@
 # Data dictionary
 
-Schema of the project dataset: `data/curated/projects.csv` (columns 1–16),
-`data/processed/projects_archive_2026.csv` and the release files in `data/release/`
-(all 24 columns). One row per project. The column names are the public schema of the
-[Zenodo release](https://doi.org/10.5281/zenodo.15551857) and must stay stable.
+Schema of the project dataset: `data/curated/italian_dh_projects.csv` (columns 1–16),
+`data/processed/italian_dh_projects_wayback_check_2026.csv` and the release files in
+`data/release/` (all 24 columns). One row per project. The column names are the public schema
+of the [Zenodo release](https://doi.org/10.5281/zenodo.15551857) and must stay stable.
+
+From v04 the release file uses the names of the Zenodo documentation for three columns
+(`schema.RELEASE_NAMES`); the repository files keep the internal names:
+
+| internal name (this page) | name in the release from v04 |
+|---|---|
+| `functioning_website` | `functioning_websites` |
+| `not_redirected_website` | `non_redirected_website` |
+| `new_website_url` | `new_websites_url` |
 
 Booleans are written `TRUE` / `FALSE`; an empty boolean means "not assessed".
 
@@ -14,12 +23,12 @@ Booleans are written `TRUE` / `FALSE`; an empty boolean means "not assessed".
 | `institution` | text | Main institution, or collaboration of institutions, responsible for the project. Empty when none is identified or clearly stated. |
 | `title` | text | Project title. For crawled projects usually the website title; otherwise taken by hand from the proceedings or from the source catalogue. |
 | `project_url` | URL | Where the project (its data/edition, not a description of it) is accessible. Empty = no project website could be found. |
-| `functioning_website` | bool | The website works. Manual assessment; this is the ground truth for "alive". |
+| `functioning_website` | bool | The website works. Manual assessment; this is the ground truth for "active". |
 | `website_not_found` | bool | No project website could be found (`project_url` is empty). |
 | `non_functioning_website` | bool | The URL is known but the website does not work (404, expired domain, outdated HTTPS, …). |
-| `not_redirected_website` | bool | The original URL is dead and does not redirect to the project's new address. |
-| `partially_unaccessible_website` | bool | The website is reachable but parts of it do not work (Flash, broken visualisations, failing search, …). |
-| `new_website_url` | URL | Address the project migrated to, if any. A non-empty value means the project is *migrated*: alive, but not at `project_url`. |
+| `not_redirected_website` | bool | The original URL no longer resolves and does not redirect to the project's new address. |
+| `partially_unaccessible_website` | bool | The website is reachable but parts of it do not work (Flash, broken visualisations, failing search, …). The spelling *unaccessible* is kept for compatibility; the taxonomy term is *partially accessible*. |
+| `new_website_url` | URL | Address the project migrated to, if any. A non-empty value means the project is *migrated*: active, but not at `project_url`. |
 | `url_showcase` | URL | Showcase page: a presentation of goals and team, not the project content. Not considered representative of the project. |
 | `url_showcase_working` | bool | The showcase URL resolves. |
 | `url_landing_page` | URL | Landing page associated with the project, which may not contain the project data. |
@@ -48,13 +57,17 @@ failed (DNS error, timeout, TLS error, …). An empty date with a valid URL mean
 Machine has no usable snapshot.
 
 The analysis replaces `url_last_seen` with a manually verified date for the projects listed
-in `data/curated/last_seen_corrections.csv` (the Wayback last-seen can be a snapshot of an
+in `data/curated/last_seen_manual_corrections.csv` (the Wayback last-seen can be a snapshot of an
 error page served with status 200).
+
+## Encoding
+
+Releases from v04 are UTF-8, `;`-separated. `DH_Projects_Survey_20260614_v03.csv` (Zenodo
+v1.2.0) is cp1252 with mixed CRLF/LF line endings: read it with `encoding="cp1252"`.
 
 ## Known differences with the Zenodo description (v1.2.0)
 
-The description on Zenodo has some names that differ from the actual columns:
-`functioning_websites` → `functioning_website`, `non_redirected_website` →
-`not_redirected_website`, `new_websites_url` → `new_website_url`. It does not describe
+Releases v01–v03 use the internal names, not the documented `functioning_websites`,
+`non_redirected_website`, `new_websites_url` (fixed from v04). The description does not describe
 `non_functioning_website` or `last_url_snapshot`, and it says `url_status_code` is the
 status of the Wayback Machine, when in fact it is the live status.

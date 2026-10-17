@@ -4,7 +4,7 @@ DHLIFE  = $(PYTHON) -m dhlife
 .PHONY: help install test sources crawl archive-check stats charts qualitative release analysis
 
 help:
-	@echo "make install         editable install with all extras"
+	@echo "make install         install pinned requirements (incl. the package)"
 	@echo "make test            run the unit tests"
 	@echo "make sources         rebuild data/sources/*.csv from the sheet snapshot"
 	@echo "make crawl           crawl the DH centres for project links"
@@ -12,33 +12,34 @@ help:
 	@echo "make stats charts    numbers and figures of the paper"
 	@echo "make qualitative     survey syntheses"
 	@echo "make release VERSION=04"
+	@echo "extra options: make <target> ARGS='--input x.csv'"
 
 install:
 	$(PYTHON) -m pip install -r requirements.txt
 
 test:
-	$(PYTHON) -m pytest
+	$(PYTHON) -m pytest $(ARGS)
 
 sources:
-	$(DHLIFE) sources
+	$(DHLIFE) sources $(ARGS)
 
 crawl:
-	$(DHLIFE) crawl
+	$(DHLIFE) crawl $(ARGS)
 
 archive-check:
-	$(DHLIFE) archive-check
+	$(DHLIFE) archive-check $(ARGS)
 
 stats:
-	$(DHLIFE) stats
+	$(DHLIFE) stats $(ARGS)
 
 charts:
-	$(DHLIFE) charts
+	$(DHLIFE) charts $(ARGS)
 
 analysis: stats charts
 
 qualitative:
-	$(DHLIFE) qualitative
+	$(DHLIFE) qualitative $(ARGS)
 
 release:
 	@test -n "$(VERSION)" || (echo "usage: make release VERSION=04" && exit 1)
-	$(DHLIFE) release --version $(VERSION)
+	$(DHLIFE) release --version $(VERSION) $(ARGS)

@@ -2,14 +2,17 @@
 
 Definitions used in the paper:
 
-* *functioning*: manual flag ``functioning_website`` — the ground truth for alive/dead.
+* *functioning*: manual flag ``functioning_website`` — the ground truth for active/ended.
   The archive status code is noisy and never used to classify projects.
 * *migrated*: ``new_website_url`` is set; the project lives on at another address and
   is counted as available, not as discontinued.
 * *unavailable in year Y*: not functioning, not migrated, last seen (after manual
   corrections) in year Y.
+
+``taxonomy`` maps these flags onto the taxonomy of the paper (§4.3).
 """
 
+import numpy as np
 import pandas as pd
 
 from dhlife import paths
@@ -61,17 +64,17 @@ def yearly_counts(df: pd.DataFrame) -> pd.DataFrame:
     ``df`` must have gone through ``add_years`` (and normally the corrections).
     """
     new = df.loc[df["year_first_seen"] != CURRENT_YEAR, "year_first_seen"].value_counts()
-    dead = df[
+    ended = df[
         df["url_last_seen_dt"].notna()
         & (df["functioning_website"] == False)  # noqa: E712 - NaN must not match
         & ~migrated(df)
         & (df["year_last_seen"] != CURRENT_YEAR)
     ]["year_last_seen"].value_counts()
-    years = sorted(set(new.index) | set(dead.index))
+    years = sorted(set(new.index) | set(ended.index))
     return pd.DataFrame({
         "year": [int(y) for y in years],
         "new": [int(new.get(y, 0)) for y in years],
-        "unavailable": [int(dead.get(y, 0)) for y in years],
+        "unavailable": [int(ended.get(y, 0)) for y in years],
     })
 
 
@@ -93,6 +96,32 @@ def growth_table(yearly: pd.DataFrame) -> pd.DataFrame:
 def discontinued(df: pd.DataFrame) -> pd.DataFrame:
     """Projects with a URL that is no longer reachable and that did not migrate."""
     return df[(df["website_not_found"] == False) & (df["functioning_website"] == False) & ~migrated(df)]  # noqa: E712
+
+
+def taxonomy(df: pd.DataFrame) -> pd.DataFrame:
+    """Project Status, Accessibility and Data Preservation (paper §4.3) from the manual flags.
+
+    * ``project_status``: ``never_published`` (no project URL), ``migrated`` (Transformed ›
+      Migrated: ``new_website_url`` set), ``active`` (functioning) or ``ended``.
+    * ``accessibility`` at ``project_url``: ``fully_accessible``, ``partially_accessible``
+      or ``inaccessible``; empty for never-published projects.
+    * ``data_preservation``: ``unknown`` (not assessed).
+
+    Categories the flags cannot tell apart (dormant, archived, restricted, planned vs.
+    unplanned ending, the other kinds of transformation) are not assigned.
+    """
+    has_url = df["project_url"].notna()
+    functioning = df["functioning_website"] == True  # noqa: E712
+    partial = df["partially_unaccessible_website"] == True  # noqa: E712
+    status = np.select([~has_url, migrated(df), functioning], ["never_published", "migrated", "active"], "ended")
+    accessibility = np.select(
+        [~has_url, functioning & ~partial, functioning & partial],
+        ["", "fully_accessible", "partially_accessible"], "inaccessible")
+    return pd.DataFrame({
+        "project_status": status,
+        "accessibility": pd.Series(accessibility, index=df.index).replace("", pd.NA),
+        "data_preservation": "unknown",
+    }, index=df.index)
 
 
 def lifespans(df: pd.DataFrame) -> pd.DataFrame:

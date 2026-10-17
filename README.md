@@ -7,21 +7,20 @@ Dataset and code for the study of the lifecycles of Italian Digital Humanities p
   Digitale): 270 projects.
 - *Life and Death of DH Projects: An Investigation of Their Lifecycles in Italy*, the extended
   version: 284 projects, a re-run of the archive check in 2026 and a qualitative survey of the
-  project teams.
+  project teams. (Under revision)
 
 The dataset is published on Zenodo as **Italian Digital Humanities Projects**,
-[doi:10.5281/zenodo.15551857](https://doi.org/10.5281/zenodo.15551857) (all versions;
-v1.2.0 = [10.5281/zenodo.23079655](https://doi.org/10.5281/zenodo.23079655)), CC-BY-4.0.
+[doi:10.5281/zenodo.15551857](https://doi.org/10.5281/zenodo.15551857) (all versions; latest, v04 = [10.5281/zenodo.23434566](https://doi.org/10.5281/zenodo.23434566); v1.2.0 = [10.5281/zenodo.23079655](https://doi.org/10.5281/zenodo.23079655)), CC-BY-4.0.
 See [`CITATION.cff`](CITATION.cff) for how to cite it.
 
 ## Pipeline
 
 ```
-Google Sheet (frozen) ──sources──▶ data/sources/*.csv ──(manual curation)──▶ data/curated/projects.csv
+Google Sheet (frozen) ──sources──▶ data/sources/*.csv ──(manual curation)──▶ data/curated/italian_dh_projects.csv
                                                                                    │
                                      Wayback CDX API + live HTTP ──archive-check───┘
                                                                                    ▼
-                                                            data/processed/projects_archive_2026.csv
+                                                            data/processed/italian_dh_projects_wayback_check_2026.csv
                                                               │            │             │
                                                            stats        charts        release
                                                               ▼            ▼             ▼
@@ -33,14 +32,14 @@ All steps are subcommands of one CLI, `dhlife` (or `python -m dhlife`):
 
 | command | what it does | reads → writes |
 |---|---|---|
-| `sources` | Clean the tabs of the frozen Google Sheet snapshot (`--download` takes a new one). | `data/sources/raw/*.xlsx` → `data/sources/*.csv`, `data/curated/last_seen_corrections.csv` |
-| `crawl` | Look for project links on the websites of Italian DH centres. | `data/sources/dh_centers.csv` → `data/sources/dh_center_projects_crawled.csv` |
-| `archive-check` | First/last Wayback Machine snapshot and live HTTP status of every project URL. Slow (Internet Archive rate limits). | `data/curated/projects.csv` → `data/processed/projects_archive_2026.csv` |
+| `sources` | Clean the tabs of the frozen Google Sheet snapshot (`--download` takes a new one). | `data/sources/raw/*.xlsx` → `data/sources/*.csv` (never touches `data/curated/`) |
+| `crawl` | Look for project links on the websites of Italian DH centres. | `data/sources/italian_dh_centres.csv` → `data/sources/italian_dh_centres_crawled_links.csv` |
+| `archive-check` | First/last Wayback Machine snapshot and live HTTP status of every project URL. Slow (Internet Archive rate limits). | `data/curated/italian_dh_projects.csv` → `data/processed/italian_dh_projects_wayback_check_2026.csv` |
 | `check-url URL` | The same check for one URL, with the list of snapshots (`--list`). | – |
-| `stats` | All the numbers of the paper (status, migrations, lifespans, yearly growth). | `data/processed/projects_archive_2026.csv` → `reports/stats.md`, `data/processed/{unavailable_projects,status_discrepancies}.csv` |
+| `stats` | All the numbers of the paper (status, migrations, lifespans, yearly growth). | `data/processed/italian_dh_projects_wayback_check_2026.csv` → `reports/stats.md`, `data/processed/{unavailable_projects_2026,live_status_vs_manual_check_2026}.csv` |
 | `charts` | The figures of the paper. | → `reports/figures/*.png` |
 | `release --version NN` | Build the Zenodo file (`;`-separated, UTF-8). | → `data/release/DH_Projects_Survey_<date>_vNN.csv` |
-| `qualitative` | Synthesis of the survey answers of live and dead projects. | `data/qualitative/*.csv` → `reports/qualitative/*.md` |
+| `qualitative` | Synthesis of the survey answers of active and discontinued projects. | `data/qualitative/*.csv` → `reports/qualitative/*.md` |
 | `grobid-parse`, `extract-urls` | Experimental: find project URLs in conference proceedings ([docs](docs/proceedings_extraction.md)). | |
 
 The `Makefile` wraps the common ones: `make install`, `make sources`, `make archive-check`,
@@ -63,9 +62,9 @@ make stats charts
 src/dhlife/            the package (one module per command; paths.py, schema.py, wayback.py, analysis.py)
 data/
   sources/             where the candidate projects come from (see data/sources/README.md)
-  curated/             hand-edited: projects.csv, last_seen_corrections.csv   ← the source of truth
+  curated/             hand-edited: italian_dh_projects.csv, last_seen_manual_corrections.csv   ← the source of truth
   processed/           generated by archive-check and stats
-  release/             files published on Zenodo
+  release/             files published on Zenodo (v01 = AIUCD 2025, v03 = Zenodo v1.2.0, v04 = zenodo.23434566)
   qualitative/         survey answers (anonymised; response timestamps kept in .audit/, not committed)
 reports/               generated statistics, figures and qualitative syntheses
 docs/                  data dictionary, proceedings extraction

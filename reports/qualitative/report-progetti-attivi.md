@@ -1,4 +1,4 @@
-# Report — Progetti DH attivi (`progetti-vivi.csv`)
+# Report — Progetti DH attivi (`survey_active_projects.csv`)
 
 _Analisi automatica generata da `analyze_surveys.py`._
 
@@ -97,7 +97,7 @@ _Analisi automatica generata da `analyze_surveys.py`._
   - _L'iniziale indisponibilità di un server del'Ente istituzionale pubblico. La difficoltà a mantenere in servizio al CNR personale precario adeguatamente formato_
 - D2 — probabilità percepita di future problematiche di mantenimento (Likert 1–5):
   - n=14, media **3.50**, mediana 3.5, moda 5
-- D3 — cause attese di possibile discontinuazione (risposta multipla):
+- D3 — cause attese di possibile cessazione (risposta multipla):
 - Obsolescenza tecnologica (software, framework o formati non più supportati): **9** (64%)
 - Abbandono del progetto da parte del personale chiave ("orphaning"): **8** (57%)
 - Fine del finanziamento senza un piano di continuazione: **6** (43%)
@@ -120,6 +120,6 @@ _Analisi automatica generata da `analyze_surveys.py`._
 - Modello di hosting più frequente: **Hosting esterno (es. hosting commerciale, VPS, cloud provider)** (43%).
 - La pianificazione di sostenibilità iniziale (C1) risulta **intermedia** (media 3.14/5).
 - Probabilità percepita di future problematiche di mantenimento (D2): media **3.50/5**, mediana 3.5.
-- Top 3 cause di discontinuazione attese (D3): _Obsolescenza tecnologica (software, framework o formati non più supportati)_ (9), _Abbandono del progetto da parte del personale chiave ("orphaning")_ (8), _Fine del finanziamento senza un piano di continuazione_ (6).
+- Top 3 cause di cessazione attese (D3): _Obsolescenza tecnologica (software, framework o formati non più supportati)_ (9), _Abbandono del progetto da parte del personale chiave ("orphaning")_ (8), _Fine del finanziamento senza un piano di continuazione_ (6).
 - Il **21%** dei progetti dichiara di aver già avuto episodi di accessibilità compromessa (D1).
 - Nel **71%** dei casi il finanziatore **non** ha richiesto un piano di sostenibilità (C6).

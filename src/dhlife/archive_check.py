@@ -4,8 +4,8 @@ For each of ``project_url`` and ``url_showcase`` four columns are (re)computed:
 first seen, last seen, live status code, link to the last snapshot
 (see ``dhlife.schema.ARCHIVE_COLUMNS``).
 
-    python -m dhlife archive-check                       # curated -> processed (~30 min)
-    python -m dhlife archive-check --output data/processed/projects_archive_2027.csv
+    python -m dhlife archive-check                       # curated -> processed (~1 hour)
+    python -m dhlife archive-check --output data/processed/italian_dh_projects_wayback_check_2027.csv
 
 If a Wayback lookup fails (network error, repeated 429s) the values from
 ``--previous`` are kept instead of being blanked.
@@ -16,6 +16,7 @@ import logging
 import sys
 import time
 from datetime import datetime
+from pathlib import Path
 
 import pandas as pd
 
@@ -97,9 +98,9 @@ def run(input_path, output_path, previous_path=None):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--input", type=paths.Path, default=paths.PROJECTS)
-    parser.add_argument("--output", type=paths.Path, default=paths.PROJECTS_ARCHIVE)
-    parser.add_argument("--previous", type=paths.Path, default=paths.PROJECTS_ARCHIVE,
+    parser.add_argument("--input", type=Path, default=paths.PROJECTS)
+    parser.add_argument("--output", type=Path, default=paths.PROJECTS_ARCHIVE)
+    parser.add_argument("--previous", type=Path, default=paths.PROJECTS_ARCHIVE,
                         help="earlier run whose values are kept when a lookup fails (default: --output)")
     args = parser.parse_args(argv)
 

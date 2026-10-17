@@ -9,6 +9,7 @@ def test_release_schema_is_stable():
         "showcase_last_url_snapshot",
     ]
     assert schema.RELEASE_COLUMNS == schema.CURATED_COLUMNS + schema.ARCHIVE_COLUMNS
+    assert set(schema.RELEASE_NAMES) <= set(schema.RELEASE_COLUMNS)
     assert set(schema.BOOLEAN_COLUMNS) <= set(schema.CURATED_COLUMNS)
 
 

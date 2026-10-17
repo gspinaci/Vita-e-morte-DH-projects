@@ -23,9 +23,9 @@ def test_apply_last_seen_corrections(tmp_path, projects):
     path = tmp_path / "corrections.csv"
     path.write_text(
         "title,project_url,correct_last_seen\n"
-        "Dead,https://dead.it,2015-05-05 00:00:00\n"
+        "Ended,https://ended.it,2015-05-05 00:00:00\n"
         "Ghost,https://ghost.it,2001-01-01 00:00:00\n"
-        "No date,https://alive.it,\n"
+        "No date,https://active.it,\n"
     )
     corrected, unmatched = analysis.apply_last_seen_corrections(projects, path)
     assert corrected.loc[2, "url_last_seen"] == "2015-05-05 00:00:00"
@@ -60,7 +60,7 @@ def test_growth_table():
 
 
 def test_discontinued_and_lifespans(dated):
-    assert analysis.discontinued(dated)["title"].tolist() == ["Dead"]
+    assert analysis.discontinued(dated)["title"].tolist() == ["Ended"]
     life = analysis.lifespans(dated)
     assert life["lifespan_years_by_year"].tolist() == [10]
     assert life["lifespan_days"].tolist() == [3653]
@@ -78,23 +78,38 @@ def test_macro_status(code, expected):
 def test_status_discrepancies(projects):
     d = analysis.status_discrepancies(projects)
     assert len(d) == 1
-    assert d.loc[0, "title"] == "Dead"
+    assert d.loc[0, "title"] == "Ended"
     assert d.loc[0, "discrepancy"].startswith("false_positive")
 
     projects.loc[0, "url_status_code"] = "404"
     d = analysis.status_discrepancies(projects)
-    assert set(d["title"]) == {"Alive", "Dead"}
+    assert set(d["title"]) == {"Active", "Ended"}
 
 
 def test_unavailable_projects(tmp_path, projects):
     path = tmp_path / "c.csv"
-    path.write_text("title,project_url,correct_last_seen\nDead,https://dead.it,2015-05-05 00:00:00\n")
+    path.write_text("title,project_url,correct_last_seen\nEnded,https://ended.it,2015-05-05 00:00:00\n")
     corrected, _ = analysis.apply_last_seen_corrections(projects, path)
     out = analysis.unavailable_projects(projects, analysis.add_years(corrected)).set_index("title")
-    assert list(out.index) == ["Migrated", "Dead", "No URL"]
+    assert list(out.index) == ["Migrated", "Ended", "No URL"]
     assert out.loc["Migrated", "unavailability"] == "not functioning; not redirected"
     assert out.loc["Migrated", "migrated_to"] == "https://new.it"
-    assert out.loc["Dead", "last_seen_corrected"] == True  # noqa: E712
+    assert out.loc["Ended", "last_seen_corrected"] == True  # noqa: E712
     assert out.loc["Migrated", "last_seen_corrected"] == False  # noqa: E712
     assert out.loc["No URL", "last_seen_corrected"] == False  # noqa: E712
-    assert out.loc["Dead", "lifespan_years"] == pytest.approx(7.34, abs=0.01)
+    assert out.loc["Ended", "lifespan_years"] == pytest.approx(7.34, abs=0.01)
+
+
+def test_taxonomy(projects):
+    t = analysis.taxonomy(projects)
+    assert t["project_status"].tolist() == ["active", "migrated", "ended", "never_published"]
+    assert t["accessibility"].fillna("").tolist() == ["fully_accessible", "inaccessible", "inaccessible", ""]
+    assert set(t["data_preservation"]) == {"unknown"}
+
+
+def test_taxonomy_partial_and_functioning_migrated(projects):
+    projects.loc[0, "partially_unaccessible_website"] = True
+    projects.loc[1, "functioning_website"] = True
+    t = analysis.taxonomy(projects)
+    assert t.loc[0, "accessibility"] == "partially_accessible"
+    assert t.loc[1, ["project_status", "accessibility"]].tolist() == ["migrated", "fully_accessible"]
